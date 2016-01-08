@@ -1,0 +1,18 @@
+@import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+@import "node_modules/bourbon/app/assets/stylesheets/bourbon";
+@import "csstyle";
+@import "fonts";
+
+$app: 'CardsAgainstCupOfTea';
+
+$csstyle-part-symbol: '\\/';
+$csstyle-root-id: $app;
+
+$mainFont: "Lato", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", "HelveticaNeue", $helvetica;
+$headingFont: "Lato", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", "HelveticaNeue", $helvetica;
+
+@import "components";
+
+body {
+    font-family: $mainFont;
+}
