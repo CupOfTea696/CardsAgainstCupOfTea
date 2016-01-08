@@ -37,7 +37,10 @@ class EventServiceProvider extends ServiceProvider
         parent::boot($events);
         
         $events->listen('eloquent.*', function ($model) use ($events) {
-            return $events->fire($event, $model));
+            $event_type = first(explode(': ', last(explode('.', $events->firing()))));
+            $event = get_class($model) . '::' . $event_type;
+            
+            return $events->fire($event, $model);
         });
     }
     
