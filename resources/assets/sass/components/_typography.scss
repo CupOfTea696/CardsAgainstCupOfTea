@@ -1,0 +1,41 @@
+@include component(text){
+    @include part(lead){
+        margin-bottom: 64px;
+        font-family: $headingFont;
+        @include font-size(modular-scale(2, $fontBaseSize));
+        line-height: modular-scale(-1, $fontBaseHeight);
+        text-align: center;
+    }
+    
+    @include part(s){
+        @include font-size($fontBaseSize);
+        
+        p, #{$all-text-inputs}, #{$all-buttons}{
+            @include font-size($fontBaseSize);
+        }
+    }
+    
+    @include part(xs){
+        @include font-size(modular-scale(-1, $fontBaseSize));
+        
+        p, #{$all-text-inputs}, #{$all-buttons}{
+            @include font-size(14px);
+        }
+    }
+    
+    @include part(left){
+        text-align: left;
+    }
+    
+    @include part(center){
+        text-align: center;
+    }
+    
+    @include part(right){
+        text-align: right;
+    }
+    
+    @include part(justify){
+        text-align: justify;
+    }
+}

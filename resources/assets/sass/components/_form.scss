@@ -1,0 +1,10 @@
+@include component(form){
+    @include part(group){
+        position: relative;
+        @include clearfix;
+    }
+    
+    @include part(control){
+        position: relative;
+    }
+}

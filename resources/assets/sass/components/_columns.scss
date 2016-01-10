@@ -1,0 +1,50 @@
+@include component(columns){
+    @include outer-container(100%);
+    margin-bottom: 64px;
+    column-gap: 64px;
+    
+    @media (min-width: $screen-sm-min){
+        max-width: 750px;
+    }
+    
+    @media (min-width: $screen-md-min){
+        max-width: 970px;
+    }
+    
+    @media (min-width: $screen-lg-min){
+        max-width: 1178px;
+    }
+    
+    @include option(two){
+        column-count: 2;
+        
+        @media (max-width: $screen-xs-min){
+            column-count: 1;
+        }
+    }
+    
+    @include option(three){
+        column-count: 3;
+        column-gap: round(modular-scale(-1, 64px));
+        
+        @media (min-width: $screen-sm-min){
+            column-count: 2;
+            column-gap: 64px;
+        }
+    }
+    
+    @include option(four){
+        column-count: 4;
+        column-gap: round(modular-scale(-2, 64px));
+        
+        @media (min-width: $screen-sm-min){
+            column-count: 2;
+            column-gap: 64px;
+        }
+        
+        @media (min-width: $screen-md-min){
+            column-count: 3;
+            column-gap: round(modular-scale(-1, 64px));
+        }
+    }
+}

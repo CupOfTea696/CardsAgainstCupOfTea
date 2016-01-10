@@ -1,0 +1,188 @@
+// Screen size breakpoints
+$screen-xs-min: 480px !default;
+$screen-sm-min: 768px !default;
+$screen-md-min: 992px !default;
+$screen-lg: 1200px !default;
+
+@mixin build_grid(){
+    @include part(one){
+        @include part(half){
+            @include span-columns(6);
+        }
+        
+        @include part(third){
+            @include span-columns(4);
+        }
+        
+        @include part(fourth){
+            @include span-columns(3);
+        }
+        
+        @include part(fifth){
+            @include span-columns(2 of 10);
+        }
+        
+        @include part(sixth){
+            @include span-columns(2);
+        }
+    }
+    
+    @include part(two){
+        @include part(thirds){
+            @include span-columns(8);
+        }
+        
+        @include part(fifths){
+            @include span-columns(4 of 10);
+        }
+    }
+    
+    @include part(three){
+        @include part(fourths){
+            @include span-columns(9);
+        }
+        
+        @include part(fifths){
+            @include span-columns(6 of 10);
+        }
+    }
+    
+    @include part(four){
+        @include part(fifths){
+            @include span-columns(8 of 10);
+        }
+    }
+    
+    @include part(five){
+        @include part(sixths){
+            @include span-columns(10);
+        }
+    }
+}
+
+@include component(grid){
+    @include outer-container(100%);
+    @extend %flexRow;
+    @extend %flexBetween;
+    flex-wrap: wrap;
+    margin-bottom: -64px;
+    
+    @media (min-width: $screen-sm-min){
+        max-width: 750px;
+    }
+    
+    @media (min-width: $screen-md-min){
+        max-width: 970px;
+    }
+    
+    @media (min-width: $screen-lg-min){
+        max-width: 1178px;
+    }
+    
+    @include part(row){
+        @include row();
+        @extend %flexRow;
+        @extend %flexBetween;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    
+    @include part(fill){
+        @include fill-parent;
+        flex-shrink: 0;
+        flex-grow: 1;
+        margin-bottom: 64px;
+    }
+    
+    @include part(xs, sm, md, ls){
+        @include part(one){ @include part(half, third, fourth, fifth, sixth){
+            flex-shrink: 0;
+            flex-grow: 1;
+            margin-bottom: 64px;
+        }}
+        
+        @include part(two){ @include part(thirds, fifths){
+            flex-shrink: 0;
+            flex-grow: 1;
+            margin-bottom: 64px;
+        }}
+        
+        @include part(three){ @include part(fourths, fifths){
+            flex-shrink: 0;
+            flex-grow: 1;
+            margin-bottom: 64px;
+        }}
+        
+        @include part(four){ @include part(fifths){
+            flex-shrink: 0;
+            flex-grow: 1;
+            margin-bottom: 64px;
+        }}
+        
+        @include part(five){ @include part(sixths){
+            flex-shrink: 0;
+            flex-grow: 1;
+            margin-bottom: 64px;
+        }}
+    }
+    
+    @include part(sm, md, ls){
+        @include part(one){ @include part(half, third, fourth, fifth, sixth){
+            @include fill-parent;
+        }}
+        
+        @include part(two){ @include part(thirds, fifths){
+            @include fill-parent;
+        }}
+        
+        @include part(three){ @include part(fourths, fifths){
+            @include fill-parent;
+        }}
+        
+        @include part(four){ @include part(fifths){
+            @include fill-parent;
+        }}
+        
+        @include part(five){ @include part(sixths){
+            @include fill-parent;
+        }}
+    }
+    
+    @include part(xs){
+        @include build_grid();
+        
+        @include part(last){
+            @include omega();
+        }
+    }
+    
+    @include part(sm){
+        @media (min-width: $screen-sm-min){
+            @include build_grid();
+            
+            @include part(last){
+                @include omega();
+            }
+        }
+    }
+    
+    @include part(md){
+        @media (min-width: $screen-md-min){
+            @include build_grid();
+            
+            @include part(last){
+                @include omega();
+            }
+        }
+    }
+    
+    @include part(lg){
+        @media (min-width: $screen-lg-min){
+            @include build_grid();
+            
+            @include part(last){
+                @include omega();
+            }
+        }
+    }
+}

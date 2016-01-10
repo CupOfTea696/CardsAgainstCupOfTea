@@ -1,0 +1,17 @@
+html{
+    font-size: $fontBaseSize;
+    
+    @media (max-width: $screen-lg-min){
+        font-size: $fontBaseSize - ($fontBaseSize - modular-scale(-1, $fontBaseSize)) / 2;
+    }
+    
+    @media (max-width: $screen-md-min){
+        font-size: modular-scale(-1, $fontBaseSize);
+    }
+}
+
+#{headings()}, p{
+    &:first-child{
+        margin-top: 0;
+    }
+}

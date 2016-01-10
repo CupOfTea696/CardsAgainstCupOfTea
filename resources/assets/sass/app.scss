@@ -1,18 +1,43 @@
-@import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
-@import "node_modules/bourbon/app/assets/stylesheets/bourbon";
-@import "csstyle";
-@import "fonts";
+@import "fonts", "icons/font-awesome";
+@import "bootstrap/bootstrap";
+@import "bourbon/bourbon";
 
+// Neat + Settings
+$visual-grid: false; // disable for production / enable for development
+$visual-grid-color: lightblue;
+$visual-grid-index: front;
+$visual-grid-opacity: .4;
+$max-width: em(1178) !global;
+
+@import "bourbon/neat";
+
+// settings
 $app: 'CardsAgainstCupOfTea';
 
 $csstyle-part-symbol: '\\/';
 $csstyle-root-id: $app;
 
+// vars
 $mainFont: "Lato", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", "HelveticaNeue", $helvetica;
 $headingFont: "Lato", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", "HelveticaNeue", $helvetica;
 
-@import "components";
+$fontBaseSize: 16px;
+$fontBaseHeight: 1.65;
 
-body {
-    font-family: $mainFont;
-}
+$container-lg: 1178px;
+
+$mainColor: #E1E1E1;
+$textColor: #222;
+$lightTextColor: #666;
+$accentColor: #7C1F92;
+
+$footerHeight: 60px;
+
+// core
+@import "core/core";
+
+// app
+@import "base";
+@import "layouts";
+@import "components";
+@import "tweaks";

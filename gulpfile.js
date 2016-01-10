@@ -1,5 +1,9 @@
 var elixir = require('laravel-elixir');
 
+var bootstrap = 'node_modules/bootstrap-sass/assets/stylesheets/bootstrap',
+    bourbon = require('bourbon').includePaths,
+    neat = require('bourbon-neat').includePaths;
+
 /*
  |--------------------------------------------------------------------------
  | Elixir Asset Management
@@ -12,6 +16,14 @@ var elixir = require('laravel-elixir');
  */
 
 elixir(function(mix) {
+    mix.sass(null, null, {
+        includePaths: [
+            bootstrap,
+            bourbon,
+            neat
+        ]
+    });
+    
     mix.sass([
         'app.scss'
     ], 'public/assets/css');

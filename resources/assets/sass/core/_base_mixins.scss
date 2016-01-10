@@ -1,0 +1,101 @@
+// Base mixins
+
+@mixin imgShadow($shadow...){
+    filter: drop-shadow($shadow);
+    -webkit-backface-visibility: hidden;
+}
+
+@mixin media($type) {
+    @if $type == xs{
+        @media (max-width: $screen-xs-min){
+            @content;
+        }
+    }
+    @else if $type == xs-landscape {
+        @media (max-width: $screen-xs-min) and (orientation: landscape){
+            @content;
+        }
+    }
+    @else if $type == sm {
+        @media (min-width: $screen-sm-min) {
+            @content;
+        }
+    }
+    @else if $type == md {
+        @media (min-width: $screen-md-min) {
+            @content;
+        }
+    }
+    @else if $type == lg {
+        @media (min-width: $screen-lg-min) {
+            @content;
+        }
+    }
+    @else if $type == landscape {
+        @media (orientation: landscape){
+            @content;
+        }
+    }
+}
+
+@mixin font-size($size) {
+    font-size: $size;
+    font-size: calculateRem($size);
+}
+
+$img-path: '../img' !default;
+$bg-img-extension: 'png' !default;
+$retina-suffix: '@2x' !default;
+@mixin bg-img($name, $size: false, $svg: true, $ext: $bg-img-extension, $alt: false, $suffix: $retina-suffix){
+    @if($size){
+        background-size: $size;
+    }
+    
+    @if($svg){
+        background-image: url(#{$img-path}/#{$name}.svg);
+        
+        .no-svg &{
+            @if($alt){
+                background-image: url(#{$img-path}/#{$alt}.#{$ext});
+            }
+            @else{
+                background-image: url(#{$img-path}/#{$name}.#{$ext});
+            }
+            
+            @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 1.3 / 1), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx){
+                @if($alt){
+                    background-image: url(#{$img-path}/#{$alt}#{$retina-suffix}.#{$ext});
+                }
+                @else{
+                    background-image: url(#{$img-path}/#{$name}#{$retina-suffix}.#{$ext});
+                }
+            }
+        }
+    }
+    @else{
+        background-image: url(#{$img-path}/#{$name}.#{$ext});
+        
+        @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 1.3 / 1), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx){
+            background-image: url(#{$img-path}/#{$name}#{$retina-suffix}.#{$ext});
+        }
+    }
+}
+
+@mixin position($position, $args) {
+    position: $position;
+    @each $pos, $val in $args{
+        #{$pos}: $val;
+    }
+}
+
+@mixin absolute($args) {
+    @include position(absolute, $args);
+}
+
+@mixin fixed($args) {
+    @include position(fixed, $args);
+}
+
+@mixin relative($args) {
+    @include position(relative, $args);
+}

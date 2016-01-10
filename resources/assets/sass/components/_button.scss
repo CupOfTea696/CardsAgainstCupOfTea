@@ -1,3 +1,38 @@
-@include component(btn) {
+@include component(btn){
+    position: relative;
+    display: inline-block;
+    @include font-size($fontBaseSize);
+    transition: background-color .2s;
+    user-select: none;
     
+    @include option(ripple){
+        overflow: hidden;
+        -webkit-mask-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAA5JREFUeNpiYGBgAAgwAAAEAAGbA+oJAAAAAElFTkSuQmCC); // fix for overflow hidden + border-raius in chrome
+        
+        .ripple{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            border-radius: 50%;
+            background-color: #FFF;
+            animation: ripple-animation 2s;
+            
+            &.remove{
+                // handle multiple clicks so the buttons doesn't get overflow with effects.
+                background-color: rgba(#FFF, 0);
+                transition: background-color .2s;
+            }
+        }
+    }
+}
+
+@keyframes ripple-animation{
+    from{
+        transform: scale(1);
+        opacity: .2;
+    }
+    to{
+        transform: scale(100);
+        opacity: 0;
+    }
 }

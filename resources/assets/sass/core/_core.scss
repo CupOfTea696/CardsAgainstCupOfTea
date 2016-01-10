@@ -1,0 +1,44 @@
+// core
+@import "normalize";
+@import "csstyle";
+@import "math";
+@import "functions";
+@import "base_mixins";
+@import "base_components";
+
+*{
+    outline: none;
+    overflow: visible;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-smoothing: antialiased;
+}
+
+body{
+    font-family: $mainFont;
+    background: $mainColor;
+    color: $textColor;
+    text-rendering: optimizeLegibility;
+}
+
+a{
+    cursor: pointer;
+    text-decoration: none;
+    color: $accentColor;
+}
+
+#{headings()}{
+    font-family: $headingFont;
+}
+
+::selection {
+    background-color: rgba($accentColor, .8);
+    color: color-contrast($accentColor, #000, #FFF);
+}

@@ -1,0 +1,57 @@
+@function add($some-number, $another-number){
+    @return $some-number + $another-number
+}
+
+@function headings($start: 1, $end: 0){
+    @if $end == 0{
+        @if $start == 1{
+        $end: 6;
+        } @else{
+        $end: $start;
+        $start: 1;
+        }
+    }
+    
+    $string: "";
+    @for $i from $start through $end{
+        $string: $string + "h" + $i + ", .h" + $i;
+        
+        @if $i < $end{
+            $string: $string + ", ";
+        }
+    }
+    
+    @return $string;
+}
+
+@function brightness($color){
+    @return ((red($color) * .299) + (green($color) * .587) + (blue($color) * .114)) / 255 * 100%;
+}
+
+@function which-color-contrast($color){
+    @if($color == null){
+        @return null;
+    }@else{
+        $color-brightness: brightness($color);
+        $light-contrast-brightness: brightness(#FFF);
+        $dark-contrast-brightness: brightness(#000);
+        
+        @return abs($color-brightness - $light-contrast-brightness) > abs($color-brightness - $dark-contrast-brightness);
+    }
+}
+
+$dark-contrast-default: #000 !default;
+$light-contrast-default: #FFF !default;
+
+@function color-contrast($color, $dark: $dark-contrast-default, $light: $light-contrast-default) {
+    @if($color == null){
+        @return null;
+    }@else{
+        @return if(which-color-contrast($color), $light, $dark);
+    }
+}
+
+@function calculateRem($size) {
+    $remSize: $size / 16px;
+    @return $remSize * 1rem;
+}
