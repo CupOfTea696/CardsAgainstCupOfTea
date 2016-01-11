@@ -40,7 +40,7 @@ return [
     */
 
     'url' => 'http://cah.local',
-    'site_name' => 'Cards Against CupOfTea',
+    'site_name' => 'Cards Against Tea',
 
     /*
     |--------------------------------------------------------------------------

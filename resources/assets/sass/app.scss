@@ -1,6 +1,8 @@
 @import "fonts", "icons/font-awesome";
 @import "bourbon";
 
+$debug: false;
+
 // Neat + Settings
 $visual-grid: false; // disable for production / enable for development
 $visual-grid-color: lightblue;
@@ -11,7 +13,7 @@ $max-width: em(1178) !global;
 @import "neat";
 
 // settings
-$app: 'CardsAgainstCupOfTea';
+$app: 'CardsAgainstTea';
 
 $csstyle-part-symbol: '\\/';
 $csstyle-root-id: $app;
@@ -26,11 +28,14 @@ $fontBaseHeight: 1.65;
 $container-lg: 1178px;
 
 $mainColor: #E1E1E1;
-$textColor: #222;
+$textColor: #F00;
 $lightTextColor: #666;
-$accentColor: #7C1F92;
+$accentColor: #A54DFF;
+$darkAccentColor: #3E2579;
 
+$headerHeight: 64px;
 $footerHeight: 60px;
+$sectionPadding: 64px;
 
 // core
 @import "bootstrap";

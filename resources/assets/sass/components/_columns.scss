@@ -1,6 +1,6 @@
 @include component(columns){
     @include outer-container(100%);
-    margin-bottom: 64px;
+    margin-bottom: 32px;
     column-gap: 64px;
     
     @media (min-width: $screen-sm-min){
@@ -27,7 +27,7 @@
         column-count: 3;
         column-gap: round(modular-scale(-1, 64px));
         
-        @media (min-width: $screen-sm-min){
+        @media (max-width: $screen-sm-min){
             column-count: 2;
             column-gap: 64px;
         }
@@ -37,14 +37,18 @@
         column-count: 4;
         column-gap: round(modular-scale(-2, 64px));
         
-        @media (min-width: $screen-sm-min){
+        @media (max-width: $screen-sm-min){
             column-count: 2;
             column-gap: 64px;
         }
         
-        @media (min-width: $screen-md-min){
+        @media (max-width: $screen-md-min){
             column-count: 3;
             column-gap: round(modular-scale(-1, 64px));
         }
+    }
+    
+    > :first-child {
+        margin-top: 0;
     }
 }

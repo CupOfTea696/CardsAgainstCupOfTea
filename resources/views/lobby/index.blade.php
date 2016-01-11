@@ -8,6 +8,8 @@
         </p>
     </header>
     <main>
-        
+        @foreach ($rooms as $room)
+            @include('lobby.room')
+        @endforeach
     </main>
 @stop

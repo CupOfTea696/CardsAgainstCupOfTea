@@ -1,27 +1,40 @@
 // General page layout
 
-#container{
+#container {
+    position: relative;
     min-height: 100%;
 }
 
-#body{
-    padding-bottom: $footerHeight;
+#container > main {
+    padding: $headerHeight + 64 0 $footerHeight + 64px;
+    
+    > section:not(:last-child) {
+        margin-bottom: 64px;
+    }
 }
 
-@include component(container){
+@include component(container) {
+    position: relative;
     margin-right: auto;
     margin-left: auto;
+    @include clearfix;
     
-    @media (min-width: $screen-sm-min){
+    @media (min-width: $screen-sm-min) {
         max-width: $container-sm;
         width: $container-sm;
     }
-    @media (min-width: $screen-md-min){
+    @media (min-width: $screen-md-min) {
         max-width: $container-md;
         width: $container-md;
     }
-    @media (min-width: $screen-lg-min){
+    @media (min-width: $screen-lg-min) {
         max-width: $container-lg;
         width: $container-lg;
     }
+}
+
+@include component(wrapper) {
+    position: relative;
+    margin-top: -1px;
+    padding-top: 1px;
 }

@@ -24,7 +24,11 @@ class Authenticate
                 return redirect()->guest(route('login'));
             }
         }
-
+        
+        view()->share([
+            'user' => Auth::user(),
+        ]);
+        
         return $next($request);
     }
 }

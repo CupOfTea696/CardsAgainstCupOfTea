@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Auth;
 
 use Auth;
+use Lang;
 use Validator;
 
 use App\Models\User;
@@ -34,7 +35,7 @@ class AuthController extends Controller
      */
     public function __construct()
     {
-        $this->middleware('guest', ['except' => 'logout']);
+        $this->middleware('guest', ['except' => ['logout']]);
     }
     
     public function loginForm()
@@ -60,6 +61,8 @@ class AuthController extends Controller
             
             return redirect()->intended(route('lobby'));
         }
+        
+        $user = User::where('username', $request->input('username'))->count();
         
         return $this->sendFailedLoginResponse($request, $user);
     }
@@ -124,7 +127,7 @@ class AuthController extends Controller
         $this->incrementLoginAttempts($request);
         
         if (! $user) {
-            $errors = ['username' => Lang::get('auth.user_not_found')];
+            $errors = ['username' => Lang::get('auth.user_not_found', ['name' => $request->get('username')])];
         } else {
             $errors = ['password' => Lang::get('auth.password_mismatch')];
         }

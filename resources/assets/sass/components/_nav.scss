@@ -1,0 +1,54 @@
+@include component(nav) {
+    height: $headerHeight;
+    @include font-size($fontBaseSize);
+    letter-spacing: .25px;
+    font-family: $headingFont;
+    color: #FFF;
+    background: rgba(#000, .7);
+    
+    @include part(container) {
+        @include fixed((top: 0, left: 0));
+        width: 100%;
+        z-index: 999;
+    }
+    
+    @include part(item) {
+        float: left;
+        position: relative;
+        height: $headerHeight;
+        padding: 0 32px;
+        line-height: $headerHeight;
+        
+        @include option(main) {
+            font-weight: 700;
+        }
+        
+        @include option(active) {
+            > a {
+                &:after {
+                    bottom: 0;
+                }
+            }
+        }
+        
+        > a {
+            overflow: hidden;
+            
+            &:after {
+                content: '';
+                @include absolute((bottom: -5px, left: 0));
+                @include size(100%, 5px);
+                background: #FFF;
+                transition: bottom .2s;
+            }
+        }
+        
+        &:hover {
+            > a {
+                &:after {
+                    bottom: 0;
+                }
+            }
+        }
+    }
+}

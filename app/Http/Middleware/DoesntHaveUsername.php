@@ -3,6 +3,7 @@
 namespace App\Http\Middleware;
 
 use Auth;
+use Route;
 use Closure;
 
 class DoesntHaveUsername

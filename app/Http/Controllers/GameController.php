@@ -9,18 +9,10 @@ use App\Http\Controllers\Controller;
 
 class GameController extends Controller
 {
-    /**
-     * Create a new lobby controller instance.
-     *
-     * @return void
-     */
-    public function __construct()
-    {
-        $this->middleware('has.username');
-    }
-    
     public function lobby()
     {
-        return view('lobby');
+        $rooms = [];
+        
+        return view('lobby.index', compact('rooms'));
     }
 }

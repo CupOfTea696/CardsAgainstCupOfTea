@@ -1,0 +1,11 @@
+@include component(page) {
+    position: relative;
+    overflow: hidden;
+    @include clearfix;
+}
+
+main > :first-child {
+    @include component(page, post, feed, classes, sidebar) {
+        padding-top: 96px;
+    }
+}

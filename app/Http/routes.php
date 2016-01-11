@@ -39,10 +39,12 @@ Route::group(['middleware' => ['web']], function () {
         Route::get( 'reset/password/{token}',   ['as' => 'pw.reset',    'uses' => 'PasswordController@showResetForm'        ]);
         Route::post('reset/password',           ['as' => 'pw.reset.do', 'uses' => 'PasswordController@reset'                ]);
     });
-    
+});
+
+Route::group(['middleware' => ['web', 'has.username']], function () {
     Route::get('lobby', ['as' => 'lobby', 'uses' => 'GameController@lobby']);
 });
 
 Route::group(['middleware' => ['web', 'auth']], function () {
-    
+    Route::get('my/account', ['as' => 'account', 'uses' => 'ProfileController@account']);
 });

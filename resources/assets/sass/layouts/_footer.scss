@@ -2,4 +2,13 @@
     position: absolute;
     bottom: 0;
     @include size(100%, $footerHeight);
+    line-height: $footerHeight;
+    @include font-size(modular-scale(-1, $fontBaseSize));
+    overflow: hidden;
+    
+    @include component(social) {
+        a {
+            color: inherit;
+        }
+    }
 }

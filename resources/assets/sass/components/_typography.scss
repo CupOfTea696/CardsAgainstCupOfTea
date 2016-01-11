@@ -1,13 +1,13 @@
-@include component(text){
-    @include part(lead){
-        margin-bottom: 64px;
+@include component(text) {
+    @include part(lead) {
+        margin-bottom: 16px;
         font-family: $headingFont;
-        @include font-size(modular-scale(2, $fontBaseSize));
+        @include font-size(modular-scale(1, $fontBaseSize));
         line-height: modular-scale(-1, $fontBaseHeight);
-        text-align: center;
+        text-align: justify;
     }
     
-    @include part(s){
+    @include part(s) {
         @include font-size($fontBaseSize);
         
         p, #{$all-text-inputs}, #{$all-buttons}{
@@ -15,7 +15,7 @@
         }
     }
     
-    @include part(xs){
+    @include part(xs) {
         @include font-size(modular-scale(-1, $fontBaseSize));
         
         p, #{$all-text-inputs}, #{$all-buttons}{
@@ -23,19 +23,79 @@
         }
     }
     
-    @include part(left){
+    @include part(left) {
         text-align: left;
     }
     
-    @include part(center){
+    @include part(center) {
         text-align: center;
     }
     
-    @include part(right){
+    @include part(right) {
         text-align: right;
     }
     
-    @include part(justify){
+    @include part(justify) {
         text-align: justify;
     }
+    
+    @include part(uppercase) {
+        text-transform: uppercase;
+    }
+    
+    @include part(capitalize) {
+        text-transform: capitalize;
+    }
+    
+    @include part(lowercase) {
+        text-transform: lowercase;
+    }
+}
+
+// [converter] $parent hack
+@mixin text-emphasis-variant($parent, $color) {
+  #{$parent} {
+    color: $color;
+  }
+  a#{$parent}:hover,
+  a#{$parent}:focus {
+    color: darken($color, 10%);
+  }
+}
+
+@include text-emphasis-variant('.text-primary', $brand-primary);
+
+@include text-emphasis-variant('.text-success', $state-success-text);
+
+@include text-emphasis-variant('.text-info', $state-info-text);
+
+@include text-emphasis-variant('.text-warning', $state-warning-text);
+
+@include text-emphasis-variant('.text-danger', $state-danger-text);
+
+#{headings()} {
+    font-weight: normal;
+}
+
+h1{
+    @include font-size(64px);
+}
+h2{
+    @include font-size(48px);
+}
+h3{
+    @include font-size(32px);
+}
+h4{
+    @include font-size(24px);
+}
+h5{
+    @include font-size(18px);
+}
+h6{
+    @include font-size(16px);
+}
+
+p {
+    letter-spacing: .4px;
 }

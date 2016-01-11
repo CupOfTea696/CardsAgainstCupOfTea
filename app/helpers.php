@@ -14,17 +14,54 @@ if (! function_exists('version')) {
             return hash_file('md5', public_path($file));
         };
         
-        if (App::environment('local', 'staging')) {
+        if (App::environment('local', 'development', 'staging')) {
             if (! $hash = config('version.' . $file)) {
                 $hash = $get_hash($file);
                 
                 config(compact('hash'));
             }
         } else {
-            $hash = Cache::remember('version.' . $file, config('version.cache_duration', 5), $get_hash($file));
+            $hash = Cache::remember('version.' . $file, config('version.cache_duration', 5), function () use ($get_hash, $file) { return $get_hash($file); });
         }
         
         return asset($file) . '?v=' . $hash;
+    }
+}
+
+if (! function_exists('layout_version')) {
+    function layout_version($layout = 'main') {
+        $get_hash = function ($layout) {
+            $hash = '';
+            $files = [
+                public_path('assets/css/app.css'),
+                public_path('assets/js/app.js'),
+                resource_path('views/layouts/main.blade.php'),
+                resource_path('views/partials/header.blade.php'),
+                resource_path('views/partials/footer.blade.php'),
+            ];
+            
+            if ($layout != 'main') {
+                $files[] =  resource_path('views/layouts/' . str_replace('.', DIRECTORY_SEPARATOR, $layout) . '.blade.php');
+            }
+            
+            foreach ($files as $file) {
+                $hash .= hash_file('md5', $file);
+            }
+            
+            return hash('md5', $hash);
+        };
+        
+        if (App::environment('local', 'development', 'staging')) {
+            if (! $hash = config('version.layout.' . $layout)) {
+                $hash = $get_hash($layout);
+                
+                config(compact('hash'));
+            }
+        } else {
+            $hash = Cache::remember('version.layout.' . $layout, config('version.cache_duration', 5), function () use ($get_hash, $layout) { return $get_hash($layout); });
+        }
+        
+        return $hash;
     }
 }
 

@@ -5,7 +5,7 @@
         <h1>Cards Against CupOfTea</h1>
     </header>
     <main class="text-center">
-        <form action="{{ route('join') }}" method="post">
+        <form action="{{ route('join') }}" method="post" data-pjax="#container">
             {{ csrf_field() }}
             
             <div class="form-group col-md-4 col-md-offset-4">
@@ -17,7 +17,7 @@
             </div>
         </form>
         
-        <form action="{{ route('loginOrSignUp') }}" method="post">
+        <form action="{{ route('loginOrSignUp') }}" method="post" data-pjax="#container">
             {{ csrf_field() }}
             
             <div class="form-group col-md-12">

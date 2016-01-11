@@ -15,3 +15,51 @@ html{
         margin-top: 0;
     }
 }
+
+#{headings()} {
+    text-rendering: auto;
+    
+    a {
+        display: block;
+    }
+}
+
+a {
+    display: inline-block;
+    transition: color .2s;
+}
+
+fieldset {
+    padding: 0;
+    border: 0;
+    
+    legend {
+        padding: 0 0 4px 8px;
+        border-bottom: 1px solid $lightTextColor;
+    }
+}
+
+blockquote {
+    margin: 0;
+    margin-left: 32px;
+    padding: 3px 16px;
+    border-left: 5px solid $accentColor;
+    
+    cite {
+        &:before {
+            content: '\2014';
+            padding: 0 3px 0 16px;
+        }
+    }
+}
+
+address {
+    margin: 1em 0;
+    font-style: normal;
+}
+
+table {
+    tr {
+        transition: background-color .2s;
+    }
+}
