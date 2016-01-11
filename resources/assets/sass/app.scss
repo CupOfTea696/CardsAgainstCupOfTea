@@ -1,6 +1,5 @@
 @import "fonts", "icons/font-awesome";
-@import "bootstrap/bootstrap";
-@import "bourbon/bourbon";
+@import "bourbon";
 
 // Neat + Settings
 $visual-grid: false; // disable for production / enable for development
@@ -9,7 +8,7 @@ $visual-grid-index: front;
 $visual-grid-opacity: .4;
 $max-width: em(1178) !global;
 
-@import "bourbon/neat";
+@import "neat";
 
 // settings
 $app: 'CardsAgainstCupOfTea';
@@ -34,6 +33,7 @@ $accentColor: #7C1F92;
 $footerHeight: 60px;
 
 // core
+@import "bootstrap";
 @import "core/core";
 
 // app

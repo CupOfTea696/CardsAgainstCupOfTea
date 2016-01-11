@@ -1,8 +1,16 @@
+var gulp = require('gulp');
+var shell = require('gulp-shell');
 var elixir = require('laravel-elixir');
 
-var bootstrap = 'node_modules/bootstrap-sass/assets/stylesheets/bootstrap',
-    bourbon = require('bourbon').includePaths,
-    neat = require('bourbon-neat').includePaths;
+var sass_options = {
+    includePaths: [
+        'node_modules/bootstrap-sass/assets/stylesheets',
+        require('bourbon').includePaths,
+        'node_modules/bourbon-neat/app/assets/stylesheets'
+    ]
+};
+
+
 
 /*
  |--------------------------------------------------------------------------
@@ -16,17 +24,9 @@ var bootstrap = 'node_modules/bootstrap-sass/assets/stylesheets/bootstrap',
  */
 
 elixir(function(mix) {
-    mix.sass(null, null, {
-        includePaths: [
-            bootstrap,
-            bourbon,
-            neat
-        ]
-    });
-    
     mix.sass([
         'app.scss'
-    ], 'public/assets/css');
+    ], 'public/assets/css', sass_options);
     
     mix.scripts([
         'app.js'
