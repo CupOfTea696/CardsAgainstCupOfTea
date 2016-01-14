@@ -15,7 +15,7 @@ $max-width: em(1178) !global;
 // settings
 $app: 'CardsAgainstTea';
 
-$csstyle-part-symbol: '\\/';
+$csstyle-part-symbol: '/';
 $csstyle-root-id: $app;
 
 // vars
@@ -28,17 +28,17 @@ $fontBaseHeight: 1.65;
 $container-lg: 1178px;
 
 $mainColor: #E1E1E1;
-$textColor: #F00;
+$textColor: #222;
 $lightTextColor: #666;
 $accentColor: #A54DFF;
 $darkAccentColor: #3E2579;
 
 $headerHeight: 64px;
-$footerHeight: 60px;
+$footerHeight: 64px;
 $sectionPadding: 64px;
 
 // core
-@import "bootstrap";
+@import "bootstrap/bootstrap";
 @import "core/core";
 
 // app

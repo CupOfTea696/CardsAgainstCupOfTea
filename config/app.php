@@ -156,6 +156,8 @@ return [
         App\Providers\AuthServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
+        
+        //CupOfTea\TwoStream\TwoStreamServiceProvider::class
 
     ],
 
@@ -199,9 +201,12 @@ return [
         'Schema'    => Illuminate\Support\Facades\Schema::class,
         'Session'   => Illuminate\Support\Facades\Session::class,
         'Storage'   => Illuminate\Support\Facades\Storage::class,
+        'TwoStream' => CupOfTea\TwoStream\Facades\TwoStream::class,
         'URL'       => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View'      => Illuminate\Support\Facades\View::class,
+        'WsRoute'   => CupOfTea\TwoStream\Facades\WsRoute::class,
+        'WsSession' => CupOfTea\TwoStream\Facades\WsSession::class,
 
     ],
 

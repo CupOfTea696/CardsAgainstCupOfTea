@@ -43,8 +43,12 @@ Route::group(['middleware' => ['web']], function () {
 
 Route::group(['middleware' => ['web', 'has.username']], function () {
     Route::get('lobby', ['as' => 'lobby', 'uses' => 'GameController@lobby']);
+    
+    Route::get( 'game/create', ['as' => 'room.create',  'uses' => 'GameController@create'   ]);
+    Route::post('game/create', ['as' => 'room.store',   'uses' => 'GameController@store'    ]);
 });
 
 Route::group(['middleware' => ['web', 'auth']], function () {
-    Route::get('my/account', ['as' => 'account', 'uses' => 'ProfileController@account']);
+    Route::get( 'my/account', ['as' => 'account.edit',      'uses' => 'AccountController@edit'  ]);
+    Route::post('my/account', ['as' => 'account.update',    'uses' => 'AccountController@update']);
 });

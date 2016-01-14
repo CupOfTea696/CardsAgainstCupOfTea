@@ -1,5 +1,4 @@
 var gulp = require('gulp');
-var shell = require('gulp-shell');
 var elixir = require('laravel-elixir');
 
 var sass_options = {
@@ -9,8 +8,6 @@ var sass_options = {
         'node_modules/bourbon-neat/app/assets/stylesheets'
     ]
 };
-
-
 
 /*
  |--------------------------------------------------------------------------
@@ -29,6 +26,10 @@ elixir(function(mix) {
     ], 'public/assets/css', sass_options);
     
     mix.scripts([
+        'jquery/**/*.js',
+        'lib/**/*.js',
+        'app/Application.js',
+        'app/**/*.js',
         'app.js'
     ], 'public/assets/js/app.js');
 });

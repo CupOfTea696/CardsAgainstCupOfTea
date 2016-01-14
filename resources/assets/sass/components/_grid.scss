@@ -58,6 +58,62 @@ $screen-lg: 1200px !default;
             @include span-columns(10);
         }
     }
+    
+    @include part(offset) {
+        @include part(one) {
+            @include part(half) {
+                @include shift(6);
+            }
+            
+            @include part(third) {
+                @include shift(4);
+            }
+            
+            @include part(fourth) {
+                @include shift(3);
+            }
+            
+            @include part(fifth) {
+                @include shift(2 of 10);
+            }
+            
+            @include part(sixth) {
+                @include shift(2);
+            }
+        }
+        
+        @include part(two) {
+            @include part(thirds) {
+                @include shift(8);
+            }
+            
+            @include part(fifths) {
+                @include shift(4 of 10);
+            }
+        }
+        
+        @include part(three) {
+            @include part(fourths) {
+                @include shift(9);
+            }
+            
+            @include part(fifths) {
+                @include shift(6 of 10);
+            }
+        }
+        
+        @include part(four) {
+            @include part(fifths) {
+                @include shift(8 of 10);
+            }
+        }
+        
+        @include part(five) {
+            @include part(sixths) {
+                @include shift(10);
+            }
+        }
+    }
 }
 
 @include component(grid) {

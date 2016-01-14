@@ -6,7 +6,7 @@ use App\Models\User;
 use Illuminate\Queue\InteractsWithQueue;
 use Illuminate\Contracts\Queue\ShouldQueue;
 
-class UserCreatedListener
+class ResolveUsernameConflicts
 {
     /**
      * Create the event listener.

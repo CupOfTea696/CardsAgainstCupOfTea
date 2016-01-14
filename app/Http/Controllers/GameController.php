@@ -15,4 +15,9 @@ class GameController extends Controller
         
         return view('lobby.index', compact('rooms'));
     }
+    
+    public function create()
+    {
+        return view('room.create');
+    }
 }

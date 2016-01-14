@@ -5,20 +5,32 @@
                 {{ $app_name }}
                 <a href="{{ Auth::check() ? route('home') : route('lobby') }}" class="+clickable"></a>
             </div>
+            @if (Auth::check())
+                <div class="nav/item">
+                    {{ uc_trans('game.create') }}
+                    <a href="{{ route('room.create') }}" class="+clickable"></a>
+                </div>
+            @endif
         </div>
         <div class="pull-right">
             @if (Auth::check())
                 <div class="nav/item">
-                    {{ trans('auth.account') }}
-                    <a href="{{ route('account') }}" class="+clickable"></a>
+                    {{ uc_trans('auth.account') }}
+                    <a href="{{ route('account.edit') }}" class="+clickable"></a>
                 </div>
                 <div class="nav/item">
-                    {{ trans('auth.logout') }}
+                    {{ uc_trans('auth.logout') }}
                     <a href="{{ route('logout') }}" class="+clickable" data-pjax="#container"></a>
                 </div>
             @else
+                @if (current_route('name') != 'home')
+                    <div class="nav/item">
+                        {{ uc_trans('auth.signup') }}
+                        <a href="{{ route('signUp') }}" class="+clickable"></a>
+                    </div>
+                @endif
                 <div class="nav/item">
-                    {{ trans('auth.login') }}
+                    {{ uc_trans('auth.login') }}
                     @if (current_route('name') == 'home')
                         <a href="{{ route('login') }}" class="+clickable"></a>
                     @else

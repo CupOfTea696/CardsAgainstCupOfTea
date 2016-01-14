@@ -1,7 +1,7 @@
-(function(window, $) {
+(function(window, app, $) {
     var document = window.document;
     
-    $(document).on('click', 'a[href^="http://cah.local"]', function(e) {
+    $(document).on('click', 'a[href^="' + app.baseUrl + '"]', function(e) {
         var container;
         
         if (! (container = $(this).data('pjax'))) {
@@ -29,4 +29,4 @@
     $(document).on('pjax:complete', function(e) {
         $(e.target).removeClass('+loading');
     });
-})(window, jQuery);
+})(window, app, jQuery);

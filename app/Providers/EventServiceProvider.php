@@ -19,8 +19,9 @@ class EventServiceProvider extends ServiceProvider
     ];
     
     protected $listen_eloquent = [
-        'App\Models\User::created' => [
-            'App\Listeners\UserCreatedListener',
+        'App\Models\Fire::created' => [
+            'App\Listeners\ResolveUsernameConflicts',
+            'App\Listeners\EmailSignedUpConfirmation',
         ],
     ];
     
@@ -32,6 +33,7 @@ class EventServiceProvider extends ServiceProvider
      */
     public function boot(DispatcherContract $events)
     {
+        $listens = $this->listen;
         $this->listen = array_merge($this->listen, $this->listen_eloquent);
         
         parent::boot($events);
@@ -42,15 +44,22 @@ class EventServiceProvider extends ServiceProvider
             
             return $events->fire($event, $model);
         });
+        
+        $this->listen = $listens;
     }
     
     public function listens()
     {
         $listens = $this->listen;
-        $listens['App\Events\Event'] = [];
         
         foreach ($this->listen_eloquent as $event => $listeners) {
-            $listens['App\Events\Event'] = array_merge($listens['App\Events\Event'], $listeners);
+            $model = explode('::', $event)[0];
+            
+            if (array_key_exists($model, $listens)) {
+                $listens[$model] = array_merge($listens[$model], $listeners);
+            } else {
+                $listens[$model] = $listeners;
+            }
         }
         
         return $listens;

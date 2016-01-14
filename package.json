@@ -4,6 +4,7 @@
     "gulp": "^3.8.8"
   },
   "dependencies": {
+    "autobahn": "0.0.0",
     "bootstrap-sass": "^3.3.6",
     "bourbon": "^4.2.6",
     "bourbon-neat": "^1.7.2",

@@ -13,16 +13,30 @@ return [
     |
     */
     
+    // fields
     'user' => 'username',
     'pass' => 'password',
     '@' => 'email',
     
-    'login' => 'Sign in',
-    'logout' => 'Sign out',
-    'account' => 'My account',
-    'account.welcome' => 'Welcome to your account, :name.',
-    'signup' => 'Sign up',
+    // auth actions
+    'login' => 'sign in',
+    'logout' => 'sign out',
+    'signup' => 'sign up',
     'signup.prompt' => 'Like to keep your username?',
+    
+    // account
+    'account' => 'my account',
+    'account.welcome' => 'Welcome to your account, :name.',
+    'edit.heading' => 'Edit your account',
+    'save' => 'save',
+    'save.success' => 'Your details have been successfully updated.',
+    'pass.change' => 'change password',
+    '@.change' => 'change email',
+    'delete' => 'delete my account',
+    'delete.heading' => 'Delete your account',
+    'delete.warn' => 'Are you sure you want to delete your account? This cannot be undone.',
+    
+    // validation
     'failed' => 'These credentials do not match our records.',
     'throttle' => 'Too many login attempts. Please try again in :seconds seconds.',
     

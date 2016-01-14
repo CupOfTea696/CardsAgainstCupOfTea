@@ -8,8 +8,30 @@
 #container > main {
     padding: $headerHeight + 64 0 $footerHeight + 64px;
     
-    > section:not(:last-child) {
-        margin-bottom: 64px;
+    header, main, footer, section {
+        @include clearfix;
+    }
+    
+    > {
+        header, main, footer, section {
+            &:not(:last-child) {
+                margin-bottom: $sectionPadding;
+            }
+            
+            > {
+                header, main, footer, section {
+                    &:not(:last-child) {
+                        margin-bottom: $sectionPadding / 2;
+                    }
+                    
+                    header, main, footer, section {
+                        &:not(:last-child) {
+                            margin-bottom: $sectionPadding / 4;
+                        }
+                    }
+                }
+            }
+        }
     }
 }
 
@@ -37,4 +59,8 @@
     position: relative;
     margin-top: -1px;
     padding-top: 1px;
+}
+
+@include component(clear) {
+    clear: both;
 }

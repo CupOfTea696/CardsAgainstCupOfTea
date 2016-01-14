@@ -1,14 +1,14 @@
 <footer>
     <div class="container">
-        <div class="pull-left">
-            &copy; {{ date('Y') }} by CupOfTea
-        </div>
         @if (App::environment('local', 'development'))
-            <div class="pull-right">
+            <div class="pull-left">
                 {{ App::environment() }}
                 //
                 {{ time() }}
             </div>
         @endif
+        <div class="pull-right">
+            &copy; {{ date('Y') }} by <a href="http://tiny.cc/cot696" target="_blank">CupOfTea</a>
+        </div>
     </div>
 </footer>

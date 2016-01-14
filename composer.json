@@ -9,7 +9,10 @@
         "laravel/framework": "5.2.*",
         "predis/predis": "~1.0",
         "spatie/laravel-pjax": "^1.1",
-        "cupoftea/package": "^1.2"
+        "cupoftea/package": "^1.2",
+        "cupoftea/twostream": "^1.0",
+        "react/zmq": "0.3.*",
+        "doctrine/dbal": "^2.5"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",
