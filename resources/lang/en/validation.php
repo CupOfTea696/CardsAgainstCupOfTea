@@ -105,6 +105,8 @@ return [
     |
     */
 
-    'attributes' => [],
+    'attributes' => [
+        'slug' => 'name',
+    ],
 
 ];

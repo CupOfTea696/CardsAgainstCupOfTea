@@ -1,18 +1,6 @@
-@include component(form) {
-    @include part(group) {
-        position: relative;
-        @include clearfix;
-    }
-    
-    @include part(control) {
-        position: relative;
-        margin-bottom: 16px;
-    }
-}
-
 #{$all-text-inputs} {
     display: block;
-    width: 100%;
+    width: 50%;
     height: 34px;
     padding: 6px 12px;
     font-size: 14px;
@@ -32,15 +20,103 @@
     }
 }
 
-@include component(form-horizontal) {
-    @include component(form-group) {
+input[type="radio"], input[type="checkbox"] {
+    display: block;
+    height: 34px;
+    margin: 0;
+    padding: 7px 0;
+    cursor: pointer;
+    
+    + {
+        @include component(help-block) {
+            margin-top: 0;
+        }
+    }
+}
+
+@include component(form) {
+    @include option(horizontal) {
         label {
             height: 34px;
-            margin-bottom: 0;
             padding-top: 7px;
             padding-bottom: 7px;
             font-size: 14px;
             line-height: 1.42857;
+            text-align: right;
         }
     }
+    
+    @include part(group) {
+        position: relative;
+        @include clearfix;
+    }
+    
+    @include part(control) {
+        position: relative;
+        margin-bottom: 16px;
+    }
+    
+    @at-root {
+        #{"#" + $csstyle-root-id} & {
+            @include part(checkbox, radio) {
+                display: none;
+                
+                + label {
+                    display: block;
+                    @include size(34px, 34px);
+                    margin: 0;
+                    padding: 7px 0;
+                    cursor: pointer;
+                    color: $brand-primary;
+                    font: normal normal normal 14px / 1 FontAwesome;
+                    font-size: 1rem;
+                    text-align: left;
+                    text-rendering: auto;
+                    -webkit-font-smoothing: antialiased;
+                    -moz-osx-font-smoothing: grayscale;
+                    transform: translate(0, 0);
+                    
+                    &:before {
+                        vertical-align: sub;
+                    }
+                }
+            }
+            
+            @include part(checkbox) {
+                + label {
+                    &:before {
+                        content: $fa-var-square-o;
+                    }
+                }
+                
+                &:checked {
+                    + label {
+                        &:before {
+                            content: $fa-var-check-square-o;
+                        }
+                    }
+                }
+            }
+            
+            @include part(radio) {
+                + label {
+                    &:before {
+                        content: $fa-var-circle-o;
+                    }
+                }
+                
+                &:checked {
+                    + label {
+                        &:before {
+                            content: $fa-var-dot-circle-o;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include component(help-block) {
+    margin-bottom: 16px;
 }

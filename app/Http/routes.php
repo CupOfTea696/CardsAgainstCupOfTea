@@ -46,9 +46,18 @@ Route::group(['middleware' => ['web', 'has.username']], function () {
     
     Route::get( 'game/create', ['as' => 'room.create',  'uses' => 'GameController@create'   ]);
     Route::post('game/create', ['as' => 'room.store',   'uses' => 'GameController@store'    ]);
+    Route::get( 'game/{game}', ['as' => 'room.show',    'uses' => 'GameController@show'     ]);
 });
 
 Route::group(['middleware' => ['web', 'auth']], function () {
     Route::get( 'my/account', ['as' => 'account.edit',      'uses' => 'AccountController@edit'  ]);
     Route::post('my/account', ['as' => 'account.update',    'uses' => 'AccountController@update']);
+});
+
+
+Route::get('test', function() {
+    return redirect('test/complete');
+});
+Route::get('test/complete', function() {
+    return 'yay';
 });

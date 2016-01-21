@@ -5,7 +5,7 @@
         <h1>{{ $app_name }}</h1>
     </header>
     <main class="text-center">
-        <form action="{{ route('loginOrSignUp') }}" method="post" data-pjax="#container">
+        <form action="{{ route('signUp.do') }}" method="post" data-pjax="#container">
             {{ csrf_field() }}
             
             <div class="form-group col-md-12">
@@ -13,7 +13,7 @@
             </div>
             
             <div class="form-group col-md-4 col-md-offset-4">
-                <input type="text" class="form-control" name="username" placeholder="{{ uc_trans('auth.user') }}">
+                <input type="text" class="form-control" name="username" placeholder="{{ uc_trans('auth.user') }}" required>
                 @if ($errors->has('username'))
                     <span class="help-block">
                         <strong>{{ $errors->first('username') }}</strong>
@@ -21,7 +21,7 @@
                 @endif
             </div>
             <div class="form-group col-md-4 col-md-offset-4">
-                <input type="password" class="form-control" name="password" placeholder="{{ uc_trans('auth.pass') }}">
+                <input type="password" class="form-control" name="password" placeholder="{{ uc_trans('auth.pass') }}" required>
                 @if ($errors->has('password'))
                     <span class="help-block">
                         <strong>{{ $errors->first('password') }}</strong>
@@ -29,7 +29,7 @@
                 @endif
             </div>
             <div class="form-group col-md-4 col-md-offset-4">
-                <input type="email" class="form-control" name="email" placeholder="{{ uc_trans('auth.@') }}">
+                <input type="email" class="form-control" name="email" placeholder="{{ uc_trans('auth.@') }}" required>
                 @if ($errors->has('email'))
                     <span class="help-block">
                         <strong>{{ $errors->first('email') }}</strong>

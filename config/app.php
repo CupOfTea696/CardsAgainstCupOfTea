@@ -157,7 +157,7 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
         
-        //CupOfTea\TwoStream\TwoStreamServiceProvider::class
+        CupOfTea\TwoStream\TwoStreamServiceProvider::class
 
     ],
 

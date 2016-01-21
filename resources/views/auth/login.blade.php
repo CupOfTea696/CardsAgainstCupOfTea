@@ -13,7 +13,7 @@
             </div>
             
             <div class="form-group col-md-4 col-md-offset-4">
-                <input type="text" class="form-control" name="username" placeholder="Username">
+                <input type="text" class="form-control" name="username" placeholder="{{ uc_trans('auth.user') }}" required>
                 @if ($errors->has('username'))
                     <span class="help-block">
                         <strong>{{ $errors->first('username') }}</strong>
@@ -21,7 +21,7 @@
                 @endif
             </div>
             <div class="form-group col-md-4 col-md-offset-4">
-                <input type="password" class="form-control" name="password" placeholder="Password">
+                <input type="password" class="form-control" name="password" placeholder="{{ uc_trans('auth.pass') }}" required>
                 @if ($errors->has('password'))
                     <span class="help-block">
                         <strong>{{ $errors->first('password') }}</strong>
@@ -30,7 +30,7 @@
             </div>
             
             <div class="form-group col-md-4 col-md-offset-4">
-                <button type="submit" class="btn btn-primary btn-block">{{ trans('auth.login') }}</button>
+                <button type="submit" class="btn btn-primary btn-block">{{ uc_trans('auth.login') }}</button>
             </div>
         </form>
     </main>

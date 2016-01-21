@@ -9,7 +9,7 @@
             {{ csrf_field() }}
             
             <div class="form-group col-md-4 col-md-offset-4">
-                <input type="text" class="form-control" name="username" placeholder="{{ uc_trans('auth.user') }}">
+                <input type="text" class="form-control" name="username" placeholder="{{ uc_trans('auth.user') }}" required>
             </div>
             
             <div class="form-group col-md-4 col-md-offset-4">
@@ -28,10 +28,10 @@
             </div>
             
             <div class="form-group col-md-4 col-md-offset-4">
-                <input type="text" class="form-control" name="username" placeholder="{{ uc_trans('auth.user') }}">
+                <input type="text" class="form-control" name="username" placeholder="{{ uc_trans('auth.user') }}" required>
             </div>
             <div class="form-group col-md-4 col-md-offset-4">
-                <input type="password" class="form-control" name="password" placeholder="{{ uc_trans('auth.pass') }}">
+                <input type="password" class="form-control" name="password" placeholder="{{ uc_trans('auth.pass') }}" required>
             </div>
             <div class="form-group col-md-4 col-md-offset-4">
                 <input type="email" class="form-control" name="email" placeholder="{{ uc_trans('auth.@') }}">

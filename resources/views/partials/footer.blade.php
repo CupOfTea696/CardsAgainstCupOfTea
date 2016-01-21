@@ -4,7 +4,7 @@
             <div class="pull-left">
                 {{ App::environment() }}
                 //
-                {{ time() }}
+                {{ microtime(true) - LARAVEL_START }}
             </div>
         @endif
         <div class="pull-right">
