@@ -241,6 +241,8 @@ function pjax(options) {
   options.complete = function(jqXHR, textStatus) {
     if (timeoutTimer)
       clearTimeout(timeoutTimer)
+      
+    jqXHR.xhr = pjax.xhr;
 
     fire('pjax:complete', [jqXHR, textStatus, options])
 
@@ -248,6 +250,8 @@ function pjax(options) {
   }
 
   options.error = function(jqXHR, textStatus, errorThrown) {
+    jqXHR.xhr = pjax.xhr; 
+    
     var container = extractContainer("", jqXHR, options)
 
     var allowed = fire('pjax:error', [jqXHR, textStatus, errorThrown, options])

@@ -8,21 +8,28 @@ use Illuminate\Http\Request;
 
 use App\Models\Room;
 use App\Http\Requests;
-use App\Http\Controllers\Controller;
+use App\Services\Game;
 
 class GameController extends Controller
 {
+    protected $game;
+    
+    public function __construct(Game $game)
+    {
+        $this->game = $game;
+    }
+    
     // lobby
     public function lobby()
     {
-        $rooms = [];
+        $rooms = Room::all();
         
         return view('lobby.index', compact('rooms'));
     }
     
     public function show(Room $room)
     {
-        echo var_dump($room);
+        return view('room.show', compact('room'));
     }
     
     // room.create
@@ -46,7 +53,17 @@ class GameController extends Controller
             'spec_capacity' => 'required|integer|min:' . config('game.spec_capacity.min') . '|max:' . config('game.spec_capacity.max'),
         ]);
         
-        $room = Room::create(Auth::check() ? $request->all() : $request->only(['name', 'slug', 'capacity', 'spec_capacity']));
+        if (Auth::check()) {
+            $data = $request->all();
+            
+            if ($data['password']) {
+                $data['private'] = true;
+            }
+        } else {
+            $data = $request->only(['name', 'slug', 'capacity', 'spec_capacity']);
+        }
+        
+        $room = Room::create($data);
         
         return redirect()->route('room.show', [$room]);
     }
@@ -55,21 +72,10 @@ class GameController extends Controller
     {
         if (! $request->input('name') && ($user = $request->user())) {
             $request->merge([
-                'name' => $this->createRoomNameFromUsername($user->username),
+                'name' => $this->game->createRoomNameFromUsername(),
             ]);
         }
         
         return str_slug($request->input('name'));
-    }
-    
-    protected function createRoomNameFromUsername($username)
-    {
-        if (ends_with($username, 's') || ends_with($username, 'x') || ends_with($username, 'z')) {
-            $their = "'";
-        } else {
-            $their = "'s";
-        }
-        
-        return $username . $their . ' Room';
     }
 }

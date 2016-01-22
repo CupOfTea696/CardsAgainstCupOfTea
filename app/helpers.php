@@ -79,16 +79,41 @@ if (! function_exists('current_route')) {
     }
 }
 
+if (! function_exists('is_current_route')) {
+    function is_current_route($route)
+    {
+        if ($route instanceof Illuminate\Routing\Route) {
+            $route = $route->getName();
+        }
+        
+        return $route === current_route('name');
+    }
+}
+
 if (! function_exists('uc_trans')) {
-    function uc_trans($id, $parameters = [], $domain = 'messages', $locale = null)
+    function uc_trans($id, array $parameters = [], $domain = 'messages', $locale = null)
     {
         return ucwords(trans($id, $parameters, $domain, $locale));
     }
 }
 
 if (! function_exists('ucf_trans')) {
-    function ucf_trans($id, $parameters = [], $domain = 'messages', $locale = null)
+    function ucf_trans($id, array $parameters = [], $domain = 'messages', $locale = null)
     {
         return ucfirst(trans($id, $parameters, $domain, $locale));
+    }
+}
+
+if (! function_exists('uc_trans_choice')) {
+    function uc_trans_choice($id, $number, array $parameters = [], $domain = 'messages', $locale = null)
+    {
+        return ucwords(trans_choice($id, $number, $parameters, $domain, $locale));
+    }
+}
+
+if (! function_exists('ucf_trans_choice')) {
+    function ucf_trans_choice($id, $number, array $parameters = [], $domain = 'messages', $locale = null)
+    {
+        return ucfirst(trans_choice($id, $number, $parameters, $domain, $locale));
     }
 }

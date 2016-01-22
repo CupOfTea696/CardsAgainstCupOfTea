@@ -38,6 +38,17 @@ class Room extends Model
     ];
     
     /**
+     * The accessors to append to the model's array form.
+     *
+     * @var array
+     */
+    protected $appends = [
+        'players',
+        'goal',
+        'status',
+    ];
+    
+    /**
      * The attributes that should be cast to native types.
      *
      * @var array
@@ -55,6 +66,26 @@ class Room extends Model
     public function getRouteKeyName()
     {
         return 'slug';
+    }
+    
+    public function getPlayersAttribute()
+    {
+        return 0;
+    }
+    
+    public function getSpectatorsAttribute()
+    {
+        return 0;
+    }
+    
+    public function getGoalAttribute()
+    {
+        return 8;
+    }
+    
+    public function getStatusAttribute()
+    {
+        return 'Not Playing';
     }
     
     public function setPassAttribute($value)

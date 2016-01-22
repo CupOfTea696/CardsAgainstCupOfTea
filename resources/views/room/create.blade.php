@@ -1,5 +1,7 @@
 @extends('layouts.main')
 
+@inject('game', 'App\Services\Game')
+
 @section('page')
     <header>
         <h2>{{ trans('game.create.heading') }}</h2>
@@ -11,7 +13,7 @@
             <div class="form/group grid --no-grow --from-start">
                 <label for="game/name" class="grid/sm/one/fourth">{{ uc_trans('game.room.name.label') }}</label>
                 <div class="grid/sm/one/half">
-                    <input type="text" class="form/control" name="name" id="game/name" placeholder="{{ uc_trans('game.room.name') }}">
+                    <input type="text" class="form/control" name="name" id="game/name" placeholder="{{ $game->createRoomNameFromUsername() ?: uc_trans('game.room.name') }}">
                     @if ($errors->has('slug'))
                         <span class="help-block">
                             <strong>{{ $errors->first('slug') }}</strong>
@@ -75,20 +77,4 @@
             </div>
         </form>
     </main>
-@stop
-
-@section('no')
-$table->increments('id');
-            $table->string('name')->unique();
-            $table->string('password', 60)->nullable();
-            $table->integer('capacity');
-            $table->integer('spec_capacity');
-            $table->boolean('permanent');
-
-'room' => [
-        'name' => 'name',
-        'score_limit' => 'score limit',
-        'capacity' => 'player limit',
-        'spec_capacity' => 'spectator limit',
-    ],
 @stop

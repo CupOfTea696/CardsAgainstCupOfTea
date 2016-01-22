@@ -2,7 +2,10 @@
 
 namespace App\Providers;
 
+use Counter;
+
 use CupOfTea\Package\Package;
+
 use Illuminate\Support\ServiceProvider;
 
 class AppServiceProvider extends ServiceProvider
@@ -34,6 +37,8 @@ class AppServiceProvider extends ServiceProvider
             'app_name' => config('app.site_name'),
             'app_version' => $this->version(),
         ]);
+        
+        Counter::registerBlade();
     }
     
     /**

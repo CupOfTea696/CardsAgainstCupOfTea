@@ -27,16 +27,16 @@
             
         });
         
-        $(document).on('pjax:complete', function(e) {
+        $(document).on('pjax:success', function(e) {
             $(e.target).removeClass('+loading');
         });
         
-        $(document).on('pjax:error', function(event, xhr, textStatus, error, options) {
-            window.xhr = xhr;
-            
-            if (! (options.type == 'GET' && textStatus !== 'abort')) {
-                document.write(xhr.responseText);
-                document.title = xhr.status + ' ' + error;
+        $(document).on('pjax:error', function(event, jqXHR, textStatus, error, options) {
+            window.xhr = jqXHR;
+            console.log([event, jqXHR, textStatus, error, options]);
+            if (! (options.type == 'GET' && textStatus !== 'abort') && jqXHR.xhr.responseURL === options.requestUrl)  {
+                document.write(jqXHR.responseText);
+                document.title = jqXHR.status + ' ' + error;
             }
         });
     }

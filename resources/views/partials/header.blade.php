@@ -6,7 +6,7 @@
                 <a href="{{ Auth::check() ? route('home') : route('lobby') }}" class="+clickable"></a>
             </div>
             @if (Auth::check())
-                <div class="nav/item">
+                <div class="nav/item{{ is_current_route('room.create') ? ' --active' : '' }}">
                     {{ uc_trans('game.create') }}
                     <a href="{{ route('room.create') }}" class="+clickable"></a>
                 </div>
@@ -14,7 +14,7 @@
         </div>
         <div class="pull-right">
             @if (Auth::check())
-                <div class="nav/item">
+                <div class="nav/item{{ is_current_route('account.edit') ? ' --active' : '' }}">
                     {{ uc_trans('auth.account') }}
                     <a href="{{ route('account.edit') }}" class="+clickable"></a>
                 </div>
@@ -24,12 +24,12 @@
                 </div>
             @else
                 @if (current_route('name') != 'home')
-                    <div class="nav/item">
+                    <div class="nav/item{{ is_current_route('signUp') ? ' --active' : '' }}">
                         {{ uc_trans('auth.signup') }}
                         <a href="{{ route('signUp') }}" class="+clickable"></a>
                     </div>
                 @endif
-                <div class="nav/item">
+                <div class="nav/item{{ is_current_route('login') ? ' --active' : '' }}">
                     {{ uc_trans('auth.login') }}
                     @if (current_route('name') == 'home')
                         <a href="{{ route('login') }}" class="+clickable"></a>

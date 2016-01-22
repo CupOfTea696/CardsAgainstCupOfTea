@@ -7,7 +7,8 @@
             {{ trans('lobby.welcome.message') }}
         </p>
     </header>
-    <main>
+    <main class="grid --no-grow">
+        @counteach ($rooms as $room)
         @foreach ($rooms as $room)
             @include('lobby.room')
         @endforeach

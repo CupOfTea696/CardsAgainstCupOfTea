@@ -152,6 +152,14 @@ $screen-lg: 1200px !default;
         }
     }
     
+    @include option(center) {
+        justify-content: center;
+        
+        @include part(row) {
+            justify-content: center;
+        }
+    }
+    
     @include option(from-end) {
         justify-content: flex-end;
         
