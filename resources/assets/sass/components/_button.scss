@@ -2,10 +2,10 @@
     position: relative;
     display: inline-block;
     @include font-size($fontBaseSize);
-    transition: background-color .2s;
+    transition: background-color .3s, border-color .3s;
     user-select: none;
     
-    @include option(ripple){
+    @include option(ripple) {
         overflow: hidden;
         -webkit-mask-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAA5JREFUeNpiYGBgAAgwAAAEAAGbA+oJAAAAAElFTkSuQmCC); // fix for overflow hidden + border-raius in chrome
         
@@ -23,15 +23,30 @@
                 transition: background-color .2s;
             }
         }
+        
+        @include option(dark) {
+            .ripple {
+                background-color: #999;
+                
+                &.remove{
+                    background-color: rgba(#999, 0);
+                }
+            }
+        }
+    }
+    
+    @include option(big) {
+        line-height: 2rem;
+        font-weight: bold;
     }
 }
 
-@keyframes ripple-animation{
-    from{
+@keyframes ripple-animation {
+    from {
         transform: scale(1);
         opacity: .2;
     }
-    to{
+    to {
         transform: scale(100);
         opacity: 0;
     }

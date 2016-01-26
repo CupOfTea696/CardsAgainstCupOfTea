@@ -67,7 +67,7 @@ input[type="radio"], input[type="checkbox"] {
                     margin: 0;
                     padding: 7px 0;
                     cursor: pointer;
-                    color: $brand-primary;
+                    color: darken($btn-primary-border, 25%);
                     font: normal normal normal 14px / 1 FontAwesome;
                     font-size: 1rem;
                     text-align: left;

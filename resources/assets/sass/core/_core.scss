@@ -6,8 +6,8 @@
 @import "base_mixins";
 @import "base_components";
 
-*{
-    outline: none;
+* {
+    outline: none !important;
     overflow: visible;
     box-sizing: border-box;
 }

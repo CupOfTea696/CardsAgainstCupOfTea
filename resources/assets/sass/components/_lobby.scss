@@ -1,0 +1,32 @@
+@include component(lobby) {
+    @include part(room) {
+        position: relative;
+        @include pad();
+        background: #EEE;
+        border: 1px solid #CCC;
+        border-radius: 4px;
+        
+        @include part(header) {
+            margin-bottom: 16px;
+        }
+        
+        @include part(name, status) {
+            margin-top: 0;
+        }
+        
+        @include part(status) {
+            line-height: 1.1 * 24px;
+            line-height: calculateRem(1.1 * 24px);
+        }
+        
+        @include part(meta) {
+            @extend %no-list;
+            margin-bottom: 8px;
+        }
+        
+        @include part(actions) {
+            float: right;
+            width: 128px;
+        }
+    }
+}

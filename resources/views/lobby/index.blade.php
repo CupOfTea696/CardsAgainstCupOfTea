@@ -8,9 +8,15 @@
         </p>
     </header>
     <main class="grid --no-grow">
-        @counteach ($rooms as $room)
-        @foreach ($rooms as $room)
+        <div class="grid/row">
+        @count ($rooms as $room)
             @include('lobby.room')
-        @endforeach
+            
+            @if(Counter::even() && ! Counter::last())
+                </div>
+                <div class="grid/row">
+            @endif
+        @endcount
+        </div>
     </main>
 @stop

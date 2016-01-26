@@ -1,5 +1,6 @@
 html{
     font-size: $fontBaseSize;
+    line-height: 1.4;
     
     @media (max-width: $screen-lg-min){
         font-size: $fontBaseSize - ($fontBaseSize - modular-scale(-1, $fontBaseSize)) / 2;
@@ -62,4 +63,10 @@ table {
     tr {
         transition: background-color .2s;
     }
+}
+
+%no-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }

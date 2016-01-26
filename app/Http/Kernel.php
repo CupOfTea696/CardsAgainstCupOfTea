@@ -29,7 +29,7 @@ class Kernel extends HttpKernel
             \Illuminate\Session\Middleware\StartSession::class,
             \Illuminate\View\Middleware\ShareErrorsFromSession::class,
             \App\Http\Middleware\VerifyCsrfToken::class,
-            \Spatie\Pjax\Middleware\FilterIfPjax::class,
+            \App\Http\Middleware\FilterIfPjax::class,
         ],
 
         'api' => [

@@ -157,7 +157,8 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
         
-        CupOfTea\TwoStream\TwoStreamServiceProvider::class
+        CupOfTea\TwoStream\TwoStreamServiceProvider::class,
+        CupOfTea\Counter\CounterServiceProvider::class,
 
     ],
 
@@ -181,6 +182,7 @@ return [
         'Cache'     => Illuminate\Support\Facades\Cache::class,
         'Config'    => Illuminate\Support\Facades\Config::class,
         'Cookie'    => Illuminate\Support\Facades\Cookie::class,
+        'Counter'   => CupOfTea\Counter\Facades\Counter::class,
         'Crypt'     => Illuminate\Support\Facades\Crypt::class,
         'DB'        => Illuminate\Support\Facades\DB::class,
         'Eloquent'  => Illuminate\Database\Eloquent\Model::class,

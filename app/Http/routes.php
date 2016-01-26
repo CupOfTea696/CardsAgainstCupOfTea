@@ -53,11 +53,3 @@ Route::group(['middleware' => ['web', 'auth']], function () {
     Route::get( 'my/account', ['as' => 'account.edit',      'uses' => 'AccountController@edit'  ]);
     Route::post('my/account', ['as' => 'account.update',    'uses' => 'AccountController@update']);
 });
-
-
-Route::get('test', function() {
-    return redirect('test/complete');
-});
-Route::get('test/complete', function() {
-    return 'yay';
-});

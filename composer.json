@@ -11,8 +11,8 @@
         "spatie/laravel-pjax": "^1.1",
         "cupoftea/package": "^1.2",
         "cupoftea/twostream": "^1.0",
-        "react/zmq": "0.3.*",
-        "doctrine/dbal": "^2.5"
+        "doctrine/dbal": "^2.5",
+        "cupoftea/counter": "^1.0"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",

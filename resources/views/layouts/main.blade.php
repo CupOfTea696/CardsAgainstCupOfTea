@@ -19,7 +19,7 @@
     <div id="container">
         @include('partials.header')
         
-        <main class="container" id="page">
+        <main class="{{ '@' . str_replace('.', '/', current_route('name')) }} container" id="page">
             @yield('page')
         </main>
         

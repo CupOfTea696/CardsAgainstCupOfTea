@@ -38,26 +38,29 @@ class AppServiceProvider extends ServiceProvider
             'app_version' => $this->version(),
         ]);
         
-        Counter::registerBlade();
-        
-        Blade::directive('counteach', function($expression) {
-            return preg_replace('/\((\$[a-zA-Z_\x7f-\xff][a-zA-Z0-9_\x7f-\xff]*)\s+as\s+((?1))\)/', '<?php Counter::start($1); foreach ($1 as $2): ?>', $expression);
+        Blade::directive('count', function($expression) {
+            return preg_replace('/\((\$[a-zA-Z_\x7f-\xff][a-zA-Z0-9_\x7f-\xff]*)\s+as\s+((?1)(?:\s+=>\s+(?1))?)\)/', '<?php foreach (Counter::loop($1) as $2): ?>', $expression);
         });
         
-        Blade::directive('endcounteach', function($expression) {
-            return '<?php Counter::tick(); endforeach; ?>';
+        Blade::directive('endcount', function($expression) {
+            return '<?php endforeach; ?>';
         });
         
         Blade::directive('first', function() {
             return '<?php if(Counter::first()): ?>';
         });
         
-        Blade::directive('index', function($expression) {
-            return "<?php if(Counter::index{$expression}): ?>";
-        });
-        
         Blade::directive('last', function() {
             return '<?php if(Counter::first()): ?>';
+        });
+        
+        Blade::directive('nth', function() {
+            return '<?php if(Counter::first()): ?>';
+        });
+        
+        Blade::directive('index', function($expression) {
+            echo var_dump($expression);
+            return "<?php if(Counter::index{$expression}): ?>";
         });
     }
     
