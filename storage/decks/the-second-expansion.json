@@ -1,0 +1,372 @@
+{
+    "name": "The Second Expansion",
+    "description": "The official Second Expansion.",
+    "version": "1.3",
+    "slug": "X2",
+    "calls": 26,
+    "responses": 76,
+    "cards": {
+        "calls": [
+            {
+                "text": "A remarkable new study has shown that chimps have evolved their own primitive version of _.",
+                "draw": 0,
+                "pick": 1
+            },
+            {
+                "text": "Before I run for president, I must destroy all evidence of my involvement with _.",
+                "draw": 0,
+                "pick": 1
+            },
+            {
+                "text": "Before _, all we had was _.",
+                "draw": 0,
+                "pick": 2
+            },
+            {
+                "text": "Charades was ruined for me forever when my mom had to act out _.",
+                "draw": 0,
+                "pick": 1
+            },
+            {
+                "text": "During his midlife crisis, my dad got really into _.",
+                "draw": 0,
+                "pick": 1
+            },
+            {
+                "text": "Everyone down on the ground! We don't want to hurt anyone. We're just here for _.",
+                "draw": 0,
+                "pick": 1
+            },
+            {
+                "text": "I spent my whole life working toward _, only to have it ruined by _.",
+                "draw": 0,
+                "pick": 2
+            },
+            {
+                "text": "I went from _ to _, all thanks to _.",
+                "draw": 2,
+                "pick": 3
+            },
+            {
+                "text": "If God didn't want us to enjoy _, he wouldn't have given us _.",
+                "draw": 0,
+                "pick": 2
+            },
+            {
+                "text": "In his newest and most difficult stunt, David Blaine must escape from _.",
+                "draw": 0,
+                "pick": 1
+            },
+            {
+                "text": "Little Miss Muffet Sat on a tuffet, Eating her curds and _.",
+                "draw": 0,
+                "pick": 1
+            },
+            {
+                "text": "Members of New York's social elite are paying thousands of dollars just to experience _.",
+                "draw": 0,
+                "pick": 1
+            },
+            {
+                "text": "My country, 'tis of thee, sweet land of _.",
+                "draw": 0,
+                "pick": 1
+            },
+            {
+                "text": "My mom freaked out when she looked at my browser history and found _.com\/_.",
+                "draw": 0,
+                "pick": 2
+            },
+            {
+                "text": "My new favorite porn star is Joey &quot;_&quot; McGee.",
+                "draw": 0,
+                "pick": 1
+            },
+            {
+                "text": "Next time on Dr. Phil: How to talk to your child about _.",
+                "draw": 0,
+                "pick": 1
+            },
+            {
+                "text": "Only two things in life are certain: death and _.",
+                "draw": 0,
+                "pick": 1
+            },
+            {
+                "text": "The Five Stages of Grief: denial, anger, bargaining, _, acceptance.",
+                "draw": 0,
+                "pick": 1
+            },
+            {
+                "text": "The healing process began when I joined a support group for victims of _.",
+                "draw": 0,
+                "pick": 1
+            },
+            {
+                "text": "This is your captain speaking. Fasten your seatbelts and prepare for _.",
+                "draw": 0,
+                "pick": 1
+            },
+            {
+                "text": "This month's Cosmo: &quot;Spice up your sex life by bringing _ into the bedroom.&quot;",
+                "draw": 0,
+                "pick": 1
+            },
+            {
+                "text": "Tonight on 20\/20: What you don't know about _ could kill you.",
+                "draw": 0,
+                "pick": 1
+            },
+            {
+                "text": "What's harshing my mellow, man?",
+                "draw": 0,
+                "pick": 1
+            },
+            {
+                "text": "You haven't truly lived until you've experienced _ and _ at the same time.",
+                "draw": 0,
+                "pick": 2
+            },
+            {
+                "text": "Your persistence is admirable, my dear Prince. But you cannot win my heart with _ alone.",
+                "draw": 0,
+                "pick": 1
+            },
+            {
+                "text": "_ would be woefully incomplete without _.",
+                "draw": 0,
+                "pick": 2
+            }
+        ],
+        "responses": [
+            {
+                "text": "A 55-gallon drum of lube."
+            },
+            {
+                "text": "A Burmese tiger pit."
+            },
+            {
+                "text": "A bigger, blacker dick."
+            },
+            {
+                "text": "A dollop of sour cream."
+            },
+            {
+                "text": "A fortuitous turnip harvest."
+            },
+            {
+                "text": "A magic hippie love cloud."
+            },
+            {
+                "text": "A man in yoga pants with a ponytail and feather earrings."
+            },
+            {
+                "text": "A pi&ntilde;ata full of scorpions"
+            },
+            {
+                "text": "A sad fat dragon with no friends."
+            },
+            {
+                "text": "A slightly shittier parallel universe."
+            },
+            {
+                "text": "A sofa that says &ldquo;I have style, but I like to be comfortable.&rdquo;"
+            },
+            {
+                "text": "A soulful rendition of &quot;Ol' Man River.&quot;"
+            },
+            {
+                "text": "A squadron of moles wearing aviator goggles."
+            },
+            {
+                "text": "A sweaty, panting leather daddy."
+            },
+            {
+                "text": "A sweet spaceship."
+            },
+            {
+                "text": "All of this blood."
+            },
+            {
+                "text": "An army of skeletons."
+            },
+            {
+                "text": "An ether-soaked rag."
+            },
+            {
+                "text": "An unhinged ferris wheel rolling toward the sea."
+            },
+            {
+                "text": "Another shot of morphine."
+            },
+            {
+                "text": "Basic human decency."
+            },
+            {
+                "text": "Beefin' over turf."
+            },
+            {
+                "text": "Being awesome at sex."
+            },
+            {
+                "text": "Boris the Soviet Love Hammer."
+            },
+            {
+                "text": "Bullshit."
+            },
+            {
+                "text": "Catastrophic urethral trauma."
+            },
+            {
+                "text": "Crushing Mr. Peanut's brittle body."
+            },
+            {
+                "text": "Daddy's belt"
+            },
+            {
+                "text": "Death by Steven Seagal."
+            },
+            {
+                "text": "Dennis the Menace."
+            },
+            {
+                "text": "Dining with cardboard cutouts of the cast of &quot;Friends.&quot;"
+            },
+            {
+                "text": "Double penetration."
+            },
+            {
+                "text": "Existing."
+            },
+            {
+                "text": "Fetal alcohol syndrome."
+            },
+            {
+                "text": "Finding Waldo."
+            },
+            {
+                "text": "Fuck Mountain."
+            },
+            {
+                "text": "Getting hilariously gang-banged by the Blue Man Group."
+            },
+            {
+                "text": "Grandpa's ashes."
+            },
+            {
+                "text": "Graphic violence, adult language, and some sexual content."
+            },
+            {
+                "text": "Hillary Clinton's death stare."
+            },
+            {
+                "text": "Intimacy problems."
+            },
+            {
+                "text": "Jeff Goldblum."
+            },
+            {
+                "text": "Living in a trashcan."
+            },
+            {
+                "text": "Loki, the trickster god."
+            },
+            {
+                "text": "Making a friend."
+            },
+            {
+                "text": "Maximal insertion."
+            },
+            {
+                "text": "Me."
+            },
+            {
+                "text": "Mild autism."
+            },
+            {
+                "text": "Mooing."
+            },
+            {
+                "text": "My first kill."
+            },
+            {
+                "text": "Nunchuck moves."
+            },
+            {
+                "text": "Oncoming traffic."
+            },
+            {
+                "text": "One Ring to rule them all."
+            },
+            {
+                "text": "Power"
+            },
+            {
+                "text": "Pretty Pretty Princess Dress-Up Board Game&reg;."
+            },
+            {
+                "text": "Pumping out a baby every nine months."
+            },
+            {
+                "text": "Rising from the grave."
+            },
+            {
+                "text": "Scrotal frostbite."
+            },
+            {
+                "text": "Some really fucked-up shit."
+            },
+            {
+                "text": "Special musical guest, Cher."
+            },
+            {
+                "text": "Subduing a grizzly bear and making her your wife."
+            },
+            {
+                "text": "Survivor's guilt."
+            },
+            {
+                "text": "Swiftly achieving orgasm."
+            },
+            {
+                "text": "Taking a man's eyes and balls out and putting his eyes where his balls go and then his balls in the eye holes."
+            },
+            {
+                "text": "The black Power Ranger"
+            },
+            {
+                "text": "The day the birds attacked."
+            },
+            {
+                "text": "The human body."
+            },
+            {
+                "text": "The mere concept of Applebee's&reg;."
+            },
+            {
+                "text": "The mixing of the races."
+            },
+            {
+                "text": "The new Radiohead album."
+            },
+            {
+                "text": "Tiny nipples."
+            },
+            {
+                "text": "Tongue."
+            },
+            {
+                "text": "Weapons-grade plutonium."
+            },
+            {
+                "text": "Wearing an octopus for a hat."
+            },
+            {
+                "text": "Whining like a little bitch."
+            },
+            {
+                "text": "Whipping a disobedient slave."
+            }
+        ]
+    }
+}

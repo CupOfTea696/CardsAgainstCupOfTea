@@ -1,0 +1,105 @@
+{
+    "name": "PAX East 2014",
+    "description": "The \"oatmeal\" cards from PAX East 2014.",
+    "version": "1.0",
+    "slug": "PAX E14",
+    "calls": 5,
+    "responses": 22,
+    "cards": {
+        "calls": [
+            {
+                "text": "<em>(Heavy breathing)<\/em><br>Luke, I am _.",
+                "draw": 0,
+                "pick": 1
+            },
+            {
+                "text": "Unfortunately, Neo, no one can be <em>told<\/em> what _ is. You have to see it for yourself.",
+                "draw": 0,
+                "pick": 1
+            },
+            {
+                "text": "What the hell?! They added a 6\/6 with flying, trample and _.",
+                "draw": 0,
+                "pick": 1
+            },
+            {
+                "text": "You think you have defeated me? Well, let's see how you handle _.",
+                "draw": 0,
+                "pick": 1
+            },
+            {
+                "text": "_ is way better in _ mode.",
+                "draw": 0,
+                "pick": 2
+            }
+        ],
+        "responses": [
+            {
+                "text": "A giant mechanical bird with a tragic backstory."
+            },
+            {
+                "text": "A grumpy old Harrison Ford who'd rather be doing anything else."
+            },
+            {
+                "text": "All of the good times and premium gaming entertainment available to you in the Kickstarter room."
+            },
+            {
+                "text": "Attacking from Kamchatka."
+            },
+            {
+                "text": "Collecting all seven power crystals."
+            },
+            {
+                "text": "Demons and shit."
+            },
+            {
+                "text": "Endless ninjas."
+            },
+            {
+                "text": "Futuristic death sports."
+            },
+            {
+                "text": "Getting bitten by a radioactive spider and then battling leukemia for 30 years."
+            },
+            {
+                "text": "KHAAAAAAAAAN!"
+            },
+            {
+                "text": "Lagging out."
+            },
+            {
+                "text": "Mistakenly hitting on a <em>League of Legends<\/em> statue."
+            },
+            {
+                "text": "Separate drinking fountains for dark elves."
+            },
+            {
+                "text": "Ser Jorah Mormonts cerulean-blue balls."
+            },
+            {
+                "text": "Stuffing my balls into a Sega Genesis and pressing the power button."
+            },
+            {
+                "text": "Taking 2d6 emotional damage."
+            },
+            {
+                "text": "The Star Wars universe."
+            },
+            {
+                "text": "The imagination of Peter Jackson."
+            },
+            {
+                "text": "The old gods."
+            },
+            {
+                "text": "The pure, Zen-like state that exists between micro and macro."
+            },
+            {
+                "text": "Whatever <em>Final Fantasy<\/em> bullshit happened this year."
+            },
+            {
+                "text": "Xena,<br>Warrior Princess."
+            }
+        ]
+    }
+}

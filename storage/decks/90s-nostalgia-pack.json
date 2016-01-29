@@ -1,0 +1,115 @@
+{
+    "name": "90s Nostalgia Pack",
+    "description": "Don't have a cow man! The 90s Nostalgia Pack is a totally tubular Crossfire\u2122 of Freshmaking\u00ae jokes. Once you Pop, the fun don't stop!",
+    "version": "1.0",
+    "slug": "90s",
+    "calls": 7,
+    "responses": 22,
+    "cards": {
+        "calls": [
+            {
+                "text": "Believe it or not Jim Carrey can do a dead-on impression of _.",
+                "draw": 0,
+                "pick": 1
+            },
+            {
+                "text": "How did Stella get her groove back?",
+                "draw": 0,
+                "pick": 1
+            },
+            {
+                "text": "I'm a bitch, I'm a lover, I'm a child, I'm _.",
+                "draw": 0,
+                "pick": 1
+            },
+            {
+                "text": "It's Morphin' Time! Mastodon! Pterodactyl! Triceratops! Sabertooth Tiger! _!",
+                "draw": 0,
+                "pick": 1
+            },
+            {
+                "text": "Siskel and Ebert have panned _ as &quot;poorly conceived&quot; and &quot;sloppily executed.&quot;",
+                "draw": 0,
+                "pick": 1
+            },
+            {
+                "text": "Tonight on SNICK: &quot;Are You Afriad of _?",
+                "draw": 0,
+                "pick": 1
+            },
+            {
+                "text": "Up next on Nickelodeon: &quot;Clarissa Explains _.&quot;",
+                "draw": 0,
+                "pick": 1
+            }
+        ],
+        "responses": [
+            {
+                "text": "A bus that will explode if it goes under 50 miles per hour."
+            },
+            {
+                "text": "A mulatto, an albino, a mosquito, and my libido."
+            },
+            {
+                "text": "Angels interfering in an otherwise fair baseball game."
+            },
+            {
+                "text": "Cool 90s up-in-the-front hair."
+            },
+            {
+                "text": "Deregulating the mortgage market."
+            },
+            {
+                "text": "Freeing Willy."
+            },
+            {
+                "text": "Getting caught up in the CROSSFIRE&trade;."
+            },
+            {
+                "text": "Jerking off to a 10-second RealMedia clip."
+            },
+            {
+                "text": "Kurt Cobain's death."
+            },
+            {
+                "text": "Liking big butts and not being able to lie about it."
+            },
+            {
+                "text": "Log&trade;."
+            },
+            {
+                "text": "Pamela Anderson's boobs running in slow motion."
+            },
+            {
+                "text": "Patti Mayonnaise."
+            },
+            {
+                "text": "Pizza in the morning, pizza in the evening, pizza at supper time."
+            },
+            {
+                "text": "Pure Moods, Vol. 1."
+            },
+            {
+                "text": "Stabbing the shit out of a Capri Sun."
+            },
+            {
+                "text": "Sucking the president's dick."
+            },
+            {
+                "text": "Sunny D! Alright!"
+            },
+            {
+                "text": "The Great Cornholio."
+            },
+            {
+                "text": "The Y2K bug."
+            },
+            {
+                "text": "Wearing Nicolas Cage's face."
+            },
+            {
+                "text": "Yelling &quot;girl power!&quot; and doing a high kick."
+            }
+        ]
+    }
+}

@@ -1,0 +1,88 @@
+{
+    "name": "PAX 2014 Panel",
+    "description": "These cards were proposed during the CAH panel at PAX East and Prime 2014, printed up overnight, and distributed to panel attendees the next day.",
+    "version": "1.0",
+    "slug": "PAX 14P",
+    "calls": 7,
+    "responses": 13,
+    "cards": {
+        "calls": [
+            {
+                "text": "Bob Ross's little-known first show was called &quot;The Joy of _.&quot;",
+                "draw": 0,
+                "pick": 1
+            },
+            {
+                "text": "Buzzfeed presents: 10 pictures of _ that look like _.",
+                "draw": 0,
+                "pick": 2
+            },
+            {
+                "text": "During my first game of D&amp;D, I accidentally summoned _.",
+                "draw": 0,
+                "pick": 1
+            },
+            {
+                "text": "Let me tell you about my new startup. It's basically _, but for _.",
+                "draw": 0,
+                "pick": 2
+            },
+            {
+                "text": "Like _, State Farm is there.",
+                "draw": 0,
+                "pick": 1
+            },
+            {
+                "text": "The Discovery Channel presents: _ week.",
+                "draw": 0,
+                "pick": 1
+            },
+            {
+                "text": "_ was totally worth the trauma.",
+                "draw": 0,
+                "pick": 1
+            }
+        ],
+        "responses": [
+            {
+                "text": "A floor that is literally made of lava."
+            },
+            {
+                "text": "A neck beard that is 10% cheese."
+            },
+            {
+                "text": "All this liquid in my mouth."
+            },
+            {
+                "text": "Exciting content!"
+            },
+            {
+                "text": "Giving a dolphin a handjob for science."
+            },
+            {
+                "text": "Hodor."
+            },
+            {
+                "text": "No survivors."
+            },
+            {
+                "text": "Pelvic sorcery."
+            },
+            {
+                "text": "Pooping as quietly as possible."
+            },
+            {
+                "text": "Rubbing chocolate pudding all over Bill Cosby's nipples."
+            },
+            {
+                "text": "Stepping on a god damn friggin' LEGO."
+            },
+            {
+                "text": "The beautiful sport of Turkish oil wrestling."
+            },
+            {
+                "text": "What The Rock was really cooking."
+            }
+        ]
+    }
+}

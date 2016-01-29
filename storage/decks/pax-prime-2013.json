@@ -1,0 +1,160 @@
+{
+    "name": "PAX Prime 2013",
+    "description": "PAX Prime 2013",
+    "version": "1.0",
+    "slug": "PAX 13",
+    "calls": 7,
+    "responses": 37,
+    "cards": {
+        "calls": [
+            {
+                "text": "In the new DLC for Mass Effect, Shepard must save the galaxy from _.",
+                "draw": 0,
+                "pick": 1
+            },
+            {
+                "text": "No Enforcer wants to manage the panel on _.",
+                "draw": 0,
+                "pick": 1
+            },
+            {
+                "text": "The most controversial game at PAX this year is an 8-bit indie platformer about _.",
+                "draw": 0,
+                "pick": 1
+            },
+            {
+                "text": "There was a riot at the Gearbox panel when they gave the attendees _.",
+                "draw": 0,
+                "pick": 1
+            },
+            {
+                "text": "What made Spock cry?",
+                "draw": 0,
+                "pick": 1
+            },
+            {
+                "text": "What's the latest bullshit that's troubling this quaint fantasy town?",
+                "draw": 0,
+                "pick": 1
+            },
+            {
+                "text": "_: Achievement unlocked.",
+                "draw": 0,
+                "pick": 1
+            }
+        ],
+        "responses": [
+            {
+                "text": "70,000 gamers sweating and farting inside an airtight steel dome."
+            },
+            {
+                "text": "A fully-dressed female videogame character."
+            },
+            {
+                "text": "A homemade, cum-stained Star Trek uniform."
+            },
+            {
+                "text": "A madman who lives in a policebox and kidnaps women."
+            },
+            {
+                "text": "Achieving the manual dexterity and tactical brilliance of a 12-year-old Korean boy."
+            },
+            {
+                "text": "Allowing nacho cheese to curdle in your beard while you creep in League of Legends."
+            },
+            {
+                "text": "An angry stone head that stomps on the floor every three seconds."
+            },
+            {
+                "text": "Being an attractive elf trapped in an unattractive human's body."
+            },
+            {
+                "text": "Bowser's aching heart."
+            },
+            {
+                "text": "Buying virtual clothes for a Sim family instead of real clothes for a real family."
+            },
+            {
+                "text": "Charles Barkley Shut Up and Jam!"
+            },
+            {
+                "text": "Eating a pizza that's lying in the street to gain health."
+            },
+            {
+                "text": "Filling every pouch of a UtiliKilt&trade; with pizza."
+            },
+            {
+                "text": "Full HD."
+            },
+            {
+                "text": "Getting into a situation with an owlbear."
+            },
+            {
+                "text": "Google Glass + e-cigarette: Ultimate Combo!"
+            },
+            {
+                "text": "Grand Theft Auto: Fort Lauderdale."
+            },
+            {
+                "text": "Legendary Creature - Robert Khoo."
+            },
+            {
+                "text": "Mario Kart rage."
+            },
+            {
+                "text": "Never watching, discussing, or thinking about My Little Pony."
+            },
+            {
+                "text": "Nude-modding Super Mario World."
+            },
+            {
+                "text": "Offering sexual favors for an ore and a sheep."
+            },
+            {
+                "text": "Reading the comments."
+            },
+            {
+                "text": "Rolling a D20 to save a failing marriage."
+            },
+            {
+                "text": "SNES cartridge cleaning fluid."
+            },
+            {
+                "text": "Tapping Serra Angel."
+            },
+            {
+                "text": "Temporary invincibility."
+            },
+            {
+                "text": "The Cock Ring of Alacrity."
+            },
+            {
+                "text": "The Sarlacc."
+            },
+            {
+                "text": "The boner hatch in the Iron Man suit."
+            },
+            {
+                "text": "The collective wail of every Magic player suddenly realizing that they've spent hundreds of dollars on pieces of cardboard."
+            },
+            {
+                "text": "The decade of legal inquests following a single hour of Grand Theft Auto."
+            },
+            {
+                "text": "The gravity gun."
+            },
+            {
+                "text": "Turn-of-the-century sky racists."
+            },
+            {
+                "text": "Unlocking a new sex position."
+            },
+            {
+                "text": "Winning the approval of Cooking Mama that you never got from actual mama."
+            },
+            {
+                "text": "Yoshi's huge egg-laying cloaca."
+            }
+        ]
+    }
+}

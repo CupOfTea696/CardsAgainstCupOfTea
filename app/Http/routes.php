@@ -57,63 +57,68 @@ Route::group(['middleware' => ['web', 'auth']], function () {
 Route::get('sql', function() {
     // Decks we need to grab from the xyzzy db
     $slugs = [
-        0 => null,
         1 => "&#x2744;",
-        5 => "13PAX",
-        6 => "14PAX",
-        7 => "90s",
-        13 => "BOX",
         23 => "HBS",
-        30 => "Panel",
-        31 => "PAX A",
-        32 => "PAX B",
-        33 => "PAX C",
-        44 => "X1",
-        45 => "X2",
-        46 => "X3",
-        47 => "X4",
     ];
     
-    // 15 => "CAN",
+    class Deck {
+        public $name;
+        public $description;
+        public $version;
+        public $slug;
+        public $calls;
+        public $responses;
+        public $cards;
+        
+        public function __construct($deck)
+        {
+            foreach(get_object_vars($this) as $prop => $v) {
+                $this->$prop = $deck->$prop;
+            }
+        }
+    }
     
     // Grabbing decks fro, xyzzy
-//    DB::setDefaultConnection('xyzzy');
-//
-//    $sets = DB::table('card_sets')->select('name', 'description', 'watermark as slug')->whereIn('watermark', $slugs)->orWhere(function($query) { $query->whereNull('watermark'); })->orderBy('name', 'asc')->get();
-//    $sets = array_map(function($set) {
-//        $getCards = function ($card) {
-//            $card->text = preg_replace('/_+/', '_', $card->text);
-//            $card->text = preg_replace('/<span\s+class="cardnum">.*?<\/span>/', '', $card->text);
-//            $card->text = str_replace(['<br/>', '<i>', '</i>'], ['<br>', '<em>', '</em>'], $card->text);
-//            $card->text = str_replace('<span class="card_number">&uarr;</span>', '<i class="icn --arrow-up"></i>', $card->text);
-//            $card->text = str_replace('<span class="card_number">&rarr;</span>', '<i class="icn --arrow-right"></i>', $card->text);
-//            $card->text = str_replace('<span class="card_number">&darr;</span>', '<i class="icn --arrow-down"></i>', $card->text);
-//            $card->text = str_replace('<span class="card_number">&larr;</span>', '<i class="icn --arrow-left"></i>', $card->text);
-//            $card->text = str_replace('<span class="card_number">B</span>', '<i class="icn --b"></i>', $card->text);
-//            $card->text = str_replace('<span class="card_number">B</span>', '<i class="icn --a"></i>', $card->text);
-//
-//            return $card;
-//        };
-//
-//        if ($set->name == 'First Version') {
-//            $set->name = 'Cards Against Humanity';
-//        }
-//
-//        $set->cards = new stdClass;
-//        $set->cards->calls = array_map($getCards, DB::table('black_cards')->select('text', 'pick')->where('watermark', $set->slug)->get());
-//        $set->cards->responses = array_map($getCards, DB::table('white_cards')->select('text')->where('watermark', $set->slug)->get());
-//
-//        $set->calls = count($set->cards->calls);
-//        $set->responses = count($set->cards->responses);
-//
-//        return $set;
-//    }, $sets);
-//
-//    foreach ($sets as $set) {
-//        $filename = str_slug(html_entity_decode($set->name)) . '.json';
-//    }
-//
-//    DB::setDefaultConnection(config('database.default'));
+    DB::setDefaultConnection('xyzzy');
+
+    //$set = DB::table('card_sets')->select('name', 'description', 'watermark as slug')->where('watermark', 'HOCAH')->orderBy('name', 'asc')->first();
+    $set = (object) []; 
+    $set->name = 'xxxxx';
+    $set->description = 'The official Sixth Expansion.';
+    $set->slug = 'X6';
+    
+        $getCards = function ($card) {
+            $card->text = preg_replace('/_+/', '_', $card->text);
+            $card->text = preg_replace('/<span\s+class="cardnum">.*?<\/span>/', '', $card->text);
+            $card->text = str_replace(['<br/>', '<i>', '</i>'], ['<br>', '<em>', '</em>'], $card->text);
+            $card->text = str_replace('<span class="card_number">&uarr;</span>', '<i class="icn --arrow-up"></i>', $card->text);
+            $card->text = str_replace('<span class="card_number">&rarr;</span>', '<i class="icn --arrow-right"></i>', $card->text);
+            $card->text = str_replace('<span class="card_number">&darr;</span>', '<i class="icn --arrow-down"></i>', $card->text);
+            $card->text = str_replace('<span class="card_number">&larr;</span>', '<i class="icn --arrow-left"></i>', $card->text);
+            $card->text = str_replace('<span class="card_number">B</span>', '<i class="icn --b"></i>', $card->text);
+            $card->text = str_replace('<span class="card_number">B</span>', '<i class="icn --a"></i>', $card->text);
+            $card->text = trim($card->text);
+            
+            if (str_contains($card->text, '<br>') || str_contains($card->text, '<em>') || str_contains($card->text, '<i class=')) {
+                return $card;
+            }
+        };
+
+        if ($set->name == 'First Version') {
+            $set->name = 'Cards Against Humanity';
+        }
+
+        $set->cards = new stdClass;
+        $set->special = new stdClass;
+        $set->special->calls = [];
+        $set->special->responses = [];
+//        $set->special->calls = array_values(array_filter(array_map($getCards, DB::table('black_cards')->select('text', 'pick')->where('watermark', $set->slug)->get()), function ($card) { return ! is_null($card); }));
+//        $set->special->responses = array_values(array_filter(array_map($getCards, DB::table('white_cards')->select('text')->where('watermark', $set->slug)->get()), function ($card) { return ! is_null($card); }));
+        
+        $set->special_calls = count($set->special->calls);
+        $set->special_responses = count($set->special->responses);
+
+    DB::setDefaultConnection(config('database.default'));
     
     // https://docs.google.com/spreadsheets/d/1lsy7lIwBe-DWOi2PALZPf5DgXHx9MEvKfRw1GaWQkzg/edit#gid=10
     
@@ -121,53 +126,38 @@ Route::get('sql', function() {
     // Main Deck - white
     //
     
-    $crawler = new Symfony\Component\DomCrawler\Crawler(file_get_contents(storage_path('Cards Against Humanity/CAH Main Deck - White.html')));
+    $crawler = new Symfony\Component\DomCrawler\Crawler(file_get_contents(storage_path('CAH/CAH Expansions - White.html')));
     $crawler = $crawler->filter('table tbody tr')->reduce(function ($node, $i) {
-        return $i > 5;
+        return $i > 239 && $i < 258;
     });
     
-    $cards = $crawler->each(function($node, $i) {
+    $responses = $crawler->each(function($node, $i) {
         $node = $node->filter('td');
         
-        if ($node->count() > 11 && $node->eq(1)->text() && $node->eq(1)->text() != 'TOTALS') {
+        if ($node->count() > 1 && $node->eq(1)->text() && $node->eq(1)->text()) {
             return [
                 'text' => $node->eq(1)->text(),
-                'uk' => $node->eq(9)->text(),
-                'ca' => $node->eq(10)->text(),
-                'us' => $node->eq(11)->text(),
             ];
         }
-    });
-    
-    $responses = array_where($cards, function ($key, $value) {
-        return $value['uk'] || $value['ca'] || $value['us'];
     });
     
     //
     // Main Deck - black
     //
-    
-    $crawler = new Symfony\Component\DomCrawler\Crawler(file_get_contents(storage_path('Cards Against Humanity/CAH Main Deck - Black.html')));
+    $crawler = new Symfony\Component\DomCrawler\Crawler(file_get_contents(storage_path('CAH/CAH Expansions - Black.html')));
     $crawler = $crawler->filter('table tbody tr')->reduce(function ($node, $i) {
-        return $i > 5;
+        return $i > 100 && $i < 112;
     });
     
-    $cards = $crawler->each(function($node, $i) {
+    $calls = $crawler->each(function($node, $i) {
         $node = $node->filter('td');
         
-        if ($node->count() > 12 && $node->eq(1)->text() && $node->eq(1)->text() != 'TOTALS') {
+        if ($node->count() > 2 && $node->eq(1)->text() && $node->eq(1)->text()) {
             return [
                 'text' => $node->eq(1)->text(),
                 'special' => $node->eq(2)->text(),
-                'uk' => $node->eq(10)->text(),
-                'ca' => $node->eq(11)->text(),
-                'us' => $node->eq(12)->text(),
             ];
         }
-    });
-    
-    $calls = array_where($cards, function ($key, $value) {
-        return $value['uk'] || $value['ca'] || $value['us'];
     });
     
     $getCards = function ($card) {
@@ -175,16 +165,13 @@ Route::get('sql', function() {
         $card['text'] = str_replace(['<br/>', '<i>', '</i>'], ['<br>', '<em>', '</em>'], $card['text']);
         $card['text'] = htmlentities($card['text']);
         $card['text'] = str_replace(['&nbsp;', '&rsquo;'], [' ', "'"], $card['text']);
-        
-        $card['ca'] = (bool) $card['ca'];
-        $card['uk'] = (bool) $card['uk'];
-        $card['us'] = (bool) $card['us'];
+        $card['text'] = trim($card['text']);
         
         if (isset($card['special'])) {
             $card['draw'] = 0;
             $card['pick'] = 1;
             
-            if (preg_match('/(?:DRAW\s+(\d+),\s)?PICK\s+(\d+)/', $card['special'], $matches)) {
+            if (preg_match('/(?:DRAW\s+(\d+),\s)?PICK\s+(\d+)/i', $card['special'], $matches)) {
                 $card['pick'] = (int) $matches[2];
                 
                 if ($matches[1]) {
@@ -195,30 +182,75 @@ Route::get('sql', function() {
             unset($card['special']);
         }
         
-        return $card;
+        return (object) $card;
     };
     
     $sortCards = function ($a, $b) {
-        if ($a['text'] == $b['text']) {
+        if ($a->text == $b->text) {
             return 0;
         }
         
-        return $a['text'] < $b['text'] ? -1 : 1;
+        return $a->text < $b->text ? -1 : 1;
     };
     
     $cardset = function($set) use ($getCards, $sortCards) {
+        $set = array_filter($set);
         $cards = array_map($getCards, $set);
         usort($cards, $sortCards);
         
         return $cards;
     };
     
-    $main_deck = [
-        'calls' => $cardset($calls),
-        'responses' => $cardset($responses),
-    ];
+    $set->cards->calls = $cardset($calls);
+    $set->cards->responses = $cardset($responses);
+    $set->calls = count($set->cards->calls);
+    $set->responses = count($set->cards->responses);
+    if ($set->special_calls > 0 || $set->special_responses > 0) {
+        if ($set->special_calls > 0) {
+            foreach ($set->special->calls as $call) {
+                $search = preg_replace('/(<br>)+/', ' ', $call->text);
+                $search = strip_tags($search);
+                
+                $index = collect($set->cards->calls)->search(function ($call) use ($search) {
+                    return $call->text == $search;
+                });
+                
+                if ($index !== false) {
+                    $set->cards->calls[$index]->text = $call->text;
+                }
+            }
+        }
+        
+        if ($set->responses > 0) {
+            foreach ($set->special->responses as $response) {
+                $search = preg_replace('/(<br>)+/', ' ', $response->text);
+                $search = strip_tags($search);
+                
+                $index = collect($set->cards->responses)->search(function ($response) use ($search) {
+                    return $response->text == $search;
+                });
+                
+                if ($index) {
+                    $set->cards->responses[$index]->text = $response->text;
+                }
+            }
+        }
+    }
     
-    return response()->json($cards);
+    $set->version = "1.0";
+    
+    $filename = str_slug(html_entity_decode($set->name)) . '.json';
+    $special = [$set->special_calls, $set->special_responses, $set->special];
+    unset($set->special, $set->special_calls, $set->special_responses);
+    
+    $set = new Deck($set);
+    
+    Storage::put('decks/' . $filename, json_encode($set, JSON_PRETTY_PRINT));
+    
+    $set->stored = 'decks/' . $filename;
+    $set->special = $special;
+    
+    return response()->json($set);
     
     //return response()->json($sets);
 });

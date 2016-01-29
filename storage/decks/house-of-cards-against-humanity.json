@@ -1,0 +1,107 @@
+{
+    "name": "House of Cards Against Humanity",
+    "description": "House of Cards pack. http:\/\/www.houseofcardsagainsthumanity.com\/",
+    "version": "1.0",
+    "slug": "HOC",
+    "calls": 9,
+    "responses": 16,
+    "cards": {
+        "calls": [
+            {
+                "text": "A wise man said, &quot;Everything is about sex. Except sex. Sex is about _.&quot;",
+                "draw": 0,
+                "pick": 1
+            },
+            {
+                "text": "Because you enjoyed _, we thought you'd like _.",
+                "draw": 0,
+                "pick": 2
+            },
+            {
+                "text": "Cancel all my meetings. We've got a situation with _ that requires my immediate attention.",
+                "draw": 0,
+                "pick": 1
+            },
+            {
+                "text": "Corruption. Betrayal. _. Coming soon to Netflix, &quot;House of _.&quot;",
+                "draw": 0,
+                "pick": 2
+            },
+            {
+                "text": "I can't believe Netflix is using _ to promote House of Cards.",
+                "draw": 0,
+                "pick": 1
+            },
+            {
+                "text": "I'm not going to lie. I despise _. There, I said it.",
+                "draw": 0,
+                "pick": 1
+            },
+            {
+                "text": "If you need him to, Remy Danton can pull some strings and get you _, but it'll cost you.",
+                "draw": 0,
+                "pick": 1
+            },
+            {
+                "text": "Our relationship is strictly professional. Let's not complicate things with _.",
+                "draw": 0,
+                "pick": 1
+            },
+            {
+                "text": "We're not like other news organizations. Here at Slugline, we welcome _ in the office.",
+                "draw": 0,
+                "pick": 1
+            }
+        ],
+        "responses": [
+            {
+                "text": "25 shitty jokes about House of Cards."
+            },
+            {
+                "text": "A childless marriage."
+            },
+            {
+                "text": "A homoerotic subplot."
+            },
+            {
+                "text": "A much younger woman."
+            },
+            {
+                "text": "An older man."
+            },
+            {
+                "text": "An origami swan that's some kind of symbol?"
+            },
+            {
+                "text": "Carbon monoxide poisoning."
+            },
+            {
+                "text": "Discharging a firearm in a residential area."
+            },
+            {
+                "text": "Forcing a handjob on a dying man."
+            },
+            {
+                "text": "Getting eaten out while on the phone with Dad."
+            },
+            {
+                "text": "Making it look like a suicide."
+            },
+            {
+                "text": "My constituents."
+            },
+            {
+                "text": "Punching a congressman in the face."
+            },
+            {
+                "text": "Ribs so good they transcend race and class."
+            },
+            {
+                "text": "Strangling a dog to make a point to the audience."
+            },
+            {
+                "text": "The sensitive European photographer who's fucking my wife."
+            }
+        ]
+    }
+}
