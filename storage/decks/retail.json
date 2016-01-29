@@ -1,0 +1,33 @@
+{
+    "name": "RETAIL",
+    "description": "This expansion for Cards Against Humanity is an Indiegogo reward for people who backed Season 3 of TableTop.",
+    "version": "1.0",
+    "slug": "TT",
+    "calls": 2,
+    "responses": 3,
+    "cards": {
+        "calls": [
+            {
+                "text": "How are the writers of Cards Against Humanity spending your $25?",
+                "draw": 0,
+                "pick": 1
+            },
+            {
+                "text": "Looking to earn big bucks? Learn how to make _ work for you!",
+                "draw": 0,
+                "pick": 1
+            }
+        ],
+        "responses": [
+            {
+                "text": "A teenage boy gunning for a handjob."
+            },
+            {
+                "text": "Feeding a man a pie made of his own children."
+            },
+            {
+                "text": "Ironically buying a trucker hat and then ironically being a trucker for 38 years."
+            }
+        ]
+    }
+}

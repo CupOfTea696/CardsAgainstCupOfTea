@@ -7,1014 +7,1038 @@
         "us": "1.7"
     },
     "slug": null,
-    "calls": 126,
-    "responses": 611,
+    "calls": 129,
+    "responses": 614,
     "cards": {
         "calls": [
             {
                 "text": "A recent laboratory study shows that undergraduates have 50% less sex after being exposed to _.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true,
                 "draw": 0,
                 "pick": 1
             },
             {
                 "text": "A romantic, candlelit dinner would be incomplete without _.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true,
                 "draw": 0,
                 "pick": 1
             },
             {
                 "text": "After four platinum albums and three Grammys, it's time to get back to my roots, to what inspired me to make music in the first place: _.",
-                "uk": false,
                 "ca": false,
+                "uk": false,
                 "us": true,
                 "draw": 0,
                 "pick": 1
             },
             {
                 "text": "After the earthquake, Sean Penn brought _ to the people of Haiti.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true,
                 "draw": 0,
                 "pick": 1
             },
             {
                 "text": "Airport security guidelines now prohibit _ on airplanes.",
-                "uk": true,
                 "ca": false,
+                "uk": true,
                 "us": false,
                 "draw": 0,
                 "pick": 1
             },
             {
                 "text": "Alternative medicine is now embracing the curative powers of _.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true,
                 "draw": 0,
                 "pick": 1
             },
             {
                 "text": "And the Academy Award for _ goes to _.",
-                "uk": false,
                 "ca": true,
+                "uk": false,
                 "us": true,
                 "draw": 0,
                 "pick": 2
             },
             {
                 "text": "And the BAFTA for _ goes to _.",
-                "uk": true,
                 "ca": false,
+                "uk": true,
                 "us": false,
                 "draw": 0,
                 "pick": 1
             },
             {
                 "text": "But before I kill you, Mr. Bond, I must show you _.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true,
                 "draw": 0,
                 "pick": 1
             },
             {
                 "text": "Channel 4 presents _, the story of _.",
-                "uk": true,
                 "ca": false,
+                "uk": true,
                 "us": false,
                 "draw": 0,
                 "pick": 1
             },
             {
                 "text": "Channel 5's new reality show features eight washed-up celebrities living with _.",
-                "uk": true,
                 "ca": false,
+                "uk": true,
                 "us": false,
                 "draw": 0,
                 "pick": 1
             },
             {
                 "text": "Coming to Broadway this season, _: The Musical.",
-                "uk": false,
                 "ca": true,
+                "uk": false,
                 "us": true,
                 "draw": 0,
                 "pick": 1
             },
             {
                 "text": "Coming to the West End this year, _: The Musical.",
-                "uk": true,
                 "ca": false,
+                "uk": true,
                 "us": false,
                 "draw": 0,
                 "pick": 1
             },
             {
                 "text": "Daddy, why is mommy crying?",
-                "uk": false,
                 "ca": true,
+                "uk": false,
                 "us": true,
                 "draw": 0,
                 "pick": 1
             },
             {
                 "text": "Daddy, why is mummy crying?",
-                "uk": true,
                 "ca": false,
+                "uk": true,
                 "us": false,
                 "draw": 0,
                 "pick": 1
             },
             {
                 "text": "Dear Abby,<br><br>I'm having some trouble with _ and would like your advice.",
-                "uk": false,
                 "ca": true,
+                "uk": false,
                 "us": true,
                 "draw": 0,
                 "pick": 1
             },
             {
                 "text": "Dear Agony Aunt,<br><br>I'm having some trouble with _ and I need your advice.",
-                "uk": true,
                 "ca": false,
+                "uk": true,
                 "us": false,
                 "draw": 0,
                 "pick": 1
             },
             {
                 "text": "During sex, I like to think about _.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true,
                 "draw": 0,
                 "pick": 1
             },
             {
                 "text": "For my next trick, I will pull _ out of _.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true,
                 "draw": 0,
                 "pick": 2
             },
             {
                 "text": "Fun tip! When your man asks you to go down on him, try surprising him with _ instead.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true,
                 "draw": 0,
                 "pick": 1
             },
             {
                 "text": "Here is the church<br>Here is the steeple<br>Open the doors<br>And there is _.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true,
                 "draw": 0,
                 "pick": 1
             },
             {
                 "text": "Hey Reddit! I'm _. Ask me anything.",
-                "uk": false,
                 "ca": false,
+                "uk": false,
                 "us": true,
                 "draw": 0,
                 "pick": 1
             },
             {
                 "text": "How am I maintaining my relationship status?",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true,
                 "draw": 0,
                 "pick": 1
             },
             {
-                "text": "How did I lose my virginity?",
-                "uk": true,
+                "text": "How are the writers of Cards Against Humanity spending your $25?",
                 "ca": true,
+                "uk": false,
+                "us": true,
+                "draw": 0,
+                "pick": 1
+            },
+            {
+                "text": "How are the writers of Cards Against Humanity spending your £20?",
+                "ca": false,
+                "uk": true,
+                "us": false,
+                "draw": 0,
+                "pick": 1
+            },
+            {
+                "text": "How did I lose my virginity?",
+                "ca": true,
+                "uk": true,
                 "us": true,
                 "draw": 0,
                 "pick": 1
             },
             {
                 "text": "I do not know with what weapons World War III will be fought, but World War IV will be fought with _.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": false,
                 "draw": 0,
                 "pick": 1
             },
             {
                 "text": "I drink to forget _.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true,
                 "draw": 0,
                 "pick": 1
             },
             {
                 "text": "I get by with a little help from _.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true,
                 "draw": 0,
                 "pick": 1
             },
             {
                 "text": "I got 99 problems but _ ain't one.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true,
                 "draw": 0,
                 "pick": 1
             },
             {
                 "text": "I never truly understood _ until I encountered _.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true,
                 "draw": 0,
                 "pick": 2
             },
             {
                 "text": "I'm going on a cleanse this week. Nothing but kale juice and _.",
-                "uk": false,
                 "ca": false,
+                "uk": false,
                 "us": true,
                 "draw": 0,
                 "pick": 1
             },
             {
                 "text": "I'm sorry, Professor, but I couldn't complete my homework because of _.",
-                "uk": false,
                 "ca": true,
+                "uk": false,
                 "us": true,
                 "draw": 0,
                 "pick": 1
             },
             {
                 "text": "I'm sorry,Sir, but I couldn't complete my homework because of _.",
-                "uk": true,
                 "ca": false,
+                "uk": true,
                 "us": false,
                 "draw": 0,
                 "pick": 1
             },
             {
                 "text": "In 1,000 years, when paper money is a distant memory, how will we pay for goods and services?",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": false,
                 "draw": 0,
                 "pick": 1
             },
             {
                 "text": "In L.A. County Jail, word is you can trade 200 cigarettes for _.",
-                "uk": false,
                 "ca": true,
+                "uk": false,
                 "us": true,
                 "draw": 0,
                 "pick": 1
             },
             {
                 "text": "In M. Night Shyamalan's new movie, Bruce Willis discovers that _ had really been _ all along.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true,
                 "draw": 0,
                 "pick": 2
             },
             {
                 "text": "In Wormwood Scrubs, word is you can trade 200 cigarettes for _.",
-                "uk": true,
                 "ca": false,
+                "uk": true,
                 "us": false,
                 "draw": 0,
                 "pick": 1
             },
             {
                 "text": "In a world ravaged by _, our only solace is _.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true,
                 "draw": 0,
                 "pick": 2
             },
             {
                 "text": "In her latest feature-length film, Tracy Beaker struggles with _ for the first time.",
-                "uk": true,
                 "ca": false,
+                "uk": true,
                 "us": false,
                 "draw": 0,
                 "pick": 1
             },
             {
                 "text": "In the new Disney Channel Original Movie, Hannah Montana struggles with _ for the first time.",
-                "uk": false,
                 "ca": true,
+                "uk": false,
                 "us": true,
                 "draw": 0,
                 "pick": 1
             },
             {
                 "text": "Instead of coal, Father Christmas now gives bad children _.",
-                "uk": true,
                 "ca": false,
+                "uk": true,
                 "us": false,
                 "draw": 0,
                 "pick": 1
             },
             {
                 "text": "Instead of coal, Santa now gives the bad children _.",
-                "uk": false,
                 "ca": true,
+                "uk": false,
                 "us": true,
                 "draw": 0,
                 "pick": 1
             },
             {
                 "text": "Introducing X-Treme Baseball! It's like baseball, but with _!",
-                "uk": false,
                 "ca": true,
+                "uk": false,
                 "us": true,
                 "draw": 0,
                 "pick": 1
             },
             {
                 "text": "Introducing the amazing superhero\/sidekick duo! It's _ and _!",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true,
                 "draw": 0,
                 "pick": 2
             },
             {
                 "text": "It's a pity that kids these days are all getting involved with _.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true,
                 "draw": 0,
                 "pick": 1
             },
             {
                 "text": "Just saw this upsetting video! Please retweet!! #stop_",
-                "uk": false,
                 "ca": false,
+                "uk": false,
                 "us": true,
                 "draw": 0,
                 "pick": 1
             },
             {
                 "text": "Kids, I don't need drugs to get high. I'm high on _.",
-                "uk": false,
                 "ca": false,
+                "uk": false,
                 "us": true,
                 "draw": 0,
                 "pick": 1
             },
             {
                 "text": "Life for American Indians was forever changed when the White Man introduced them to _.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true,
                 "draw": 0,
                 "pick": 1
             },
             {
                 "text": "Lifetime&reg; presents &quot;_: the Story of _.&quot;",
-                "uk": false,
                 "ca": true,
+                "uk": false,
                 "us": true,
                 "draw": 0,
                 "pick": 2
             },
             {
-                "text": "MTV's new reality show features eight washed-up celebrities living with _.",
-                "uk": false,
+                "text": "Looking to earn big bucks? Learn how to make _ work for you!",
                 "ca": true,
+                "uk": true,
+                "us": true,
+                "draw": 0,
+                "pick": 1
+            },
+            {
+                "text": "MTV's new reality show features eight washed-up celebrities living with _.",
+                "ca": true,
+                "uk": false,
                 "us": true,
                 "draw": 0,
                 "pick": 1
             },
             {
                 "text": "Make a haiku.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true,
                 "draw": 2,
                 "pick": 3
             },
             {
                 "text": "Maybe she's born with it. Maybe it's _.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true,
                 "draw": 0,
                 "pick": 1
             },
             {
                 "text": "Next from J.K. Rowling: Harry Potter and the Chamber of _.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true,
                 "draw": 0,
                 "pick": 1
             },
             {
                 "text": "Next on ESPN2: The World Series of _.",
-                "uk": false,
                 "ca": true,
+                "uk": false,
                 "us": true,
                 "draw": 0,
                 "pick": 1
             },
             {
                 "text": "Next on Sky Sports: The World Championship of _.",
-                "uk": true,
                 "ca": false,
+                "uk": true,
                 "us": false,
                 "draw": 0,
                 "pick": 1
             },
             {
                 "text": "Nobody expects the Spanish Inquisition. Our chief weapons are fear, surprise, and _.",
-                "uk": true,
                 "ca": false,
+                "uk": true,
                 "us": false,
                 "draw": 0,
                 "pick": 1
             },
             {
                 "text": "Now at the Smithsonian: an interactive exhibit on _.",
-                "uk": false,
                 "ca": false,
+                "uk": false,
                 "us": true,
                 "draw": 0,
                 "pick": 1
             },
             {
                 "text": "O Canada, we stand on guard for _.",
-                "uk": false,
                 "ca": true,
+                "uk": false,
                 "us": false,
                 "draw": 0,
                 "pick": 1
             },
             {
                 "text": "Step 1: _. Step 2: _. Step 3: Profit.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true,
                 "draw": 0,
                 "pick": 2
             },
             {
                 "text": "TSA guidelines now prohibit _ on airplanes.",
-                "uk": false,
                 "ca": true,
+                "uk": false,
                 "us": true,
                 "draw": 0,
                 "pick": 1
             },
             {
                 "text": "That's right, I killed _. How, you ask? _.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true,
                 "draw": 0,
                 "pick": 2
             },
             {
                 "text": "The Natural History Museum has just opened an interactive exhibit on _.",
-                "uk": true,
                 "ca": false,
+                "uk": true,
                 "us": false,
                 "draw": 0,
                 "pick": 1
             },
             {
                 "text": "The Smithsonian Museum of Natural History has just opened an interactive exhibit on _.",
-                "uk": false,
                 "ca": true,
+                "uk": false,
                 "us": false,
                 "draw": 0,
                 "pick": 1
             },
             {
                 "text": "The TFL apologizes for the delay in train service due to _.",
-                "uk": true,
                 "ca": false,
+                "uk": true,
                 "us": false,
                 "draw": 0,
                 "pick": 1
             },
             {
                 "text": "The class field trip was completely ruined by _.",
-                "uk": false,
                 "ca": true,
+                "uk": false,
                 "us": true,
                 "draw": 0,
                 "pick": 1
             },
             {
                 "text": "The new Chevy Tahoe. With the power and space to take _ everywhere you go.",
-                "uk": false,
                 "ca": true,
+                "uk": false,
                 "us": true,
                 "draw": 0,
                 "pick": 1
             },
             {
                 "text": "The school field trip was completely ruined by _.",
-                "uk": true,
                 "ca": false,
+                "uk": true,
                 "us": false,
                 "draw": 0,
                 "pick": 1
             },
             {
                 "text": "The theme for next year's Eurovision Song Contest is &quot;We are _.&quot;",
-                "uk": true,
                 "ca": false,
+                "uk": true,
                 "us": false,
                 "draw": 0,
                 "pick": 1
             },
             {
                 "text": "They said we were crazy. They said we couldn't put _ inside of _. They were wrong.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true,
                 "draw": 0,
                 "pick": 2
             },
             {
                 "text": "This is the way the world ends This is the way the world ends Not with a bang but with _.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true,
                 "draw": 0,
                 "pick": 1
             },
             {
                 "text": "Today on \/Maury\/: &quot;Help! My son is _!&quot;",
-                "uk": false,
                 "ca": true,
+                "uk": false,
                 "us": true,
                 "draw": 0,
                 "pick": 1
             },
             {
                 "text": "Today on The Jeremy Kyle Show: &quot;Help! My son is _!&quot;",
-                "uk": true,
                 "ca": false,
+                "uk": true,
                 "us": false,
                 "draw": 0,
                 "pick": 1
             },
             {
                 "text": "Uh, hey guys, I know this was my idea, but I'm having serious doubts about _.",
-                "uk": false,
                 "ca": false,
+                "uk": false,
                 "us": true,
                 "draw": 0,
                 "pick": 1
             },
             {
                 "text": "War!<br><br>What is it good for?",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true,
                 "draw": 0,
                 "pick": 1
             },
             {
                 "text": "Well if you'll excuse me, gentlemen, I have a date with _.",
-                "uk": false,
                 "ca": false,
+                "uk": false,
                 "us": true,
                 "draw": 0,
                 "pick": 1
             },
             {
                 "text": "What am I giving up for Lent?",
-                "uk": true,
                 "ca": false,
+                "uk": true,
                 "us": false,
                 "draw": 0,
                 "pick": 1
             },
             {
                 "text": "What are my parents hiding from me?",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true,
                 "draw": 0,
                 "pick": 1
             },
             {
                 "text": "What are school administrators using to curb rampant teenage pregnancy?",
-                "uk": true,
                 "ca": false,
+                "uk": true,
                 "us": false,
                 "draw": 0,
                 "pick": 1
             },
             {
                 "text": "What did I bring back from Amsterdam?",
-                "uk": true,
                 "ca": false,
+                "uk": true,
                 "us": false,
                 "draw": 0,
                 "pick": 1
             },
             {
                 "text": "What did I bring back from Mexico?",
-                "uk": false,
                 "ca": true,
+                "uk": false,
                 "us": true,
                 "draw": 0,
                 "pick": 1
             },
             {
                 "text": "What did Vin Diesel eat for dinner?",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true,
                 "draw": 0,
                 "pick": 1
             },
             {
                 "text": "What did the US airdrop to the children of Afghanistan?",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true,
                 "draw": 0,
                 "pick": 1
             },
             {
                 "text": "What don't you want to find in your Kung Pao chicken?",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true,
                 "draw": 0,
                 "pick": 1
             },
             {
                 "text": "What ended my last relationship?",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true,
                 "draw": 0,
                 "pick": 1
             },
             {
                 "text": "What gets better with age?",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": false,
                 "draw": 0,
                 "pick": 1
             },
             {
                 "text": "What gives me uncontrollable gas?",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true,
                 "draw": 0,
                 "pick": 1
             },
             {
                 "text": "What helps Obama unwind?",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true,
                 "draw": 0,
                 "pick": 1
             },
             {
                 "text": "What is Batman's guilty pleasure?",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true,
                 "draw": 0,
                 "pick": 1
             },
             {
                 "text": "What is George W. Bush thinking about right now?",
-                "uk": false,
                 "ca": true,
+                "uk": false,
                 "us": true,
                 "draw": 0,
                 "pick": 1
             },
             {
                 "text": "What kept Margaret Thatcher busy in her waning years?",
-                "uk": true,
                 "ca": false,
+                "uk": true,
                 "us": false,
                 "draw": 0,
                 "pick": 1
             },
             {
                 "text": "What made my first kiss so awkward?",
-                "uk": false,
                 "ca": false,
+                "uk": false,
                 "us": true,
                 "draw": 0,
                 "pick": 1
             },
             {
                 "text": "What never fails to liven up the party?",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true,
                 "draw": 0,
                 "pick": 1
             },
             {
                 "text": "What will I bring back in time to convince people that I am a powerful wizard?",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": false,
                 "draw": 0,
                 "pick": 1
             },
             {
                 "text": "What will always get you laid?",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true,
                 "draw": 0,
                 "pick": 1
             },
             {
                 "text": "What would grandma find disturbing, yet oddly charming?",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true,
                 "draw": 0,
                 "pick": 1
             },
             {
                 "text": "What's Teach for America using to inspire inner city students to succeed?",
-                "uk": false,
                 "ca": true,
+                "uk": false,
                 "us": true,
                 "draw": 0,
                 "pick": 1
             },
             {
                 "text": "What's a girl's best friend?",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true,
                 "draw": 0,
                 "pick": 1
             },
             {
                 "text": "What's my anti-drug?",
-                "uk": false,
                 "ca": true,
+                "uk": false,
                 "us": false,
                 "draw": 0,
                 "pick": 1
             },
             {
                 "text": "What's my secret power?",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true,
                 "draw": 0,
                 "pick": 1
             },
             {
                 "text": "What's that smell?",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true,
                 "draw": 0,
                 "pick": 1
             },
             {
                 "text": "What's that sound?",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true,
                 "draw": 0,
                 "pick": 1
             },
             {
                 "text": "What's the most emo?",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": false,
                 "draw": 0,
                 "pick": 1
             },
             {
                 "text": "What's the new fad diet?",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": false,
                 "draw": 0,
                 "pick": 1
             },
             {
                 "text": "What's the next Happy Meal&reg; toy?",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true,
                 "draw": 0,
                 "pick": 1
             },
             {
                 "text": "What's there a ton of in heaven?",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true,
                 "draw": 0,
                 "pick": 1
             },
             {
                 "text": "When I am President of the United States, I will create the Department of _.",
-                "uk": false,
                 "ca": true,
+                "uk": false,
                 "us": true,
                 "draw": 0,
                 "pick": 1
             },
             {
                 "text": "When I am Prime Minister of the United Kingdom, I will create the Ministry of _.",
-                "uk": true,
                 "ca": false,
+                "uk": true,
                 "us": false,
                 "draw": 0,
                 "pick": 1
             },
             {
                 "text": "When I am a billionare, I shall erect a 50-foot statue to commemorate _.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true,
                 "draw": 0,
                 "pick": 1
             },
             {
                 "text": "When I was tripping on acid, _ turned into _.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true,
                 "draw": 0,
                 "pick": 2
             },
             {
                 "text": "When Pharaoh remained unmoved, Moses called down a Plague of _.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true,
                 "draw": 0,
                 "pick": 1
             },
             {
                 "text": "While the United States raced the Soviet Union to the moon, the Mexican government funneled millions of pesos into research on _.",
-                "uk": false,
                 "ca": true,
+                "uk": false,
                 "us": true,
                 "draw": 0,
                 "pick": 1
             },
             {
                 "text": "White people like _.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true,
                 "draw": 0,
                 "pick": 1
             },
             {
                 "text": "Why am I sticky?",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true,
                 "draw": 0,
                 "pick": 1
             },
             {
                 "text": "Why can't I sleep at night?",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true,
                 "draw": 0,
                 "pick": 1
             },
             {
                 "text": "Why do I hurt all over?",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true,
                 "draw": 0,
                 "pick": 1
             },
             {
                 "text": "_ + _ = _.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true,
                 "draw": 2,
                 "pick": 3
             },
             {
                 "text": "_ is a slippery slope that leads to _.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true,
                 "draw": 0,
                 "pick": 2
             },
             {
                 "text": "_. Betcha can't have just one!",
-                "uk": false,
                 "ca": true,
+                "uk": false,
                 "us": true,
                 "draw": 0,
                 "pick": 1
             },
             {
                 "text": "_. High five, bro.",
-                "uk": false,
                 "ca": true,
+                "uk": false,
                 "us": true,
                 "draw": 0,
                 "pick": 1
             },
             {
                 "text": "_. It's a trap!",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true,
                 "draw": 0,
                 "pick": 1
             },
             {
                 "text": "_. That was so metal.",
-                "uk": false,
                 "ca": false,
+                "uk": false,
                 "us": true,
                 "draw": 0,
                 "pick": 1
             },
             {
                 "text": "_. That's how I want to die.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": false,
                 "draw": 0,
                 "pick": 1
             },
             {
                 "text": "_. That's why mums go to Iceland.",
-                "uk": true,
                 "ca": false,
+                "uk": true,
                 "us": false,
                 "draw": 0,
                 "pick": 1
             },
             {
                 "text": "_: Once you pop, the fun don't stop!",
-                "uk": true,
                 "ca": false,
+                "uk": true,
                 "us": false,
                 "draw": 0,
                 "pick": 1
             },
             {
                 "text": "_: good to the last drop.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true,
                 "draw": 0,
                 "pick": 1
             },
             {
                 "text": "_: kid-tested, mother-approved.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true,
                 "draw": 0,
                 "pick": 1
             },
             {
                 "text": "_? Jim'll fix it!",
-                "uk": true,
                 "ca": false,
+                "uk": true,
                 "us": false,
                 "draw": 0,
                 "pick": 1
@@ -1023,3668 +1047,3686 @@
         "responses": [
             {
                 "text": "400 years of colonial atrocities.",
-                "uk": true,
                 "ca": false,
+                "uk": true,
                 "us": false
             },
             {
                 "text": "50,000 volts straight to the nipples.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "72 virgins.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "8 oz. of sweet Mexican black-tar heroin.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "A Bop It&trade;.",
-                "uk": false,
                 "ca": true,
+                "uk": false,
                 "us": true
             },
             {
                 "text": "A Chelsea smile.",
-                "uk": true,
                 "ca": false,
+                "uk": true,
                 "us": false
             },
             {
                 "text": "A Fleshlight.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "A Super Soaker&trade; full of cat pee.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "A Tim Hortons franchise.",
-                "uk": false,
                 "ca": true,
+                "uk": false,
                 "us": false
             },
             {
                 "text": "A bag of magic beans.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "A balanced breakfast.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "A ball of earwax, semen, and toenail clippings.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "A bit of slap and tickle.",
-                "uk": true,
                 "ca": false,
+                "uk": true,
                 "us": false
             },
             {
                 "text": "A bitch slap.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "A bleached arsehole.",
-                "uk": true,
                 "ca": false,
+                "uk": true,
                 "us": false
             },
             {
                 "text": "A bleached asshole.",
-                "uk": false,
                 "ca": true,
+                "uk": false,
                 "us": true
             },
             {
                 "text": "A brain tumor.",
-                "uk": false,
                 "ca": true,
+                "uk": false,
                 "us": true
             },
             {
                 "text": "A brain tumour.",
-                "uk": true,
                 "ca": false,
+                "uk": true,
                 "us": false
             },
             {
                 "text": "A bucket of fish heads.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": false
             },
             {
                 "text": "A can of whoop-ass.",
-                "uk": false,
                 "ca": true,
+                "uk": false,
                 "us": false
             },
             {
                 "text": "A cooler full of organs.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "A defective condom.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "A disappointing birthday party.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "A falcon with a cap on its head.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "A fanny fart.",
-                "uk": true,
                 "ca": false,
+                "uk": true,
                 "us": false
             },
             {
                 "text": "A fetus.",
-                "uk": false,
                 "ca": true,
+                "uk": false,
                 "us": true
             },
             {
                 "text": "A foetus.",
-                "uk": true,
                 "ca": false,
+                "uk": true,
                 "us": false
             },
             {
                 "text": "A foul mouth.",
-                "uk": true,
                 "ca": false,
+                "uk": true,
                 "us": false
             },
             {
                 "text": "A gassy antelope.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "A gentle caress of the inner thigh.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "A ginger's freckled ballsack.",
-                "uk": true,
                 "ca": false,
+                "uk": true,
                 "us": false
             },
             {
                 "text": "A good sniff.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "A homoerotic volleyball montage.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "A lifetime of sadness.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "A live studio audience.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "A mad cow.",
-                "uk": true,
                 "ca": false,
+                "uk": true,
                 "us": false
             },
             {
                 "text": "A madman who lives in a police box and kidnaps women.",
-                "uk": true,
                 "ca": false,
+                "uk": true,
                 "us": false
             },
             {
                 "text": "A man on the brink of orgasm.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "A mating display.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "A micropenis.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "A micropig wearing a tiny raincoat and booties.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "A middle-aged man on roller skates.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "A mime having a stroke.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "A monkey smoking a cigar.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "A mopey zoo lion.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "A much younger woman.",
-                "uk": false,
                 "ca": false,
+                "uk": false,
                 "us": true
             },
             {
                 "text": "A murder most foul.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "A nice cup of tea.",
-                "uk": true,
                 "ca": false,
+                "uk": true,
                 "us": false
             },
             {
                 "text": "A pangender octopus who roams the cosmos in search of love.",
-                "uk": false,
                 "ca": false,
+                "uk": false,
                 "us": true
             },
             {
                 "text": "A posh wank.",
-                "uk": true,
                 "ca": false,
+                "uk": true,
                 "us": false
             },
             {
                 "text": "A pyramid of severed heads.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "A really cool hat.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "A robust mongoloid.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "A sad handjob.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "A salty surprise.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "A sassy black woman.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "A saxophone solo.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "A sea of troubles.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "A sickly child-king.",
-                "uk": false,
                 "ca": false,
+                "uk": false,
                 "us": true
             },
             {
                 "text": "A snapping turtle biting the tip of your penis.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "A sober Irishman who doesn't care for potatoes.",
-                "uk": true,
                 "ca": false,
+                "uk": true,
                 "us": false
             },
             {
                 "text": "A stray pube.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "A subscription to Men's Fitness.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
+                "us": true
+            },
+            {
+                "text": "A teenage boy gunning for a handjob.",
+                "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "A thermonuclear detonation.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "A thousand Scottish warriors lifting their kilts in unison.",
-                "uk": true,
                 "ca": false,
+                "uk": true,
                 "us": false
             },
             {
                 "text": "A time travel paradox.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "A tiny horse.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "A tribe of warrior women.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "A vindaloo poo.",
-                "uk": true,
                 "ca": false,
+                "uk": true,
                 "us": false
             },
             {
                 "text": "A white van man.",
-                "uk": true,
                 "ca": false,
+                "uk": true,
                 "us": false
             },
             {
                 "text": "A windmill full of corpses.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "A zesty breakfast burrito.",
-                "uk": false,
                 "ca": true,
+                "uk": false,
                 "us": true
             },
             {
                 "text": "AIDS.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "AXE Body Spray.",
-                "uk": false,
                 "ca": true,
+                "uk": false,
                 "us": true
             },
             {
                 "text": "Aaron Burr.",
-                "uk": false,
                 "ca": false,
+                "uk": false,
                 "us": true
             },
             {
                 "text": "Active listening.",
-                "uk": false,
                 "ca": true,
+                "uk": false,
                 "us": true
             },
             {
                 "text": "Adderall&trade;.",
-                "uk": false,
                 "ca": false,
+                "uk": false,
                 "us": true
             },
             {
                 "text": "Advice from a wise, old black man.",
-                "uk": false,
                 "ca": true,
+                "uk": false,
                 "us": true
             },
             {
                 "text": "African children.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "Agriculture.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "Alcoholism.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "All-you-can-eat shrimp for $4.99.",
-                "uk": false,
                 "ca": true,
+                "uk": false,
                 "us": false
             },
             {
                 "text": "All-you-can-eat shrimp for $8.99.",
-                "uk": false,
                 "ca": false,
+                "uk": false,
                 "us": true
             },
             {
                 "text": "Altar boys.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "Amputees.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "An AK-47 assault rifle.",
-                "uk": true,
                 "ca": false,
+                "uk": true,
                 "us": false
             },
             {
                 "text": "An AR-15 assault rifle.",
-                "uk": false,
                 "ca": false,
+                "uk": false,
                 "us": true
             },
             {
                 "text": "An M. Night Shyamalan plot twist.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "An M16 assault rifle.",
-                "uk": false,
                 "ca": true,
+                "uk": false,
                 "us": false
             },
             {
                 "text": "An Oedipus complex.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "An argument with Richard Dawkins.",
-                "uk": true,
                 "ca": false,
+                "uk": true,
                 "us": false
             },
             {
                 "text": "An asymmetric boob job.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "An endless stream of diarrhea.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "An entrenched class system.",
-                "uk": true,
                 "ca": false,
+                "uk": true,
                 "us": false
             },
             {
                 "text": "An erection that lasts longer than four hours.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "An icepick labotomy.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "An icy handjob from an Edmonton hooker.",
-                "uk": false,
                 "ca": true,
+                "uk": false,
                 "us": false
             },
             {
                 "text": "An oversized lollipop.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "An ugly face.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "Anal beads.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "Anything that comes out of Prince Philip's mouth.",
-                "uk": true,
                 "ca": false,
+                "uk": true,
                 "us": false
             },
             {
                 "text": "Arnold Schwarzenegger.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "Asians who aren't good at math.",
-                "uk": false,
                 "ca": true,
+                "uk": false,
                 "us": true
             },
             {
                 "text": "Assless chaps.",
-                "uk": false,
                 "ca": true,
+                "uk": false,
                 "us": true
             },
             {
                 "text": "Auschwitz.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "Authentic Mexican cuisine.",
-                "uk": false,
                 "ca": true,
+                "uk": false,
                 "us": true
             },
             {
                 "text": "Autocannibalism.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "BATMAN!!!",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "Badger culling.",
-                "uk": true,
                 "ca": false,
+                "uk": true,
                 "us": false
             },
             {
                 "text": "Balls.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "Barack Obama.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "Battlefield amputations.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "Becoming a blueberry.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "Bees?",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "Being Canadian.",
-                "uk": false,
                 "ca": true,
+                "uk": false,
                 "us": false
             },
             {
                 "text": "Being a dick to children.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "Being a motherfucking sorcerer.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "Being fabulous.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "Being fat and stupid.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "Being hunted like a fox.",
-                "uk": true,
                 "ca": false,
+                "uk": true,
                 "us": false
             },
             {
                 "text": "Being marginalized.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "Being on fire.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "Being rich.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "Bill Nye the Science Guy.",
-                "uk": false,
                 "ca": true,
+                "uk": false,
                 "us": true
             },
             {
                 "text": "Bingeing and purging.",
-                "uk": false,
                 "ca": true,
+                "uk": false,
                 "us": true
             },
             {
                 "text": "Bio-engineered assault turtles with acid breath.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "Bitches.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "Black people.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "Blood, toil, tears, and sweat.",
-                "uk": true,
                 "ca": false,
+                "uk": true,
                 "us": false
             },
             {
                 "text": "Blowing up Parliament.",
-                "uk": true,
                 "ca": false,
+                "uk": true,
                 "us": false
             },
             {
                 "text": "Bogies.",
-                "uk": true,
                 "ca": false,
+                "uk": true,
                 "us": false
             },
             {
                 "text": "Boogers.",
-                "uk": false,
                 "ca": true,
+                "uk": false,
                 "us": true
             },
             {
                 "text": "Breaking out into song and dance.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "Brown people.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "Buckfast Tonic Wine.",
-                "uk": true,
                 "ca": false,
+                "uk": true,
                 "us": false
             },
             {
                 "text": "Burning down the White House.",
-                "uk": false,
                 "ca": true,
+                "uk": false,
                 "us": false
             },
             {
                 "text": "Canada: America's Hat.",
-                "uk": false,
                 "ca": true,
+                "uk": false,
                 "us": false
             },
             {
                 "text": "Cards Against Humanity.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "Catapults.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "Centaurs.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "Chainsaws for hands.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "Cheating in the Paralympics.",
-                "uk": true,
                 "ca": false,
+                "uk": true,
                 "us": false
             },
             {
                 "text": "Cheating in the Special Olympics.",
-                "uk": false,
                 "ca": true,
+                "uk": false,
                 "us": false
             },
             {
                 "text": "Child abuse.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "Child beauty pageants.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "Children on leashes.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "Chivalry.",
-                "uk": true,
                 "ca": false,
+                "uk": true,
                 "us": false
             },
             {
                 "text": "Christopher Walken.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "Chunks of dead hitchhiker.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "Civilian casualties.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "Classist undertones.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "Coat hanger abortions.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "Completely unwarranted confidence.",
-                "uk": false,
                 "ca": false,
+                "uk": false,
                 "us": true
             },
             {
                 "text": "Concealing a boner.",
-                "uk": false,
                 "ca": true,
+                "uk": false,
                 "us": true
             },
             {
                 "text": "Concealing an erection.",
-                "uk": true,
                 "ca": false,
+                "uk": true,
                 "us": false
             },
             {
                 "text": "Consensual sex.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "Copping a feel.",
-                "uk": true,
                 "ca": false,
+                "uk": true,
                 "us": false
             },
             {
                 "text": "Cottaging.",
-                "uk": true,
                 "ca": false,
+                "uk": true,
                 "us": false
             },
             {
                 "text": "Count Chocula.",
-                "uk": false,
                 "ca": true,
+                "uk": false,
                 "us": true
             },
             {
                 "text": "Court-ordered rehab.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "Crippling debt.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "Crucifixion.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "Crumbs all over the bloody carpet.",
-                "uk": true,
                 "ca": false,
+                "uk": true,
                 "us": false
             },
             {
                 "text": "Crumbs all over the god damn carpet.",
-                "uk": false,
                 "ca": true,
+                "uk": false,
                 "us": true
             },
             {
                 "text": "Crystal meth.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "Cuddling.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "Cybernetic enhancements.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "Daddies&reg; Brown Sauce.",
-                "uk": true,
                 "ca": false,
+                "uk": true,
                 "us": false
             },
             {
                 "text": "Daddy issues.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "Daniel Radcliffe's delicious arsehole.",
-                "uk": true,
                 "ca": false,
+                "uk": true,
                 "us": false
             },
             {
                 "text": "Daniel Radcliffe's delicious asshole.",
-                "uk": false,
                 "ca": true,
+                "uk": false,
                 "us": true
             },
             {
                 "text": "Danny DeVito.",
-                "uk": false,
                 "ca": false,
+                "uk": false,
                 "us": true
             },
             {
                 "text": "Dark and mysterious forces beyond our control.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "Darth Vader.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "David Bowie flying in on a tiger made of lightning.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "David Cameron.",
-                "uk": true,
                 "ca": false,
+                "uk": true,
                 "us": false
             },
             {
                 "text": "Dead babies.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "Dead parents.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "Destroying the evidence.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "Dick Cheney",
-                "uk": false,
                 "ca": true,
+                "uk": false,
                 "us": true
             },
             {
                 "text": "Dick fingers.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "Dirty nappies.",
-                "uk": true,
                 "ca": false,
+                "uk": true,
                 "us": false
             },
             {
                 "text": "Dogging.",
-                "uk": true,
                 "ca": false,
+                "uk": true,
                 "us": false
             },
             {
                 "text": "Doin' it in the butt.",
-                "uk": false,
                 "ca": true,
+                "uk": false,
                 "us": true
             },
             {
                 "text": "Doing a shit in Pudsey Bear's eyehole.",
-                "uk": true,
                 "ca": false,
+                "uk": true,
                 "us": false
             },
             {
                 "text": "Doing crimes.",
-                "uk": false,
                 "ca": false,
+                "uk": false,
                 "us": true
             },
             {
                 "text": "Doing the right thing.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "Domino's&trade; Oreo&trade; Dessert Pizza.",
-                "uk": false,
                 "ca": true,
+                "uk": false,
                 "us": true
             },
             {
                 "text": "Don Cherry's wardrobe.",
-                "uk": false,
                 "ca": true,
+                "uk": false,
                 "us": false
             },
             {
                 "text": "Drinking alone.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "Drinking out of the toilet and eating garbage.",
-                "uk": false,
                 "ca": false,
+                "uk": false,
                 "us": true
             },
             {
                 "text": "Dropping a chandelier on your enemies and riding the rope up.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "Drowning the kids in the bathtub.",
-                "uk": false,
                 "ca": false,
+                "uk": false,
                 "us": true
             },
             {
                 "text": "Druids.",
-                "uk": true,
                 "ca": false,
+                "uk": true,
                 "us": false
             },
             {
                 "text": "Dry heaving.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "Dying of dysentery.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": false
             },
             {
                 "text": "Dying.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "Eating the last known bison.",
-                "uk": false,
                 "ca": true,
+                "uk": false,
                 "us": true
             },
             {
                 "text": "Ecstasy.",
-                "uk": true,
                 "ca": false,
+                "uk": true,
                 "us": false
             },
             {
                 "text": "Ed Balls.",
-                "uk": true,
                 "ca": false,
+                "uk": true,
                 "us": false
             },
             {
                 "text": "Edible underpants.",
-                "uk": false,
                 "ca": true,
+                "uk": false,
                 "us": true
             },
             {
                 "text": "Edible underwear.",
-                "uk": true,
                 "ca": false,
+                "uk": true,
                 "us": false
             },
             {
                 "text": "Elderly Japanese men.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "Embryonic stem cells.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "Emma Watson.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "Emotions.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "England",
-                "uk": true,
                 "ca": false,
+                "uk": true,
                 "us": false
             },
             {
                 "text": "Erectile dysfunction.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "Establishing dominance.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "Estrogen.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "Ethnic cleansing.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "Eugenics.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "Exactly what you'd expect.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "Excalibur.",
-                "uk": true,
                 "ca": false,
+                "uk": true,
                 "us": false
             },
             {
                 "text": "Expecting a burp and vomiting on the floor.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "Explosions.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "Extremely tight pants.",
-                "uk": false,
                 "ca": true,
+                "uk": false,
                 "us": true
             },
             {
                 "text": "Extremely tight trousers.",
-                "uk": true,
                 "ca": false,
+                "uk": true,
                 "us": false
             },
             {
                 "text": "Fading away into nothingness.",
-                "uk": false,
                 "ca": false,
+                "uk": false,
                 "us": true
             },
             {
                 "text": "Faffing about.",
-                "uk": true,
                 "ca": false,
+                "uk": true,
                 "us": false
             },
             {
                 "text": "Famine.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "Fancy Feast&reg;.",
-                "uk": false,
                 "ca": true,
+                "uk": false,
                 "us": true
             },
             {
                 "text": "Farting and walking away.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "Fear itself.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
+                "us": true
+            },
+            {
+                "text": "Feeding a man a pie made of his own children.",
+                "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "Fiery poops.",
-                "uk": false,
                 "ca": true,
+                "uk": false,
                 "us": true
             },
             {
                 "text": "Figgy pudding.",
-                "uk": false,
                 "ca": false,
+                "uk": false,
                 "us": true
             },
             {
                 "text": "Finger painting.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "Fingering.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "Firing a rifle into the air while balls deep in a squealing hog.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "Five litres of Special Brew.",
-                "uk": true,
                 "ca": false,
+                "uk": true,
                 "us": false
             },
             {
                 "text": "Five-Dollar Footlongs&trade;.",
-                "uk": false,
                 "ca": true,
+                "uk": false,
                 "us": true
             },
             {
                 "text": "Flesh-eating bacteria.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "Flightless birds.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "Flying sex snakes.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "Foreskin.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "Former President George W. Bush.",
-                "uk": false,
                 "ca": true,
+                "uk": false,
                 "us": true
             },
             {
                 "text": "Free samples.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "Friction.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "Friendly fire.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "Frolicking.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "Full frontal nudity.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "Funky fresh rhymes.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "Gandhi.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "Gary Glitter.",
-                "uk": true,
                 "ca": false,
+                "uk": true,
                 "us": false
             },
             {
                 "text": "Geese.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "Genghis Khan.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": false
             },
             {
                 "text": "Gentleman's Relish&reg;.",
-                "uk": true,
                 "ca": false,
+                "uk": true,
                 "us": false
             },
             {
                 "text": "Genuine human connection.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "German dungeon porn.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "Germans on holiday.",
-                "uk": true,
                 "ca": false,
+                "uk": true,
                 "us": false
             },
             {
                 "text": "Getting crushed by a vending machine.",
-                "uk": false,
                 "ca": false,
+                "uk": false,
                 "us": true
             },
             {
                 "text": "Getting married, having a few kids, buying some stuff, retiring to Florida, and dying.",
-                "uk": false,
                 "ca": false,
+                "uk": false,
                 "us": true
             },
             {
                 "text": "Getting naked and watching CBeebies.",
-                "uk": true,
                 "ca": false,
+                "uk": true,
                 "us": false
             },
             {
                 "text": "Getting naked and watching Nickelodeon.",
-                "uk": false,
                 "ca": true,
+                "uk": false,
                 "us": true
             },
             {
                 "text": "Getting pregnant again.",
-                "uk": false,
                 "ca": false,
+                "uk": false,
                 "us": true
             },
             {
                 "text": "Getting really high.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "Getting so angry that you pop a boner.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "Getting wed, having a few kids, taking some pictures, retiring to the south of France, and dying.",
-                "uk": true,
                 "ca": false,
+                "uk": true,
                 "us": false
             },
             {
                 "text": "Ghosts.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "Giving 110%",
-                "uk": true,
                 "ca": false,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "Giving birth to the Antichrist.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "Gloryholes.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "GoGurt&reg;.",
-                "uk": false,
                 "ca": false,
+                "uk": false,
                 "us": true
             },
             {
                 "text": "Goblins.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "God.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "Grandma.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "Grave robbing.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "Growing a pair.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "Haggis.",
-                "uk": true,
                 "ca": false,
+                "uk": true,
                 "us": false
             },
             {
                 "text": "Half-assed foreplay.",
-                "uk": false,
                 "ca": true,
+                "uk": false,
                 "us": true
             },
             {
                 "text": "Harry Potter erotica.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "Having anuses for eyes.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "Having big dreams but no realistic way to achieve them.",
-                "uk": false,
                 "ca": false,
+                "uk": false,
                 "us": true
             },
             {
                 "text": "Heartwarming orphans.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "Helplessly giggling at the mention of Hutus and Tutsis.",
-                "uk": false,
                 "ca": true,
+                "uk": false,
                 "us": false
             },
             {
                 "text": "Her Majesty, Queen Elizabeth II.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "Heritage minutes.",
-                "uk": false,
                 "ca": true,
+                "uk": false,
                 "us": false
             },
             {
                 "text": "Heteronormativity.",
-                "uk": false,
                 "ca": true,
+                "uk": false,
                 "us": true
             },
             {
                 "text": "Hip hop jewels.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": false
             },
             {
                 "text": "Holding down a child and farting all over him.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "Home video of Oprah sobbing into a Lean Cuisine&reg;.",
-                "uk": false,
                 "ca": true,
+                "uk": false,
                 "us": false
             },
             {
                 "text": "Homeless people.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "Homo milk.",
-                "uk": false,
                 "ca": true,
+                "uk": false,
                 "us": false
             },
             {
                 "text": "Hope.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "Hormone injections.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "Horrifying laser hair removal accidents.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "Horse meat.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "Hospice care.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "Hot Pockets&reg;.",
-                "uk": false,
                 "ca": false,
+                "uk": false,
                 "us": true
             },
             {
                 "text": "Hot cheese.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "Hot people.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "However much weed $20 can buy.",
-                "uk": false,
                 "ca": false,
+                "uk": false,
                 "us": true
             },
             {
                 "text": "Hurling one's body down a hill in pursuit of a wheel of cheese.",
-                "uk": true,
                 "ca": false,
+                "uk": true,
                 "us": false
             },
             {
                 "text": "Hurricane Katrina.",
-                "uk": false,
                 "ca": true,
+                "uk": false,
                 "us": false
             },
             {
                 "text": "Inappropriate yodeling.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "Incest.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "Inserting a Mason jar into my anus.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "Invading Poland.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
+                "us": true
+            },
+            {
+                "text": "Ironically buying a trucker hat and then ironically being a trucker for 38 years.",
+                "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "Italians.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "Jade Goody's cancerous remains.",
-                "uk": true,
                 "ca": false,
+                "uk": true,
                 "us": false
             },
             {
                 "text": "Jedward.",
-                "uk": true,
                 "ca": false,
+                "uk": true,
                 "us": false
             },
             {
                 "text": "Jehovah's Witnesses.",
-                "uk": true,
                 "ca": false,
+                "uk": true,
                 "us": false
             },
             {
                 "text": "Jennifer Lawrence.",
-                "uk": false,
                 "ca": false,
+                "uk": false,
                 "us": true
             },
             {
                 "text": "Jerking off into a pool of children's tears.",
-                "uk": false,
                 "ca": true,
+                "uk": false,
                 "us": true
             },
             {
                 "text": "Jewish fraternities.",
-                "uk": false,
                 "ca": true,
+                "uk": false,
                 "us": true
             },
             {
                 "text": "Jimmy Savile.",
-                "uk": true,
                 "ca": false,
+                "uk": true,
                 "us": false
             },
             {
                 "text": "Jobs.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "Joe Biden.",
-                "uk": false,
                 "ca": false,
+                "uk": false,
                 "us": true
             },
             {
                 "text": "Judge Judy.",
-                "uk": false,
                 "ca": true,
+                "uk": false,
                 "us": true
             },
             {
                 "text": "Just touching David Beckham's hair.",
-                "uk": true,
                 "ca": false,
+                "uk": true,
                 "us": false
             },
             {
                 "text": "Justin Bieber.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "Kamikaze pilots.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "Kanye West.",
-                "uk": false,
                 "ca": true,
+                "uk": false,
                 "us": true
             },
             {
                 "text": "Keanu Reeves.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "Kids with ass cancer.",
-                "uk": false,
                 "ca": true,
+                "uk": false,
                 "us": true
             },
             {
                 "text": "Kids with bum cancer.",
-                "uk": true,
                 "ca": false,
+                "uk": true,
                 "us": false
             },
             {
                 "text": "LYNX&reg; Body Spray.",
-                "uk": true,
                 "ca": false,
+                "uk": true,
                 "us": false
             },
             {
                 "text": "Lactation.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "Lady Gaga.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "Lance Armstrong's missing testicle.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "Land mines.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "Laying an egg.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "Leaked footage of Kate Middleton's colonoscopy.",
-                "uk": true,
                 "ca": false,
+                "uk": true,
                 "us": false
             },
             {
                 "text": "Leprosy.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "Licking things to claim them as your own.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "Lockjaw.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "Lumberjack fantasies.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "Lunchables&trade;.",
-                "uk": false,
                 "ca": true,
+                "uk": false,
                 "us": true
             },
             {
                 "text": "Madeleine McCann.",
-                "uk": true,
                 "ca": false,
+                "uk": true,
                 "us": false
             },
             {
                 "text": "Magnets.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "Making a pouty face.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "Man meat.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "Masturbation.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "Maureen of Blackpool, Reader's Wife of the Year 1988.",
-                "uk": true,
                 "ca": false,
+                "uk": true,
                 "us": false
             },
             {
                 "text": "Me time.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "MechaHitler.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "Men.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "Menstrual rage.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "Michael Jackson.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "Michelle Obama's arms.",
-                "uk": false,
                 "ca": true,
+                "uk": false,
                 "us": true
             },
             {
                 "text": "Miley Cyrus at 55.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "Millwall fans.",
-                "uk": true,
                 "ca": false,
+                "uk": true,
                 "us": false
             },
             {
                 "text": "Mining accidents.",
-                "uk": true,
                 "ca": false,
+                "uk": true,
                 "us": false
             },
             {
                 "text": "Morgan Freeman's voice.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "Mouth herpes.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "Mr. Clean, right behind you.",
-                "uk": false,
                 "ca": true,
+                "uk": false,
                 "us": true
             },
             {
                 "text": "Mr. Dressup.",
-                "uk": false,
                 "ca": true,
+                "uk": false,
                 "us": false
             },
             {
                 "text": "Muhammad (Peace Be Upon Him).",
-                "uk": false,
                 "ca": false,
+                "uk": false,
                 "us": true
             },
             {
                 "text": "Muhammad (Praise Be Unto Him).",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": false
             },
             {
                 "text": "Multiple stab wounds.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "Mutually assured destruction.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "My balls on your face.",
-                "uk": false,
                 "ca": false,
+                "uk": false,
                 "us": true
             },
             {
                 "text": "My black ass.",
-                "uk": false,
                 "ca": true,
+                "uk": false,
                 "us": true
             },
             {
                 "text": "My collection of high-tech sex toys.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "My ex-wife.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "My genitals.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "My humps.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "My inner demons.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "My relationship status.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "My sex life.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "My soul.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "My vagina.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "Naked News.",
-                "uk": false,
                 "ca": true,
+                "uk": false,
                 "us": false
             },
             {
                 "text": "Natalie Portman.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": false
             },
             {
                 "text": "Natural male enhancement.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "Natural selection.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "Nazis.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "Necrophilia.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "New Age music.",
-                "uk": true,
                 "ca": false,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "Newfies.",
-                "uk": false,
                 "ca": true,
+                "uk": false,
                 "us": false
             },
             {
                 "text": "Nickelback.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "Nicolas Cage.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "Nipple blades.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "Not giving a shit about the Third World.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "Not reciprocating oral sex.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "Not wearing pants.",
-                "uk": false,
                 "ca": true,
+                "uk": false,
                 "us": true
             },
             {
                 "text": "Not wearing trousers.",
-                "uk": true,
                 "ca": false,
+                "uk": true,
                 "us": false
             },
             {
                 "text": "Object permanence.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "Old-people smell.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "One Direction's supple, hairless bodies.",
-                "uk": true,
                 "ca": false,
+                "uk": true,
                 "us": false
             },
             {
                 "text": "One trillion dollars.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "Oompa-Loompas.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "Opposable thumbs.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "Our first chimpanzee President.",
-                "uk": false,
                 "ca": false,
+                "uk": false,
                 "us": true
             },
             {
                 "text": "Overcompensation.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "Pac-Man uncontrollably guzzling cum.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "Paedophiles.",
-                "uk": true,
                 "ca": false,
+                "uk": true,
                 "us": false
             },
             {
                 "text": "Panda sex.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "Passive-aggressive Post-it notes.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "Pedophiles.",
-                "uk": false,
                 "ca": true,
+                "uk": false,
                 "us": true
             },
             {
                 "text": "Peeing a little bit.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "Penis breath.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "Penis envy.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "Perfunctory foreplay.",
-                "uk": true,
                 "ca": false,
+                "uk": true,
                 "us": false
             },
             {
                 "text": "Permanent Orgasm-Face Disorder.",
-                "uk": false,
                 "ca": false,
+                "uk": false,
                 "us": true
             },
             {
                 "text": "Pictures of boobs.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "Pixelated bukkake.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "Police Brutality.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "Pooping back and forth.Forever.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "Pooping in a laptop and closing it.",
-                "uk": false,
                 "ca": false,
+                "uk": false,
                 "us": true
             },
             {
                 "text": "Poopy diapers.",
-                "uk": false,
                 "ca": true,
+                "uk": false,
                 "us": true
             },
             {
                 "text": "Poor life choices.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "Poor people.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "Poorly-timed Holocaust jokes.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "Poutine.",
-                "uk": false,
                 "ca": true,
+                "uk": false,
                 "us": false
             },
             {
                 "text": "Poverty.",
-                "uk": false,
                 "ca": false,
+                "uk": false,
                 "us": true
             },
             {
                 "text": "Powerful thighs.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "Prancing.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": false
             },
             {
                 "text": "Praying the gay away.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "Preteens.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "Pretending to care.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "Pronouncing the names of northern Welsh towns.",
-                "uk": true,
                 "ca": false,
+                "uk": true,
                 "us": false
             },
             {
                 "text": "Puberty.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "Public ridicule.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": false
             },
             {
                 "text": "Pulling out.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "Punching a congressman in the face.",
-                "uk": false,
                 "ca": false,
+                "uk": false,
                 "us": true
             },
             {
                 "text": "Puppies!",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "Queefing.",
-                "uk": false,
                 "ca": true,
+                "uk": false,
                 "us": true
             },
             {
                 "text": "Queen Elizabeth's immaculate anus.",
-                "uk": true,
                 "ca": false,
+                "uk": true,
                 "us": false
             },
             {
                 "text": "Racially-biased SAT questions.",
-                "uk": false,
                 "ca": false,
+                "uk": false,
                 "us": true
             },
             {
                 "text": "Racism.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "Rap music.",
-                "uk": false,
                 "ca": false,
+                "uk": false,
                 "us": true
             },
             {
                 "text": "Raptor attacks.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "Repression.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "Republicans.",
-                "uk": false,
                 "ca": true,
+                "uk": false,
                 "us": true
             },
             {
                 "text": "Riding off into the sunset.",
-                "uk": true,
                 "ca": false,
+                "uk": true,
                 "us": false
             },
             {
                 "text": "Ripping off the Beatles.",
-                "uk": true,
                 "ca": false,
+                "uk": true,
                 "us": false
             },
             {
                 "text": "Road head.",
-                "uk": false,
                 "ca": true,
+                "uk": false,
                 "us": true
             },
             {
                 "text": "Rob Ford.",
-                "uk": false,
                 "ca": true,
+                "uk": false,
                 "us": false
             },
             {
                 "text": "Robert Downey Jr.",
-                "uk": false,
                 "ca": true,
+                "uk": false,
                 "us": true
             },
             {
                 "text": "RoboCop.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "Ronald Reagan.",
-                "uk": false,
                 "ca": false,
+                "uk": false,
                 "us": true
             },
             {
                 "text": "Rubbing Boris Johnson's belly until he falls asleep.",
-                "uk": true,
                 "ca": false,
+                "uk": true,
                 "us": false
             },
             {
                 "text": "Running out of semen.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "Rush Limbaugh's soft, shitty body.",
-                "uk": false,
                 "ca": false,
+                "uk": false,
                 "us": true
             },
             {
                 "text": "Same-sex ice dancing.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": false
             },
             {
                 "text": "Saying &quot;I love you.&quot;",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "Scalping the Milkybar Kid.",
-                "uk": true,
                 "ca": false,
+                "uk": true,
                 "us": false
             },
             {
                 "text": "Schmirler the Curler.",
-                "uk": false,
                 "ca": true,
+                "uk": false,
                 "us": false
             },
             {
                 "text": "Science.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "Scientology.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "Scousers.",
-                "uk": true,
                 "ca": false,
+                "uk": true,
                 "us": false
             },
             {
                 "text": "Sean Connery.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "Sean Penn.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "Seeing Grandma naked.",
-                "uk": false,
                 "ca": true,
+                "uk": false,
                 "us": true
             },
             {
                 "text": "Seeing Granny naked.",
-                "uk": true,
                 "ca": false,
+                "uk": true,
                 "us": false
             },
             {
                 "text": "Seething with quiet resentment.",
-                "uk": false,
                 "ca": false,
+                "uk": false,
                 "us": true
             },
             {
                 "text": "Self-loathing.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "Selling crack to children.",
-                "uk": false,
                 "ca": false,
+                "uk": false,
                 "us": true
             },
             {
                 "text": "Seppuku.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "Serfdom.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "Sex with Patrick Stewart.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "Sexual peeing.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "Sexual tension.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "Sexy pillow fights.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "Shapeshifters.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "Shaquille O'Neal's acting career.",
-                "uk": false,
                 "ca": true,
+                "uk": false,
                 "us": true
             },
             {
                 "text": "Shiny objects.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "Shitting out a perfect Cumberland sausage.",
-                "uk": true,
                 "ca": false,
+                "uk": true,
                 "us": false
             },
             {
                 "text": "Silence.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "Skeletor.",
-                "uk": false,
                 "ca": true,
+                "uk": false,
                 "us": true
             },
             {
                 "text": "Slapping a biscuit out of an orphan's mouth.",
-                "uk": true,
                 "ca": false,
+                "uk": true,
                 "us": false
             },
             {
                 "text": "Smallpox blankets.",
-                "uk": false,
                 "ca": true,
+                "uk": false,
                 "us": true
             },
             {
                 "text": "Smegma.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "Sniffing glue.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "Snotsicles.",
-                "uk": false,
                 "ca": true,
+                "uk": false,
                 "us": false
             },
             {
                 "text": "Solving problems with violence.",
-                "uk": false,
                 "ca": false,
+                "uk": false,
                 "us": true
             },
             {
                 "text": "Some bloody peace and quiet.",
-                "uk": true,
                 "ca": false,
+                "uk": true,
                 "us": false
             },
             {
                 "text": "Some god damn peace and quiet.",
-                "uk": false,
                 "ca": true,
+                "uk": false,
                 "us": true
             },
             {
                 "text": "Soup that is too hot.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "Spaniards.",
-                "uk": true,
                 "ca": false,
+                "uk": true,
                 "us": false
             },
             {
                 "text": "Spectacular abs.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "Sperm whales.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "Spontaneous human combustion.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "Stalin.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "Stephen Harper.",
-                "uk": false,
                 "ca": true,
+                "uk": false,
                 "us": false
             },
             {
                 "text": "Stephen Hawking talking dirty.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "Still being a virgin.",
-                "uk": false,
                 "ca": false,
+                "uk": false,
                 "us": true
             },
             {
                 "text": "Strong female characters.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "Sunshine and rainbows.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "Surprise sex!",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "Sweet, sweet vengeance.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "Switching to Geico&reg;.",
-                "uk": false,
                 "ca": true,
+                "uk": false,
                 "us": true
             },
             {
                 "text": "Swooping.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "Synergistic management solutions.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "Syrupy sex with a maple tree.",
-                "uk": false,
                 "ca": true,
+                "uk": false,
                 "us": false
             },
             {
                 "text": "Take-backsies.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": false
             },
             {
                 "text": "Taking off your shirt.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "Tap dancing like there's no tomorrow.",
-                "uk": false,
                 "ca": false,
+                "uk": false,
                 "us": true
             },
             {
                 "text": "Tasteful sideboob.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "Teaching a robot to love.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "Teenage pregnancy.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "Tentacle porn.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "Terry Fox's prosthetic leg.",
-                "uk": false,
                 "ca": true,
+                "uk": false,
                 "us": false
             },
             {
                 "text": "Testicular torsion.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "The American Dream",
-                "uk": true,
                 "ca": false,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "The Amish.",
-                "uk": false,
                 "ca": true,
+                "uk": false,
                 "us": true
             },
             {
                 "text": "The BNP.",
-                "uk": true,
                 "ca": false,
+                "uk": true,
                 "us": false
             },
             {
                 "text": "The Big Bang.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "The Black Death.",
-                "uk": true,
                 "ca": false,
+                "uk": true,
                 "us": false
             },
             {
                 "text": "The Blood of Christ.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "The Boy Scouts of America.",
-                "uk": false,
                 "ca": true,
+                "uk": false,
                 "us": true
             },
             {
                 "text": "The Care Bear Stare.",
-                "uk": false,
                 "ca": true,
+                "uk": false,
                 "us": true
             },
             {
                 "text": "The Chinese gymnastics team.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "The Devil Himself.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "The FLQ",
-                "uk": false,
                 "ca": true,
+                "uk": false,
                 "us": false
             },
             {
                 "text": "The Force.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "The French.",
-                "uk": true,
                 "ca": false,
+                "uk": true,
                 "us": false
             },
             {
                 "text": "The Great Depression.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "The Hamburglar.",
-                "uk": false,
                 "ca": true,
+                "uk": false,
                 "us": true
             },
             {
                 "text": "The Hillsborough Disaster.",
-                "uk": true,
                 "ca": false,
+                "uk": true,
                 "us": false
             },
             {
                 "text": "The Holy Bible.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "The Honey Monster.",
-                "uk": true,
                 "ca": false,
+                "uk": true,
                 "us": false
             },
             {
                 "text": "The Hustle.",
-                "uk": false,
                 "ca": true,
+                "uk": false,
                 "us": true
             },
             {
                 "text": "The Jews.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "The KKK",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "The Kool-Aid Man.",
-                "uk": false,
                 "ca": true,
+                "uk": false,
                 "us": true
             },
             {
                 "text": "The Little Engine That Could.",
-                "uk": false,
                 "ca": true,
+                "uk": false,
                 "us": true
             },
             {
                 "text": "The Make-A-Wish&reg; Foundation.",
-                "uk": false,
                 "ca": true,
+                "uk": false,
                 "us": true
             },
             {
                 "text": "The North.",
-                "uk": true,
                 "ca": false,
+                "uk": true,
                 "us": false
             },
             {
                 "text": "The Official Languages Act. La Loi sur les langues officielles.",
-                "uk": false,
                 "ca": true,
+                "uk": false,
                 "us": false
             },
             {
                 "text": "The Patriarchy.",
-                "uk": false,
                 "ca": true,
+                "uk": false,
                 "us": true
             },
             {
                 "text": "The Pope.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "The Rapture.",
-                "uk": false,
                 "ca": true,
+                "uk": false,
                 "us": true
             },
             {
                 "text": "The Rev. Dr. Martin Luther King, Jr.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "The Royal Canadian Mounted Police.",
-                "uk": false,
                 "ca": true,
+                "uk": false,
                 "us": false
             },
             {
                 "text": "The Scouts.",
-                "uk": true,
                 "ca": false,
+                "uk": true,
                 "us": false
             },
             {
                 "text": "The South.",
-                "uk": false,
                 "ca": true,
+                "uk": false,
                 "us": true
             },
             {
                 "text": "The Stig.",
-                "uk": true,
                 "ca": false,
+                "uk": true,
                 "us": false
             },
             {
                 "text": "The Tempur-Pedic&reg; Swedish Sleep System&trade;.",
-                "uk": false,
                 "ca": true,
+                "uk": false,
                 "us": false
             },
             {
                 "text": "The Three-Fifths compromise.",
-                "uk": false,
                 "ca": false,
+                "uk": false,
                 "us": true
             },
             {
                 "text": "The Trail of Tears",
-                "uk": false,
                 "ca": false,
+                "uk": false,
                 "us": true
             },
             {
                 "text": "The Underground Railroad.",
-                "uk": false,
                 "ca": true,
+                "uk": false,
                 "us": true
             },
             {
                 "text": "The World of Warcraft.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "The art of seduction.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": false
             },
             {
                 "text": "The bloody Welsh.",
-                "uk": true,
                 "ca": false,
+                "uk": true,
                 "us": false
             },
             {
                 "text": "The chronic.",
-                "uk": false,
                 "ca": true,
+                "uk": false,
                 "us": false
             },
             {
                 "text": "The clitoris.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "The cool, refreshing taste of Pepsi&reg;.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "The end of days.",
-                "uk": true,
                 "ca": false,
+                "uk": true,
                 "us": false
             },
             {
                 "text": "The entire Mormon Tabernacle Choir.",
-                "uk": false,
                 "ca": true,
+                "uk": false,
                 "us": true
             },
             {
                 "text": "The entire cast of Downton Abbey.",
-                "uk": true,
                 "ca": false,
+                "uk": true,
                 "us": false
             },
             {
                 "text": "The female orgasm.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "The folly of man.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": false
             },
             {
                 "text": "The gays.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "The glass ceiling.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "The hardworking Mexican.",
-                "uk": false,
                 "ca": true,
+                "uk": false,
                 "us": true
             },
             {
                 "text": "The heart of a child.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "The homosexual agenda.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "The inevitable heat death of the universe.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "The invisible hand.",
-                "uk": false,
                 "ca": true,
+                "uk": false,
                 "us": true
             },
             {
                 "text": "The light of a billion suns.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": false
             },
             {
                 "text": "The milkman.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "The miracle of childbirth.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "The morbidly obese.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "The penny whistle solo from &quot;My Heart Will Go On&quot;.",
-                "uk": false,
                 "ca": true,
+                "uk": false,
                 "us": true
             },
             {
                 "text": "The petty troubles of the landed gentry.",
-                "uk": true,
                 "ca": false,
+                "uk": true,
                 "us": false
             },
             {
                 "text": "The pirate's life.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "The placenta.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "The profoundly handicapped.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "The rhythms of Africa.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "The screams...the terrible screams.",
-                "uk": false,
                 "ca": false,
+                "uk": false,
                 "us": true
             },
             {
                 "text": "The sudden appearance of the Go Compare man.",
-                "uk": true,
                 "ca": false,
+                "uk": true,
                 "us": false
             },
             {
                 "text": "The terrorists.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "The token minority.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": false
             },
             {
                 "text": "The true meaning of Christmas.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "The unstoppable tide of Islam.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "The violation of our most basic human rights.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "The way James Bond treats women.",
-                "uk": true,
                 "ca": false,
+                "uk": true,
                 "us": false
             },
             {
                 "text": "The wonders of the Orient.",
-                "uk": false,
                 "ca": true,
+                "uk": false,
                 "us": true
             },
             {
                 "text": "The wrath of Vladimir Putin.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "Third base.",
-                "uk": false,
                 "ca": true,
+                "uk": false,
                 "us": true
             },
             {
                 "text": "This year's mass shooting.",
-                "uk": false,
                 "ca": false,
+                "uk": false,
                 "us": true
             },
             {
                 "text": "Three dicks at the same time.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "Throwing a virgin into a volcano.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "Tom Cruise.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "Toni Morrison's vagina.",
-                "uk": false,
                 "ca": true,
+                "uk": false,
                 "us": true
             },
             {
                 "text": "Tories.",
-                "uk": true,
                 "ca": false,
+                "uk": true,
                 "us": false
             },
             {
                 "text": "Touching a pug right on his penis.",
-                "uk": false,
                 "ca": false,
+                "uk": false,
                 "us": true
             },
             {
                 "text": "Trench foot.",
-                "uk": true,
                 "ca": false,
+                "uk": true,
                 "us": false
             },
             {
                 "text": "Two midgets shitting into a bucket.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "Unfathomable stupidity.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "Used knickers.",
-                "uk": true,
                 "ca": false,
+                "uk": true,
                 "us": false
             },
             {
                 "text": "Used panties.",
-                "uk": false,
                 "ca": true,
+                "uk": false,
                 "us": true
             },
             {
                 "text": "Vehicular manslaughter.",
-                "uk": false,
                 "ca": true,
+                "uk": false,
                 "us": true
             },
             {
                 "text": "Viagra&reg;.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "Vigilante justice.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": false
             },
             {
                 "text": "Vigorous jazz hands.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "Vikings.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "Waiting till marriage.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "Waking up half-naked in a Denny's parking lot.",
-                "uk": false,
                 "ca": true,
+                "uk": false,
                 "us": true
             },
             {
                 "text": "Waking up half-naked in a Little Chef car park.",
-                "uk": true,
                 "ca": false,
+                "uk": true,
                 "us": false
             },
             {
                 "text": "Wanking into a pool of children's tears.",
-                "uk": true,
                 "ca": false,
+                "uk": true,
                 "us": false
             },
             {
                 "text": "Wet dreams.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "When you fart and a little bit comes out.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": false
             },
             {
                 "text": "Whipping it out.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "White people.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "White privilege.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "White-man scalps.",
-                "uk": false,
                 "ca": true,
+                "uk": false,
                 "us": true
             },
             {
                 "text": "Wifely duties.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "William Shatner.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "Winking at old people.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "Wiping her bum.",
-                "uk": true,
                 "ca": false,
+                "uk": true,
                 "us": false
             },
             {
                 "text": "Wiping her butt.",
-                "uk": false,
                 "ca": true,
+                "uk": false,
                 "us": true
             },
             {
                 "text": "Women in yoghurt adverts.",
-                "uk": true,
                 "ca": false,
+                "uk": true,
                 "us": false
             },
             {
                 "text": "Women in yogurt commercials.",
-                "uk": false,
                 "ca": true,
+                "uk": false,
                 "us": true
             },
             {
                 "text": "Women's suffrage.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "World peace.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "YOU MUST CONSTRUCT ADDITIONAL PYLONS.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": false
             },
             {
                 "text": "Yeast.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             },
             {
                 "text": "Your weird brother.",
-                "uk": true,
                 "ca": true,
+                "uk": true,
                 "us": true
             }
         ]

@@ -1,0 +1,118 @@
+{
+    "name": "Science Pack",
+    "description": "The Science Pack is a pack about the hit system of knowledge known worldwide as \"science.\"",
+    "version": "1.0",
+    "slug": "SCI",
+    "calls": 7,
+    "responses": 23,
+    "cards": {
+        "calls": [
+            {
+                "text": "A study published in Nature this week found that _ is good for you in small doses.",
+                "draw": 0,
+                "pick": 1
+            },
+            {
+                "text": "Hey there, Young Scientists! Put on your labcoats and strap on your safety goggles, because today we're learning about _!",
+                "draw": 0,
+                "pick": 1
+            },
+            {
+                "text": "In an attempt to recreate conditions just after the Big Bang, physicists at the LHC are observing collisions between _ and _.",
+                "draw": 0,
+                "pick": 2
+            },
+            {
+                "text": "In line with our predictions, we find a robust correlation between _ and _ (p&lt;.05).",
+                "draw": 0,
+                "pick": 2
+            },
+            {
+                "text": "In what's being hailed as a major breakthrough, scientists have synthesized _ in the lab.",
+                "draw": 0,
+                "pick": 1
+            },
+            {
+                "text": "Today on Mythbusters, we found out how long _ can withstand _.",
+                "draw": 0,
+                "pick": 2
+            },
+            {
+                "text": "What really killed the dinosaurs?",
+                "draw": 0,
+                "pick": 1
+            }
+        ],
+        "responses": [
+            {
+                "text": "3.7 billion years of evolution."
+            },
+            {
+                "text": "A 0.7 waist-to-hip ratio."
+            },
+            {
+                "text": "A supermassive black hole."
+            },
+            {
+                "text": "Achieving reproductive success."
+            },
+            {
+                "text": "Being knowledgeable in a narrow domain that nobody understands or cares about."
+            },
+            {
+                "text": "David Attenborough watching us mate."
+            },
+            {
+                "text": "Developing secondary sex characteristics."
+            },
+            {
+                "text": "Driving into a tornado to learn about tornadoes."
+            },
+            {
+                "text": "Electroejaculating a capuchin monkey."
+            },
+            {
+                "text": "Evolving a labyrinthine vagina."
+            },
+            {
+                "text": "Explosive decompression."
+            },
+            {
+                "text": "Failing the Turing test."
+            },
+            {
+                "text": "Fun and interesting facts about rocks."
+            },
+            {
+                "text": "Getting really worred about global warming for a few seconds."
+            },
+            {
+                "text": "Infinity."
+            },
+            {
+                "text": "Insufficient serotonin."
+            },
+            {
+                "text": "Oxytocin release via manual stimulation of the nipples."
+            },
+            {
+                "text": "Photosynthesis."
+            },
+            {
+                "text": "Reconciling quantum theory with general relativity."
+            },
+            {
+                "text": "Slowly evaporating."
+            },
+            {
+                "text": "The Sun engulfing the Earth."
+            },
+            {
+                "text": "The quiet majesty of the sea turtle."
+            },
+            {
+                "text": "Uranus."
+            }
+        ]
+    }
+}

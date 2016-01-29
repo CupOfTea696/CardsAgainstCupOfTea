@@ -55,6 +55,77 @@ Route::group(['middleware' => ['web', 'auth']], function () {
 });
 
 Route::get('sql', function() {
+    $json = Storage::get('decks/cards-against-humanity.json');
+    $main = json_decode($json);
+    
+    
+    $json = Storage::get('decks/retail.json');
+    $retail = json_decode($json);
+    
+    $main->cards->calls = array_merge($main->cards->calls, $retail->cards->calls);
+    $main->cards->responses = array_merge($main->cards->responses, $retail->cards->responses);
+    
+    $main->calls = count($main->cards->calls);
+    $main->responses = count($main->cards->responses);
+    
+    $sortCards = function ($a, $b) {
+        $a = (array) $a;
+        $b = (array) $b;
+        
+        if ($a['text'] == $b['text']) {
+            return 0;
+        }
+        
+        return $a['text'] < $b['text'] ? -1 : 1;
+    };
+    
+    foreach ($main->cards->calls as &$card) {
+        $new = [];
+        
+        $new['text'] = $card->text;
+        if (isset($card->ca)) {
+            $new['ca'] = $card->ca;
+            $new['uk'] = $card->uk;
+            $new['us'] = $card->us;
+        } else {
+            $new['ca'] = true;
+            $new['uk'] = true;
+            $new['us'] = true;
+        }
+        $new['draw'] = $card->draw;
+        $new['pick'] = $card->pick;
+        
+        $card = $new;
+    }
+    
+    foreach ($main->cards->responses as &$card) {
+        $new = [];
+        
+        $new['text'] = $card->text;
+        if (isset($card->ca)) {
+            $new['ca'] = $card->ca;
+            $new['uk'] = $card->uk;
+            $new['us'] = $card->us;
+        } else {
+            $new['ca'] = true;
+            $new['uk'] = true;
+            $new['us'] = true;
+        }
+        
+        $card = $new;
+    }
+    
+    usort($main->cards->calls, $sortCards);
+    usort($main->cards->responses, $sortCards);
+    
+    $filename = str_slug(html_entity_decode($main->name)) . '.json';
+    
+    Storage::put('decks/' . $filename, json_encode($main, JSON_PRETTY_PRINT));
+    
+    return response()->json($main);
+    
+    die();
+    
     // Decks we need to grab from the xyzzy db
     $slugs = [
         1 => "&#x2744;",
@@ -82,10 +153,10 @@ Route::get('sql', function() {
     DB::setDefaultConnection('xyzzy');
 
     //$set = DB::table('card_sets')->select('name', 'description', 'watermark as slug')->where('watermark', 'HOCAH')->orderBy('name', 'asc')->first();
-    $set = (object) []; 
-    $set->name = 'xxxxx';
-    $set->description = 'The official Sixth Expansion.';
-    $set->slug = 'X6';
+    $set = (object) [];
+    $set->name = 'RETAIL';
+    $set->description = 'This expansion for Cards Against Humanity is an Indiegogo reward for people who backed Season 3 of TableTop.';
+    $set->slug = 'TT';
     
         $getCards = function ($card) {
             $card->text = preg_replace('/_+/', '_', $card->text);
@@ -128,7 +199,7 @@ Route::get('sql', function() {
     
     $crawler = new Symfony\Component\DomCrawler\Crawler(file_get_contents(storage_path('CAH/CAH Expansions - White.html')));
     $crawler = $crawler->filter('table tbody tr')->reduce(function ($node, $i) {
-        return $i > 239 && $i < 258;
+        return $i > 704 && $i < 710;
     });
     
     $responses = $crawler->each(function($node, $i) {
@@ -146,7 +217,7 @@ Route::get('sql', function() {
     //
     $crawler = new Symfony\Component\DomCrawler\Crawler(file_get_contents(storage_path('CAH/CAH Expansions - Black.html')));
     $crawler = $crawler->filter('table tbody tr')->reduce(function ($node, $i) {
-        return $i > 100 && $i < 112;
+        return $i > 272 && $i < 277;
     });
     
     $calls = $crawler->each(function($node, $i) {
@@ -164,6 +235,7 @@ Route::get('sql', function() {
         $card['text'] = preg_replace('/_+/', '_', $card['text']);
         $card['text'] = str_replace(['<br/>', '<i>', '</i>'], ['<br>', '<em>', '</em>'], $card['text']);
         $card['text'] = htmlentities($card['text']);
+        $card['text'] = str_replace('A Mexican child trapped inside of a burrito.', 'Oreos for dinner.', $card['text']);
         $card['text'] = str_replace(['&nbsp;', '&rsquo;'], [' ', "'"], $card['text']);
         $card['text'] = trim($card['text']);
         
