@@ -55,82 +55,8 @@ Route::group(['middleware' => ['web', 'auth']], function () {
 });
 
 Route::get('sql', function() {
-    $json = Storage::get('decks/cards-against-humanity.json');
-    $main = json_decode($json);
     
-    
-    $json = Storage::get('decks/retail.json');
-    $retail = json_decode($json);
-    
-    $main->cards->calls = array_merge($main->cards->calls, $retail->cards->calls);
-    $main->cards->responses = array_merge($main->cards->responses, $retail->cards->responses);
-    
-    $main->calls = count($main->cards->calls);
-    $main->responses = count($main->cards->responses);
-    
-    $sortCards = function ($a, $b) {
-        $a = (array) $a;
-        $b = (array) $b;
-        
-        if ($a['text'] == $b['text']) {
-            return 0;
-        }
-        
-        return $a['text'] < $b['text'] ? -1 : 1;
-    };
-    
-    foreach ($main->cards->calls as &$card) {
-        $new = [];
-        
-        $new['text'] = $card->text;
-        if (isset($card->ca)) {
-            $new['ca'] = $card->ca;
-            $new['uk'] = $card->uk;
-            $new['us'] = $card->us;
-        } else {
-            $new['ca'] = true;
-            $new['uk'] = true;
-            $new['us'] = true;
-        }
-        $new['draw'] = $card->draw;
-        $new['pick'] = $card->pick;
-        
-        $card = $new;
-    }
-    
-    foreach ($main->cards->responses as &$card) {
-        $new = [];
-        
-        $new['text'] = $card->text;
-        if (isset($card->ca)) {
-            $new['ca'] = $card->ca;
-            $new['uk'] = $card->uk;
-            $new['us'] = $card->us;
-        } else {
-            $new['ca'] = true;
-            $new['uk'] = true;
-            $new['us'] = true;
-        }
-        
-        $card = $new;
-    }
-    
-    usort($main->cards->calls, $sortCards);
-    usort($main->cards->responses, $sortCards);
-    
-    $filename = str_slug(html_entity_decode($main->name)) . '.json';
-    
-    Storage::put('decks/' . $filename, json_encode($main, JSON_PRETTY_PRINT));
-    
-    return response()->json($main);
-    
-    die();
-    
-    // Decks we need to grab from the xyzzy db
-    $slugs = [
-        1 => "&#x2744;",
-        23 => "HBS",
-    ];
+    return;
     
     class Deck {
         public $name;
@@ -152,11 +78,11 @@ Route::get('sql', function() {
     // Grabbing decks fro, xyzzy
     DB::setDefaultConnection('xyzzy');
 
-    //$set = DB::table('card_sets')->select('name', 'description', 'watermark as slug')->where('watermark', 'HOCAH')->orderBy('name', 'asc')->first();
+//    $set = DB::table('card_sets')->select('name', 'description', 'watermark as slug')->where('watermark', 'HBS')->orderBy('name', 'asc')->first();
     $set = (object) [];
-    $set->name = 'RETAIL';
-    $set->description = 'This expansion for Cards Against Humanity is an Indiegogo reward for people who backed Season 3 of TableTop.';
-    $set->slug = 'TT';
+    $set->name = '8 Sensible Hanukah Gifts';
+    $set->description = 'This is Cards Against Humanity\'s Eight Sensible Gifts for Hanukkah, a seasonal promotion that we\'ve created to capture your attention and money.';
+    $set->slug = '&#x2721;';
     
         $getCards = function ($card) {
             $card->text = preg_replace('/_+/', '_', $card->text);
@@ -197,15 +123,15 @@ Route::get('sql', function() {
     // Main Deck - white
     //
     
-    $crawler = new Symfony\Component\DomCrawler\Crawler(file_get_contents(storage_path('CAH/CAH Expansions - White.html')));
+    $crawler = new Symfony\Component\DomCrawler\Crawler(file_get_contents(storage_path('CAH/CAH - Holiday Specials.html')));
     $crawler = $crawler->filter('table tbody tr')->reduce(function ($node, $i) {
-        return $i > 704 && $i < 710;
+        return $i > 122 && $i < 153;
     });
     
     $responses = $crawler->each(function($node, $i) {
         $node = $node->filter('td');
         
-        if ($node->count() > 1 && $node->eq(1)->text() && $node->eq(1)->text()) {
+        if ($node->count() > 1 && $node->eq(1)->text() && $node->eq(0)->text() == 'White') {
             return [
                 'text' => $node->eq(1)->text(),
             ];
@@ -215,18 +141,23 @@ Route::get('sql', function() {
     //
     // Main Deck - black
     //
-    $crawler = new Symfony\Component\DomCrawler\Crawler(file_get_contents(storage_path('CAH/CAH Expansions - Black.html')));
+    $crawler = new Symfony\Component\DomCrawler\Crawler(file_get_contents(storage_path('CAH/CAH - Holiday Specials.html')));
     $crawler = $crawler->filter('table tbody tr')->reduce(function ($node, $i) {
-        return $i > 272 && $i < 277;
+        return $i > 122 && $i < 153;
     });
     
     $calls = $crawler->each(function($node, $i) {
         $node = $node->filter('td');
         
-        if ($node->count() > 2 && $node->eq(1)->text() && $node->eq(1)->text()) {
+        if ($node->count() > 2 && $node->eq(1)->text() && $node->eq(0)->text() == 'Black') {
+            preg_match_all('/_+/', $node->eq(1)->text(), $matches);
+            $pick = count($matches[0]) ?: 1;
+            $draw = $pick > 2 ? 2 : 0;
+            $special = "PICK $pick, DRAW $draw";
+            
             return [
                 'text' => $node->eq(1)->text(),
-                'special' => $node->eq(2)->text(),
+                'special' => $special,
             ];
         }
     });

@@ -1,0 +1,116 @@
+{
+    "name": "10 Days or Whatever of Kwanzaa",
+    "description": "Cards Against Humanity's Ten Days or Whatever of Kwanzaa is a Seasonal Promotion&trade; that we've created to capture your attention and money.",
+    "version": "1.0",
+    "slug": "&#x1f56f;",
+    "calls": 6,
+    "responses": 24,
+    "cards": {
+        "calls": [
+            {
+                "text": "A curse upon thee! Many years from now, just when you think you're safe, _ shall turn into _.",
+                "draw": 0,
+                "pick": 2
+            },
+            {
+                "text": "Behold the Four Horsemen of the Apocalypse! War, Famine, Death, and _.",
+                "draw": 0,
+                "pick": 1
+            },
+            {
+                "text": "Dear Mom and Dad, Camp is fun. I like capture the flag. Yesterday, one of the older kids taught me about _. I love you, Casey",
+                "draw": 0,
+                "pick": 1
+            },
+            {
+                "text": "Honey, Mommy and Daddy love you very much. But apparently Mommy loves _ more than she loves Daddy.",
+                "draw": 0,
+                "pick": 1
+            },
+            {
+                "text": "Today on Buzzfeed: 10 pictures of _ That look like _!",
+                "draw": 0,
+                "pick": 2
+            },
+            {
+                "text": "Why am I so tired?",
+                "draw": 0,
+                "pick": 1
+            }
+        ],
+        "responses": [
+            {
+                "text": "200 years of slavery."
+            },
+            {
+                "text": "A cloud of ash that darkens the Earth for a thousand years."
+            },
+            {
+                "text": "A protracted siege."
+            },
+            {
+                "text": "A vague fear of something called ISIS."
+            },
+            {
+                "text": "All the poop inside of my body."
+            },
+            {
+                "text": "Being replaced by a robot."
+            },
+            {
+                "text": "Blockbuster late fees up the wazoo."
+            },
+            {
+                "text": "Building a ladder of hot dogs to the moon."
+            },
+            {
+                "text": "Ebola."
+            },
+            {
+                "text": "Harnessing the miraculous power of the atom to slaughter 200,000 Japanese people."
+            },
+            {
+                "text": "Reading an entire book."
+            },
+            {
+                "text": "Rising sea levels consistent with scientific predictions."
+            },
+            {
+                "text": "Rock music and premarital sex."
+            },
+            {
+                "text": "Small-town cops with M-4 assault rifles."
+            },
+            {
+                "text": "The 9,000 children who starved to death today."
+            },
+            {
+                "text": "The Bowflex Revolution."
+            },
+            {
+                "text": "The Great Lizard Uprising of 2352."
+            },
+            {
+                "text": "The diminishing purity of the white race."
+            },
+            {
+                "text": "The dying breath of the last human."
+            },
+            {
+                "text": "The events depicted in James Cameron's Avatar."
+            },
+            {
+                "text": "The transience of all things."
+            },
+            {
+                "text": "This groovy new thing called LSD."
+            },
+            {
+                "text": "Trying to feel something, anything."
+            },
+            {
+                "text": "What remains of my penis."
+            }
+        ]
+    }
+}

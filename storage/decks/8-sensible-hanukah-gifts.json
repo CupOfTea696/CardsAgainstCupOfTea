@@ -1,0 +1,114 @@
+{
+    "name": "8 Sensible Hanukah Gifts",
+    "description": "This is Cards Against Humanity's Eight Sensible Gifts for Hanukkah, a seasonal promotion that we've created to capture your attention and money.",
+    "version": "1.0",
+    "slug": "&#x2721;",
+    "calls": 5,
+    "responses": 25,
+    "cards": {
+        "calls": [
+            {
+                "text": "According to Freud, all children progress through three stages of development: the oral stage, the anal stage, and the _ stage.",
+                "draw": 0,
+                "pick": 1
+            },
+            {
+                "text": "Can't you see? The Jews are behind everything &mdash; the banks, the media, even _!",
+                "draw": 0,
+                "pick": 1
+            },
+            {
+                "text": "Coming to Broadway next season: &quot;_ on the Roof.&quot;",
+                "draw": 0,
+                "pick": 1
+            },
+            {
+                "text": "Oh, your daughter should meet my son! He gives to charity, he loves _ and did I mention he's a doctor?",
+                "draw": 0,
+                "pick": 1
+            },
+            {
+                "text": "What's so important right now that you can't call your mother?",
+                "draw": 0,
+                "pick": 1
+            }
+        ],
+        "responses": [
+            {
+                "text": "A big brain full of facts and sadness."
+            },
+            {
+                "text": "A headache that's definitely cancer."
+            },
+            {
+                "text": "A lifetime of internalized guilt."
+            },
+            {
+                "text": "A little bit of schmutz right there."
+            },
+            {
+                "text": "A three-foot-tall corned beef sandwich."
+            },
+            {
+                "text": "Bags of money."
+            },
+            {
+                "text": "Being chosen by God to win a free iPod Nano."
+            },
+            {
+                "text": "Chopping off a bit of the penis."
+            },
+            {
+                "text": "Demolishing that ass like a Palestinian village."
+            },
+            {
+                "text": "Hiding from the Nazis."
+            },
+            {
+                "text": "Holding up the line at Walgreens by trying to use an expired coupon."
+            },
+            {
+                "text": "Pork products."
+            },
+            {
+                "text": "Resurrecting an army of six million Jews and conquering Germany."
+            },
+            {
+                "text": "Sacrificing Isaac to the Lord."
+            },
+            {
+                "text": "Some kind of concentrated encampment for people."
+            },
+            {
+                "text": "Suddenly remembering that the Holocaust happened."
+            },
+            {
+                "text": "The blood of Christian babies."
+            },
+            {
+                "text": "The ethical implications of enjoying a Woody Allen film in light of the allegations against him."
+            },
+            {
+                "text": "The part of Anne Frank's diary where she talks about her vagina."
+            },
+            {
+                "text": "Thy neighbor's wife."
+            },
+            {
+                "text": "Torturing Jews until they say they're not Jews anymore."
+            },
+            {
+                "text": "Usury."
+            },
+            {
+                "text": "Wandering the desert for 40 years."
+            },
+            {
+                "text": "What it means to be a Jewish woman in contemporary society."
+            },
+            {
+                "text": "Whoopi Goldberg."
+            }
+        ]
+    }
+}

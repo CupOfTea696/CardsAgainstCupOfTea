@@ -1,0 +1,120 @@
+{
+    "name": "2013 Holiday Bullshit",
+    "description": "http:\/\/www.holidaybullshit.com",
+    "version": "1.0",
+    "slug": "HBS",
+    "calls": 8,
+    "responses": 22,
+    "cards": {
+        "calls": [
+            {
+                "text": "Because they are forbidden from masturbating, Mormons channel their repressed sexual energy into _.",
+                "draw": 0,
+                "pick": 1
+            },
+            {
+                "text": "Blessed are you, Lord our God, creator of the universe, who has granted us _.",
+                "draw": 0,
+                "pick": 1
+            },
+            {
+                "text": "GREETINGS HUMANS<br><br>I AM _ BOT<br><br>EXECUTING PROGRAM",
+                "draw": 0,
+                "pick": 1
+            },
+            {
+                "text": "Here's what you can expect for the new year.<br>Out: _.<br>In: _.",
+                "draw": 0,
+                "pick": 2
+            },
+            {
+                "text": "I really hope my grandma doesn't ask me to explain _ again.",
+                "draw": 0,
+                "pick": 1
+            },
+            {
+                "text": "Kids these days with their iPods and their Internet. In my day, all we needed to pass the time was _.",
+                "draw": 0,
+                "pick": 1
+            },
+            {
+                "text": "Revealed:<br>Why He Really Resigned!<br>Pope Benedict's Secret Struggle with _!",
+                "draw": 0,
+                "pick": 1
+            },
+            {
+                "text": "What's the one thing that makes an elf instantly ejaculate?",
+                "draw": 0,
+                "pick": 1
+            }
+        ],
+        "responses": [
+            {
+                "text": "A magical tablet containing a world of unlimited pornography."
+            },
+            {
+                "text": "A simultaneous nightmare and wet dream starring Sigourney Weaver."
+            },
+            {
+                "text": "Being blind and deaf and having no limbs."
+            },
+            {
+                "text": "Breeding elves for their priceless semen."
+            },
+            {
+                "text": "Congress's flaccid penises withering away beneath their suit pants."
+            },
+            {
+                "text": "Finding out that Santa isn't real."
+            },
+            {
+                "text": "First Last."
+            },
+            {
+                "text": "Giving money and personal information to strangers on the Internet."
+            },
+            {
+                "text": "Having a strong opinion about Obamacare."
+            },
+            {
+                "text": "Jizzing into Santa's beard."
+            },
+            {
+                "text": "Making up for 10 years of shitty parenting with a PlayStation."
+            },
+            {
+                "text": "Moses gargling Jesus's balls while Shiva and the Buddha penetrate his divine hand holes."
+            },
+            {
+                "text": "People with cake in their mouths talking about how good cake is."
+            },
+            {
+                "text": "Piece of shit Christmas cards with no money in them."
+            },
+            {
+                "text": "Rudolph's bright red balls."
+            },
+            {
+                "text": "Slicing a ham in icy silence."
+            },
+            {
+                "text": "Swapping bodies with mom for a day."
+            },
+            {
+                "text": "The Grinch's musty, cum-stained pelt."
+            },
+            {
+                "text": "The Hawaiian goddess Kapo and her flying detachable vagina."
+            },
+            {
+                "text": "The royal afterbirth."
+            },
+            {
+                "text": "The shittier, Jewish version of Christmas."
+            },
+            {
+                "text": "These low, low prices!"
+            }
+        ]
+    }
+}
