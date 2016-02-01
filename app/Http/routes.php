@@ -254,6 +254,4 @@ Route::get('sql', function() {
     $set->special = $special;
     
     return response()->json($set);
-    
-    //return response()->json($sets);
 });
