@@ -5,8 +5,19 @@ return array_dot([
     'join' => 'join game',
     'create' => 'create game',
     'create.heading' => 'Create a new game',
+    'settings' => 'settings',
+    'decks' => 'card deck|card decks',
+    'deck' => [
+        'main' => 'Main Cards Against Humanity deck',
+        'official' => 'Official card decks',
+    ],
+    'locales' => [
+        'ca' => 'Canadian version',
+        'uk' => 'UK version',
+        'us' => 'US version',
+    ],
     
-    'room' => [
+    'props' => [
         'name' => 'name',
         'name.label' => 'name your game',
         'score_limit' => 'score limit',

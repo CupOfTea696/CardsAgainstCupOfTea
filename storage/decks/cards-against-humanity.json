@@ -1,6 +1,11 @@
 {
     "name": "Cards Against Humanity",
     "description": "The official Cards Against Humanity base game.",
+    "locales": {
+        "ca": "Canadian Version",
+        "uk": "UK Version",
+        "us": "US Version"
+    },
     "version": {
         "ca": "1.6",
         "uk": "1.6",

@@ -9,8 +9,8 @@
     </header>
     <main class="grid --no-grow">
         <div class="grid/row">
-        @count ($rooms as $room)
-            @include('lobby.room')
+        @count ($games as $game)
+            @include('lobby.game')
             
             @if(Counter::even() && ! Counter::last())
                 </div>

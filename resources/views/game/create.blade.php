@@ -1,19 +1,19 @@
 @extends('layouts.main')
 
-@inject('game', 'App\Services\Game')
+@inject('logic', 'App\Services\GameLogic')
 
 @section('page')
     <header>
         <h2>{{ trans('game.create.heading') }}</h2>
     </header>
     <main>
-        <form action="{{ route('room.store') }}" method="post" class="form --horizontal">
+        <form action="{{ route('game.store') }}" method="post" class="form --horizontal">
             {{ csrf_field() }}
             
             <div class="form/group grid --no-grow --from-start">
-                <label for="game/name" class="grid/sm/one/fourth">{{ uc_trans('game.room.name.label') }}</label>
+                <label for="game/name" class="grid/sm/one/fourth">{{ uc_trans('game.props.name.label') }}</label>
                 <div class="grid/sm/one/half">
-                    <input type="text" class="form/control" name="name" id="game/name" placeholder="{{ $game->createRoomNameFromUsername() ?: uc_trans('game.room.name') }}">
+                    <input type="text" class="form/control" name="name" id="game/name" placeholder="{{ $logic->createNameFromUsername() ?: uc_trans('game.props.name') }}">
                     @if ($errors->has('slug'))
                         <span class="help-block">
                             <strong>{{ $errors->first('slug') }}</strong>
@@ -22,7 +22,7 @@
                 </div>
             </div>
             <div class="form/group grid --no-grow --from-start">
-                <label for="game/capacity" class="grid/sm/one/fourth">{{ uc_trans('game.room.capacity') }}</label>
+                <label for="game/capacity" class="grid/sm/one/fourth">{{ uc_trans('game.props.capacity') }}</label>
                 <div class="grid/sm/one/half">
                     <input type="number" class="form/control" name="capacity" id="game/capacity"
                            min="{{ config('game.capacity.min') }}" max="{{ config('game.capacity.max') }}" value="{{ config('game.capacity.default') }}">
@@ -34,7 +34,7 @@
                 </div>
             </div>
             <div class="form/group grid --no-grow --from-start">
-                <label for="game/spec_capacity" class="grid/sm/one/fourth">{{ uc_trans('game.room.spec_capacity') }}</label>
+                <label for="game/spec_capacity" class="grid/sm/one/fourth">{{ uc_trans('game.props.spec_capacity') }}</label>
                 <div class="grid/sm/one/half">
                     <input type="number" class="form/control" name="spec_capacity" id="game/spec_capacity"
                            min="{{ config('game.spec_capacity.min') }}" max="{{ config('game.spec_capacity.max') }}" value="{{ config('game.spec_capacity.default') }}">
@@ -47,19 +47,19 @@
             </div>
             @if (Auth::check())
                 <div class="form/group grid --no-grow --from-start">
-                    <label for="game/private" class="grid/sm/one/fourth">{{ uc_trans('game.room.private') }}</label>
+                    <label for="game/private" class="grid/sm/one/fourth">{{ uc_trans('game.props.private') }}</label>
                     <div class="grid/sm/one/half">
                         <input type="checkbox" class="form/control form/checkbox" name="private" id="game/private">
                         <label for="game/private"></label>
                         <span class="help-block">
-                            <strong>{{ trans('game.room.private.help', ['site_name' => $app_name]) }}</strong>
+                            <strong>{{ trans('game.props.private.help', ['site_name' => $app_name]) }}</strong>
                         </span>
                     </div>
                 </div>
                 <div class="form/group grid --no-grow --from-start">
-                    <label for="game/password" class="grid/sm/one/fourth">{{ uc_trans('game.room.pass.label') }}</label>
+                    <label for="game/password" class="grid/sm/one/fourth">{{ uc_trans('game.props.pass.label') }}</label>
                     <div class="grid/sm/one/half">
-                        <input type="password" class="form/control" name="password" id="game/password" placeholder="{{ uc_trans('game.room.pass') }}">
+                        <input type="password" class="form/control" name="password" id="game/password" placeholder="{{ uc_trans('game.props.pass') }}">
                         @if ($errors->has('password'))
                             <span class="help-block">
                                 <strong>{{ $errors->first('password') }}</strong>

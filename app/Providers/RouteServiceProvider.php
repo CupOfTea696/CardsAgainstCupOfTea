@@ -26,7 +26,7 @@ class RouteServiceProvider extends ServiceProvider
     {
         parent::boot($router);
         
-        $router->model('game', 'App\Models\Room');
+        $router->model('game', 'App\Models\Game');
     }
 
     /**

@@ -7,7 +7,7 @@
         var $container = $(container);
         
         $container.removeClass('+loading').on(app.transitionEvent(), function() {
-           var $this = $(this); 
+           var $this = $(this);
             
             $this.off(app.transitionEvent());
             $this.removeClass('+loadable');
@@ -18,6 +18,8 @@
         if (route !== 'home') {
             $('.nav\\/item').filter('[data-route="' + route + '"]').addClass('--active');
         }
+        
+        $('body').removeClass().addClass('@' + route.replace('.', '/'));
     };
     
     app.Navigation = {

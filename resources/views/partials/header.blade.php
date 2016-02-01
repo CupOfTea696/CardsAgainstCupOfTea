@@ -6,9 +6,9 @@
                 <a href="{{ Auth::check() ? route('home') : route('lobby') }}" class="+clickable"></a>
             </div>
             @if (Auth::check())
-                <div class="nav/item{{ is_current_route('room.create') ? ' --active' : '' }}" data-route="room.create">
+                <div class="nav/item{{ is_current_route('game.create') ? ' --active' : '' }}" data-route="game.create">
                     {{ uc_trans('game.create') }}
-                    <a href="{{ route('room.create') }}" class="+clickable"></a>
+                    <a href="{{ route('game.create') }}" class="+clickable"></a>
                 </div>
             @endif
         </div>

@@ -11,65 +11,20 @@ use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 class Controller extends BaseController
 {
     use AuthorizesRequests, DispatchesJobs, ValidatesRequests;
-    
+
     /**
-     * Conditional validation rules based on a Closure.
+     * Run the validation routine against the given validator.
      *
-     * @var array
-     */
-    protected $sometimes = [];
-    
-    /**
-     * Add conditions to a given field based on a Closure.
-     *
-     * @param  string|array  $attribute
-     * @param  string|array  $rules
-     * @param  callable  $callback
-     * @return object
-     */
-    public function sometimes($attribute, $rules, callable $callback)
-    {
-        array_push($this->sometimes, compact('attribute', 'rules', 'callback'));
-        return $this;
-    }
-    
-    /**
-     * Validate the given request with the given rules.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  array  $rules
-     * @param  array  $messages
-     * @param  array  $customAttributes
+     * @param  \Illuminate\Contracts\Validation\Validator  $validator
+     * @param  \Illuminate\Http\Request|null  $request
      * @return void
      */
-    public function validate(Request $request, array $rules, array $messages = [], array $customAttributes = [])
+    public function validateWith($validator, Request $request = null)
     {
-        $validator = $this->makeValidator($request->all(), $rules, $messages, $customAttributes);
-        
+        $request = $request ?: app('request');
+
         if ($validator->fails()) {
-            $this->throwValidationException($request, $validator);
+            $this->throwValidationException($request, $validation);
         }
-    }
-    
-    /**
-     * Create a new Validator instance.
-     *
-     * @param  array  $data
-     * @param  array  $rules
-     * @param  array  $messages
-     * @param  array  $customAttributes
-     * @return \Illuminate\Validation\Validator
-     */
-    protected function makeValidator(array $data, array $rules, array $messages = [], array $customAttributes = [])
-    {
-        $validator = $this->getValidationFactory()->make($data, $rules, $messages, $customAttributes);
-        
-        foreach ($this->sometimes as $sometimes) {
-            $validator->sometimes($sometimes['attribute'], $sometimes['rules'], $sometimes['callback']);
-        }
-        
-        $this->sometimes = [];
-        
-        return $validator;
     }
 }
