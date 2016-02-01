@@ -15,11 +15,11 @@
     
     @include('assets.css')
 </head>
-<body>
+<body class="{{ '@' . str_replace('.', '/', current_route('name')) }}">
     <div id="container">
         @include('partials.header')
         
-        <main class="{{ '@' . str_replace('.', '/', current_route('name')) }} container" id="page">
+        <main class="container" id="page">
             @yield('page')
         </main>
         

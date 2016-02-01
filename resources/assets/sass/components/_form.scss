@@ -62,22 +62,26 @@ input[type="radio"], input[type="checkbox"] {
                 display: none;
                 
                 + label {
-                    display: block;
-                    @include size(34px, 34px);
-                    margin: 0;
-                    padding: 7px 0;
-                    cursor: pointer;
-                    color: darken($btn-primary-border, 25%);
-                    font: normal normal normal 14px / 1 FontAwesome;
-                    font-size: 1rem;
-                    text-align: left;
-                    text-rendering: auto;
-                    -webkit-font-smoothing: antialiased;
-                    -moz-osx-font-smoothing: grayscale;
-                    transform: translate(0, 0);
+                    margin-right: 16px;
+                    font-weight: inherit;
+                    
+                    &:last-child {
+                        margin-right: 0;
+                    }
                     
                     &:before {
-                        vertical-align: sub;
+                        display: inline-block;
+                        color: darken($btn-primary-border, 25%);
+                        @include size(1.28571em, 20px);
+                        margin: 0;
+                        padding-right: 7px;
+                        font: normal normal normal 14px / 1 FontAwesome;
+                        font-size: 1rem;
+                        text-align: left;
+                        text-rendering: auto;
+                        -webkit-font-smoothing: antialiased;
+                        -moz-osx-font-smoothing: grayscale;
+                        transform: translate(0, 0);
                     }
                 }
             }

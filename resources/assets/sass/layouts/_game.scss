@@ -1,0 +1,9 @@
+@include location(game) {
+    @include part(show) {
+        @include component(nav) {
+            @include part(container) {
+                position: absolute;
+            }
+        }
+    }
+}

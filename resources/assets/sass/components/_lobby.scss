@@ -1,5 +1,5 @@
 @include component(lobby) {
-    @include part(room) {
+    @include part(game) {
         position: relative;
         @include pad();
         background: #EEE;

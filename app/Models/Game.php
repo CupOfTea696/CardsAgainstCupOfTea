@@ -4,14 +4,14 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Room extends Model
+class Game extends Model
 {
     /**
      * The table associated with the model.
      *
      * @var string
      */
-    protected $table = 'Rooms';
+    protected $table = 'Games';
     
     /**
      * The attributes that are mass assignable.
@@ -86,10 +86,5 @@ class Room extends Model
     public function getStatusAttribute()
     {
         return 'Not Playing';
-    }
-    
-    public function setPassAttribute($value)
-    {
-        $this->attributes['password'] = bcrypt($value);
     }
 }
