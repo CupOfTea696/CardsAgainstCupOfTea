@@ -28,7 +28,7 @@
                 "pick": 1
             },
             {
-                "text": "Press <i class=\"icn --arrow-down\"></i><i class=\"icn --arrow-down\"></i><i class=\"icn --arrow-left\"></i><i class=\"icn --arrow-right\"></i><i class=\"icn --b\"></i> to unleash _.",
+                "text": "Press <i class=\"icn --arrow-down\"><\/i><i class=\"icn --arrow-down\"><\/i><i class=\"icn --arrow-left\"><\/i><i class=\"icn --arrow-right\"><\/i><i class=\"icn --b\"><\/i> to unleash _.",
                 "draw": 0,
                 "pick": 1
             },

@@ -8,7 +8,7 @@
     "cards": {
         "calls": [
             {
-                "text": "<em>&quot;This is madness.&quot; &quot;No, THIS IS _!&quot;</em>",
+                "text": "<em>&quot;This is madness.&quot;<br><br>&quot;<em>No<\/em>, THIS IS _!&quot;<\/em>",
                 "draw": 0,
                 "pick": 1
             },
@@ -113,7 +113,7 @@
                 "pick": 1
             },
             {
-                "text": "Y'all ready to get this thing started? I'm Nick Cannon, and this is America's Got _.",
+                "text": "Y'all ready to get this thing started? I'm Nick Cannon, and this is <em>America's Got<\/em> _.",
                 "draw": 0,
                 "pick": 1
             },
@@ -183,7 +183,7 @@
                 "text": "Being popular and good at sports."
             },
             {
-                "text": "Beloved television star Bill Cosby"
+                "text": "Beloved television star Bill Cosby."
             },
             {
                 "text": "Breastfeeding a ten year old."
@@ -225,7 +225,7 @@
                 "text": "Getting all offended."
             },
             {
-                "text": "Getting shot out of a cannon"
+                "text": "Getting shot out of a cannon."
             },
             {
                 "text": "Growing up chained to a radiator in perpetual darkness."
@@ -315,7 +315,7 @@
                 "text": "The amount of gay I am."
             },
             {
-                "text": "The color &quot;puce&quot;"
+                "text": "The color &quot;puce&quot;."
             },
             {
                 "text": "The dentist."
@@ -339,7 +339,7 @@
                 "text": "Throwing stones at a man until he dies."
             },
             {
-                "text": "Total fucking chaos"
+                "text": "Total fucking chaos."
             },
             {
                 "text": "Treausres beyond your wildest dreams."

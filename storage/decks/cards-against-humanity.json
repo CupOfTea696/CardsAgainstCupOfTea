@@ -209,7 +209,7 @@
                 "pick": 1
             },
             {
-                "text": "How are the writers of Cards Against Humanity spending your £20?",
+                "text": "How are the writers of Cards Against Humanity spending your &pound;20?",
                 "ca": false,
                 "uk": true,
                 "us": false,
@@ -2131,7 +2131,7 @@
                 "us": true
             },
             {
-                "text": "Dick Cheney",
+                "text": "Dick Cheney.",
                 "ca": true,
                 "uk": false,
                 "us": true
@@ -2293,7 +2293,7 @@
                 "us": true
             },
             {
-                "text": "England",
+                "text": "England.",
                 "ca": false,
                 "uk": true,
                 "us": false
@@ -4039,7 +4039,7 @@
                 "us": true
             },
             {
-                "text": "The American Dream",
+                "text": "The American Dream.",
                 "ca": false,
                 "uk": true,
                 "us": true
@@ -4099,7 +4099,7 @@
                 "us": true
             },
             {
-                "text": "The FLQ",
+                "text": "The FLQ.",
                 "ca": true,
                 "uk": false,
                 "us": false
@@ -4159,7 +4159,7 @@
                 "us": true
             },
             {
-                "text": "The KKK",
+                "text": "The KKK.",
                 "ca": true,
                 "uk": true,
                 "us": true
@@ -4255,7 +4255,7 @@
                 "us": true
             },
             {
-                "text": "The Trail of Tears",
+                "text": "The Trail of Tears.",
                 "ca": false,
                 "uk": false,
                 "us": true

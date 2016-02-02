@@ -23,7 +23,7 @@
                 "pick": 1
             },
             {
-                "text": "Do you lack energy? Does it sometimes feel like the whole world is _ ? Zoloft.",
+                "text": "Do you lack energy? Does it sometimes feel like the whole world is _ ?<br><br>Zoloft.",
                 "draw": 0,
                 "pick": 1
             },
@@ -98,7 +98,7 @@
                 "pick": 2
             },
             {
-                "text": "WHOOO! God damn I love _!",
+                "text": "WHOOO! God <em>damn<\/em> I love _!",
                 "draw": 0,
                 "pick": 1
             },
@@ -217,6 +217,9 @@
             },
             {
                 "text": "Child support payments."
+            },
+            {
+                "text": "Cutting off a flamingo's legs with garden shears."
             },
             {
                 "text": "Daddy's credit card."
@@ -355,9 +358,6 @@
             },
             {
                 "text": "Western standards of beauty."
-            },
-            {
-                "text": "lj"
             }
         ]
     }
