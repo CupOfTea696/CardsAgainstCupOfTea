@@ -9,13 +9,13 @@ use Illuminate\Http\Request;
 
 use App\Models\Game;
 use App\Http\Requests;
-use App\Services\GameLogic;
+use App\Game\Logic;
 
 class GameController extends Controller
 {
     protected $logic;
     
-    public function __construct(GameLogic $logic)
+    public function __construct(Logic $logic)
     {
         $this->logic = $logic;
     }

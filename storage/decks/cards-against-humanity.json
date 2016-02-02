@@ -12,8 +12,16 @@
         "us": "1.7"
     },
     "slug": null,
-    "calls": 129,
-    "responses": 614,
+    "calls": {
+        "ca": 92,
+        "uk": 92,
+        "us": 92
+    },
+    "responses": {
+        "ca": 463,
+        "uk": 462,
+        "us": 463
+    },
     "cards": {
         "calls": [
             {

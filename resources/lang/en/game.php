@@ -10,6 +10,7 @@ return array_dot([
     'deck' => [
         'main' => 'Main Cards Against Humanity deck',
         'official' => 'Official card decks',
+        'third-party' => 'Third-party card decks',
     ],
     'locales' => [
         'ca' => 'Canadian version',

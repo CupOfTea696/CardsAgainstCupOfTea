@@ -1,11 +1,11 @@
 <?php
 
-namespace App\Services;
+namespace App\Game;
 
 use Auth;
 use Storage;
 
-class GameLogic
+class Logic
 {
     public $main = 'cards-against-humanity';
     
@@ -19,7 +19,9 @@ class GameLogic
     
     public function __construct()
     {
-        $decks = Storage::get('decks.json');
+        if (Storage::exists('decks.json')) {
+            $decks = Storage::get('decks.json');
+        }
     }
     
     public function createNameFromUsername()

@@ -57,7 +57,7 @@
             <div class="grid/sm/one/half">
                 @foreach ($logic->expansions as $deck => $file)
                     <input type="checkbox" class="form/control form/checkbox" name="decks" id="game/decks/{{ $deck }}">
-                    <label for="game/decks/{{ $deck }}">{{ str_replace('', ) }}</label>
+                    <label for="game/decks/{{ $deck }}">{{ str_replace('', '', $deck) }}</label>
                 @endforeach
             </div>
         </div>

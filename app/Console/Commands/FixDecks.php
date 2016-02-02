@@ -13,7 +13,7 @@ class FixDecks extends Command
      *
      * @var string
      */
-    protected $signature = 'decks:fix';
+    protected $signature = 'decks:fix {--skip-cards}';
 
     /**
      * The console command description.
@@ -57,11 +57,29 @@ class FixDecks extends Command
             $this->info('Checking deck <comment>' . $deck->name . '</comment>');
             $flags[$deck->name] = [];
             
-            $this->checkBroken($deck, $deck->cards->calls);
-            $this->checkBroken($deck, $deck->cards->responses);
+            if (! $this->option('skip-cards')) {
+                $this->checkBroken($deck, $deck->cards->calls);
+                $this->checkBroken($deck, $deck->cards->responses);
+            }
             
             sort($deck->cards->calls);
             sort($deck->cards->responses);
+            
+            if ($deck->name == 'Cards Against Humanity') {
+                $deck->calls = [];
+                $deck->responses = [];
+                
+                foreach ($deck->locales as $locale => $name) {
+                    $deck->calls[$locale] = collect($deck->cards->calls)->where($locale, true)->count();
+                    $deck->responses[$locale] = collect($deck->cards->responses)->where($locale, true)->count();
+                }
+                
+                $deck->calls = (object) $deck->calls;
+                $deck->responses = (object) $deck->responses;
+            } else {
+                $deck->calls = count($deck->cards->calls);
+                $deck->responses = count($deck->cards->responses);
+            }
             
             $deck->description = preg_replace('/(?<!href=")((?:https?:\/\/(?:www\.)?|(?<!http:\/\/)www\.)([^\s]+))/', '<a href="$1" target="_blank">$2</a>', $deck->description);
             
