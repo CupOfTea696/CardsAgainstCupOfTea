@@ -2,7 +2,9 @@
 
 namespace App\Support;
 
-class SortedObject
+use Illuminate\Contracts\Support\Arrayable;
+
+class SortedObject implements Arrayable
 {
     public function __construct($obj)
     {
@@ -16,9 +18,21 @@ class SortedObject
         }
         
         foreach(get_object_vars($this) as $prop => $v) {
-            $this->$prop = $obj->$prop;
+            if (isset($obj->$prop)) {
+                $this->$prop = $obj->$prop;
+            }
         }
         
         return $this;
+    }
+    
+    public function toArray()
+    {
+        return array_filter((array) $this);
+    }
+    
+    public static function make($obj)
+    {
+        return new static($obj);
     }
 }
