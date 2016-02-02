@@ -1,0 +1,203 @@
+{
+    "main": {
+        "name": "Cards Against Humanity",
+        "source": "file",
+        "file": "cards-against-humanity.json",
+        "description": "The official Cards Against Humanity base game.",
+        "type": "official",
+        "locales": {
+            "us": "US Version",
+            "ca": "Canadian Version",
+            "uk": "UK Version"
+        },
+        "calls": {
+            "ca": 92,
+            "uk": 92,
+            "us": 92
+        },
+        "responses": {
+            "ca": 463,
+            "uk": 462,
+            "us": 463
+        }
+    },
+    "official": {
+        "x1": {
+            "name": "The First Expansion",
+            "file": "the-first-expansion.json",
+            "description": "The official First Expansion.",
+            "type": "official",
+            "calls": 24,
+            "responses": 88
+        },
+        "x2": {
+            "name": "The Second Expansion",
+            "file": "the-second-expansion.json",
+            "description": "The official Second Expansion.",
+            "type": "official",
+            "calls": 26,
+            "responses": 76
+        },
+        "x3": {
+            "name": "The Third Expansion",
+            "file": "the-third-expansion.json",
+            "description": "The official Third Expansion.",
+            "type": "official",
+            "calls": 25,
+            "responses": 75
+        },
+        "x4": {
+            "name": "The Fourth Expansion",
+            "file": "the-fourth-expansion.json",
+            "description": "The official Fourth Expansion.",
+            "type": "official",
+            "calls": 30,
+            "responses": 70
+        },
+        "x5": {
+            "name": "The Fifth Expansion",
+            "file": "the-fifth-expansion.json",
+            "description": "The official Fifth Expansion.",
+            "type": "official",
+            "calls": 25,
+            "responses": 75
+        },
+        "x6": {
+            "name": "The Sixth Expansion",
+            "file": "the-sixth-expansion.json",
+            "description": "The official Sixth Expansion.",
+            "type": "official",
+            "calls": 25,
+            "responses": 75
+        },
+        "90s": {
+            "name": "90s Nostalgia Pack",
+            "file": "90s-nostalgia-pack.json",
+            "description": "Don't have a cow man! The 90s Nostalgia Pack is a totally tubular Crossfire&trade; of Freshmaking&reg; jokes. Once you Pop, the fun don't stop!",
+            "type": "official",
+            "calls": 7,
+            "responses": 22
+        },
+        "fantasy": {
+            "name": "Fantasy Pack",
+            "file": "fantasy-pack.json",
+            "description": "Oh no! Not another fucking elf! It's the Fantasy Pack, co-written by make-believers Pat Rothfuss, Neil Gaiman, Sam Sykes, Myke Cole, Jacqueline Carey, Martha Wells, Sherwood Smith, Elizabeth Bear, and Wesley Chu.",
+            "type": "official",
+            "calls": 6,
+            "responses": 26
+        },
+        "food": {
+            "name": "Food Pack",
+            "file": "food-pack.json",
+            "description": "All people know that food is divided into four categories: chomp chomps, snick-snacks, crunchies, and yellow circles.",
+            "type": "official",
+            "calls": 6,
+            "responses": 24
+        },
+        "sci": {
+            "name": "Science Pack",
+            "file": "science-pack.json",
+            "description": "The Science Pack is a pack about the hit system of knowledge known worldwide as \"science.\"",
+            "type": "official",
+            "calls": 7,
+            "responses": 23
+        },
+        "www": {
+            "name": "World Wide Web Pack",
+            "file": "world-wide-web-pack.json",
+            "description": "Except for the rampant misinformation and unspeakable pornography, the Internet is one of Al Gore's greatest inventions.",
+            "type": "official",
+            "calls": 9,
+            "responses": 21
+        },
+        "box": {
+            "name": "Box Expansion",
+            "file": "box-expansion.json",
+            "description": "The official Box Expansion. Instructions for use: 1. Do not.",
+            "type": "official",
+            "responses": 21
+        },
+        "h12": {
+            "name": "2012 Holiday Pack",
+            "file": "2012-holiday-pack.json",
+            "description": "The 2012 Holiday Pack.",
+            "type": "official",
+            "calls": 6,
+            "responses": 23
+        },
+        "h13": {
+            "name": "2013 Holiday Bullshit",
+            "file": "2013-holiday-bullshit.json",
+            "description": "<a href=\"http:\/\/www.holidaybullshit.com\" target=\"_blank\">holidaybullshit.com<\/a>",
+            "type": "official",
+            "calls": 8,
+            "responses": 22
+        },
+        "h14": {
+            "name": "10 Days or Whatever of Kwanzaa",
+            "file": "10-days-or-whatever-of-kwanzaa.json",
+            "description": "Cards Against Humanity's Ten Days or Whatever of Kwanzaa is a Seasonal Promotion&trade; that we've created to capture your attention and money.",
+            "type": "official",
+            "calls": 6,
+            "responses": 24
+        },
+        "h15": {
+            "name": "8 Sensible Hanukah Gifts",
+            "file": "8-sensible-hanukah-gifts.json",
+            "description": "This is Cards Against Humanity's Eight Sensible Gifts for Hanukkah, a seasonal promotion that we've created to capture your attention and money.",
+            "type": "official",
+            "calls": 5,
+            "responses": 25
+        },
+        "hoc": {
+            "name": "House of Cards Against Humanity",
+            "file": "house-of-cards-against-humanity.json",
+            "description": "House of Cards pack. <a href=\"http:\/\/www.houseofcardsagainsthumanity.com\" target=\"_blank\">houseofcardsagainsthumanity.com<\/a>",
+            "type": "official",
+            "calls": 9,
+            "responses": 16
+        },
+        "tt": {
+            "name": "Tabletop Pack",
+            "file": "tabletop-pack.json",
+            "description": "This expansion for Cards Against Humanity is an Indiegogo reward for people who backed Season 3 of TableTop.",
+            "type": "official",
+            "calls": 3,
+            "responses": 12
+        }
+    },
+    "pax": {
+        "pax_e13": {
+            "name": "PAX East 2013",
+            "file": "pax-east-2013.json",
+            "description": "PAX East 2013 Pack.",
+            "type": "pax",
+            "calls": 6,
+            "responses": 24
+        },
+        "pax_13": {
+            "name": "PAX Prime 2013",
+            "file": "pax-prime-2013.json",
+            "description": "PAX Prime 2013",
+            "type": "pax",
+            "calls": 7,
+            "responses": 37
+        },
+        "pax_e14": {
+            "name": "PAX East 2014",
+            "file": "pax-east-2014.json",
+            "description": "The \"oatmeal\" cards from PAX East 2014.",
+            "type": "pax",
+            "calls": 5,
+            "responses": 22
+        },
+        "pax_14p": {
+            "name": "PAX 2014 Panel",
+            "file": "pax-2014-panel.json",
+            "description": "These cards were proposed during the CAH panel at PAX East and Prime 2014, printed up overnight, and distributed to panel attendees the next day.",
+            "type": "pax",
+            "calls": 7,
+            "responses": 13
+        }
+    }
+}
