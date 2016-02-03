@@ -15,8 +15,14 @@ $max-width: em(1178) !global;
 // settings
 $app: 'CardsAgainstTea';
 
+// CSStyle
 $csstyle-part-symbol: '/';
 $csstyle-root-id: $app;
+
+// Hint.css
+$prefix: 'hint.\\--';
+$fontSize: .9em;
+$showDelay: 1s;
 
 // vars
 $mainFont: "Lato", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", "HelveticaNeue", $helvetica;

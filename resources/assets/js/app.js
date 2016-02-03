@@ -38,41 +38,49 @@
                 document.title = jqXHR.status + ' ' + error;
             }
         });
-        
-        $(document).on('mousedown', '.\\--ripple, .\\+ripple', function(e){
-            var $this = $(this),
-                $ripple = $('<div/>'),
-                btnOffset = $this.offset(),
-                xPos = e.pageX - btnOffset.left,
-                yPos = e.pageY - btnOffset.top;
-            
-            $ripple.addClass('ripple');
-            
-            var color = $this.data("ripple-color");
-            if (color) {
-                $ripple.css({background: color});
-            }
-            
-            // handle multiple clicks so the buttons doesn't get overflow with effects.
-            $this.find('.ripple').addClass('remove').on(app.transitionEvent(), function(){
-                $(this).remove();
-            });
-            
-            $ripple.css({
-                width: $this.height(),
-                height: $this.height(),
-                top: yPos - ($ripple.height()/2),
-                left: xPos - ($ripple.width()/2)
-            })
-            .appendTo($this);
-            
-            $ripple.on(app.animationEvent(), function(){
-                $(this).remove();
-            });
-        });
-        
-        $(document).on('click', '.btn, :button, :submit, :reset', function() {
-            $(this).blur();
-        });
     }
+        
+    $(document).on('mousedown', '.\\--ripple, .\\+ripple', function(e){
+        var $this = $(this),
+            $ripple = $('<div/>'),
+            btnOffset = $this.offset(),
+            xPos = e.pageX - btnOffset.left,
+            yPos = e.pageY - btnOffset.top;
+        
+        $ripple.addClass('ripple');
+        
+        var color = $this.data("ripple-color");
+        if (color) {
+            $ripple.css({background: color});
+        }
+        
+        // handle multiple clicks so the buttons doesn't get overflow with effects.
+        $this.find('.ripple').addClass('remove').on(app.transitionEvent(), function(){
+            $(this).remove();
+        });
+        
+        $ripple.css({
+            width: $this.height(),
+            height: $this.height(),
+            top: yPos - ($ripple.height()/2),
+            left: xPos - ($ripple.width()/2)
+        })
+        .appendTo($this);
+        
+        $ripple.on(app.animationEvent(), function(){
+            $(this).remove();
+        });
+    });
+
+    $(document).on('click', '.btn, :button, :submit, :reset', function() {
+        $(this).blur();
+    });
+    
+    $(document).on('click', 'label[data-set]', function() {
+        var set = $(this).data('set');
+        var $checkboxes = $('input[type="checkbox"][data-set="' + set + '"]');
+        var state = $('input[type="checkbox"][data-set="' + set + '"]:checked').length !== $checkboxes.length;
+        
+        $checkboxes.prop('checked', state);
+    });
 })(window, app, jQuery);

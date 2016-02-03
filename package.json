@@ -8,6 +8,7 @@
     "bootstrap-sass": "^3.3.6",
     "bourbon": "^4.2.6",
     "bourbon-neat": "^1.7.2",
+    "hint.css": "^2.0.0",
     "laravel-elixir": "^4.0.0"
   }
 }

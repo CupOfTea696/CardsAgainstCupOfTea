@@ -7,16 +7,21 @@ return array_dot([
     'create.heading' => 'Create a new game',
     'settings' => 'settings',
     'decks' => 'card deck|card decks',
-    'deck' => [
+    'sets' => [
         'main' => 'Main Cards Against Humanity deck',
         'official' => 'Official card decks',
+        'pax' => 'Official card decks',
         'third-party' => 'Third-party card decks',
     ],
     'locales' => [
         'ca' => 'Canadian version',
         'uk' => 'UK version',
         'us' => 'US version',
+        'description' => 'The official Cards Against Humanity base game, ',
     ],
+    
+    'calls' => 'black cards',
+    'responses' => 'white cards',
     
     'props' => [
         'name' => 'name',

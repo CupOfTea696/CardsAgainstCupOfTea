@@ -43,23 +43,36 @@
     </fieldset>
     <fieldset>
         <legend>{{ uc_trans_choice('game.decks', 0) }}</legend>
-        <div class="form/group grid --no-grow --from-start">
-            <label class="grid/sm/one/fourth">{{ uc_trans('game.deck.main') }}</label>
-            <div class="grid/sm/one/half">
-                @foreach ($logic->locales as $locale)
-                    <input type="checkbox" class="form/control form/checkbox" name="decks" id="game/decks/{{ $locale }}">
-                    <label for="game/decks/{{ $locale }}">{{ uc_trans('game.locales.' . $locale) }}</label>
-                @endforeach
+        @foreach ($logic->sets as $set_id => $set)
+            <div class="form/group grid --no-grow --from-start">
+                <label class="grid/sm/one/fourth" data-set="game/decks/{{ $set_id }}">{{ uc_trans('game.sets.' . $set_id) }}</label>
+                <div class="grid/sm/three/fourths">
+                    @if ($set_id == 'main')
+                        @foreach ($set->locales as $locale)
+                            <span class="hint --top --rounded --bounce" data-hint="{{ uc_trans('game.locales.description') . uc_trans('game.locales.' . $locale) }}
+                                                                                   [{{ $set->calls->$locale }} {{ trans_choice('game.calls', $set->calls->$locale) }},
+                                                                                   {{ $set->responses->$locale }} {{ trans_choice('game.responses', $set->responses->$locale) }}]">
+                                <input type="checkbox" class="form/control form/checkbox" name="decks" id="game/decks/{{ $locale }}" data-set="game/decks/{{ $set_id }}">
+                                <label for="game/decks/{{ $locale }}">
+                                    {{ uc_trans('game.locales.' . $locale) }}
+                                </label>
+                            </span>
+                        @endforeach
+                    @else
+                        @foreach ($set as $id => $deck)
+                    <pre>{{ var_dump($deck) }}</pre> <?php continue; ?>
+                            <span class="hint --top --rounded --bounce" data-hint="{{ strip_tags($deck->description) }}
+                                                                                   [{{ $deck->calls }} {{ trans_choice('game.calls', $deck->calls) }},
+                                                                                   {{ $deck->responses }} {{ trans_choice('game.responses', $deck->responses) }}]">
+                                <input type="checkbox" class="form/control form/checkbox" name="decks" id="game/decks/{{ $id }}" data-set="game/decks/{{ $set_id }}">
+                                <label for="game/decks/{{ $id }}">
+                                    {{ $deck->name }}
+                                </label>
+                            </span>
+                        @endforeach
+                    @endif
+                </div>
             </div>
-        </div>
-        <div class="form/group grid --no-grow --from-start">
-            <label class="grid/sm/one/fourth">{{ uc_trans('game.deck.official') }}</label>
-            <div class="grid/sm/one/half">
-                @foreach ($logic->expansions as $deck => $file)
-                    <input type="checkbox" class="form/control form/checkbox" name="decks" id="game/decks/{{ $deck }}">
-                    <label for="game/decks/{{ $deck }}">{{ str_replace('', '', $deck) }}</label>
-                @endforeach
-            </div>
-        </div>
+        @endforeach
     </fieldset>
 </form>

@@ -1,0 +1,20 @@
+@import 'hint';
+
+[data-hint] {
+    &:before, &:after {
+        transition-delay: $hideDelay !important;
+    }
+    
+    &:after {
+        max-width: 320px;
+        width: 500%;
+        white-space: normal;
+        text-align: center;
+    }
+    
+    &:hover {
+        &:before, &:after {
+            transition-delay: $showDelay !important;
+        }
+    }
+}

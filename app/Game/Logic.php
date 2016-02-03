@@ -7,20 +7,16 @@ use Storage;
 
 class Logic
 {
-    public $main = 'cards-against-humanity';
-    
-    public $locales = [
-        'us',
-        'ca',
-        'uk',
-    ];
-    
-    public $expansions = [];
+    public $sets = [];
     
     public function __construct()
     {
         if (Storage::exists('decks.json')) {
-            $decks = Storage::get('decks.json');
+            $sets = json_decode(Storage::get('decks.json'));
+            
+            foreach ($sets as $id => $set) {
+                $this->sets[$id] = $set;
+            }
         }
     }
     

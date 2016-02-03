@@ -5,7 +5,8 @@ var sass_options = {
     includePaths: [
         'node_modules/bootstrap-sass/assets/stylesheets',
         require('bourbon').includePaths,
-        'node_modules/bourbon-neat/app/assets/stylesheets'
+        'node_modules/bourbon-neat/app/assets/stylesheets',
+        'node_modules/hint.css/src',
     ]
 };
 

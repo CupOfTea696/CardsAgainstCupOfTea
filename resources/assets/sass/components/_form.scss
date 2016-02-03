@@ -65,10 +65,6 @@ input[type="radio"], input[type="checkbox"] {
                     margin-right: 16px;
                     font-weight: inherit;
                     
-                    &:last-child {
-                        margin-right: 0;
-                    }
-                    
                     &:before {
                         display: inline-block;
                         color: darken($btn-primary-border, 25%);
