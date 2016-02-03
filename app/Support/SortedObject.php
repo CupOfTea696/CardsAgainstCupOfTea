@@ -28,7 +28,9 @@ class SortedObject implements Arrayable
     
     public function toArray()
     {
-        return array_filter((array) $this);
+        return array_filter((array) $this, function ($item) {
+            return ! is_null($item);
+        });
     }
     
     public static function make($obj)

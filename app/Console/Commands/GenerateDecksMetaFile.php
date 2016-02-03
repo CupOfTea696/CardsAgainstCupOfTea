@@ -127,13 +127,13 @@ class GenerateDecksMetaFile extends Command
         
         for ($i = 0; $i < $count; $i++) {
             if (count($locales) > 1) {
-                $key = $this->choice('Select the locale for index ' . $i, $locales);
-                $ordered_locales[$key] = $locales[$key];
+                $locale = $this->choice('Select the locale for index ' . $i, $locales);
+                $ordered_locales[$i] = $locale;
             } else {
                 $ordered_locales = array_merge($ordered_locales, $locales);
             }
             
-            unset($locales[$key]);
+            unset($locales[array_search($locale, $locales)]);
         }
         
         return $ordered_locales;
@@ -157,6 +157,7 @@ class GenerateDecksMetaFile extends Command
             }
             
             $deck = $set[$i];
+            $id = $set[$i]['id'];
             
             if (! count($meta)) {
                 $index = $i;
@@ -164,31 +165,23 @@ class GenerateDecksMetaFile extends Command
                 $index = $this->ask('Deck index for <comment>' . $deck['id'] . ' => ' . $deck['name'] . '</comment>', $suggested_index);
             }
             
-            $set = $set->map(function ($deck) use ($index) {
-                if (isset($deck['index']) && $deck['index'] >= $index) {
-                    $deck['index']++;
-                }
-                
-                return $deck;
-            });
-            
-            $deck['index'] = $index;
-            $set[$i] = $deck;
-            
-            $id = $set[$i]['id'];
-            
             $meta = collect($meta)->map(function ($deck, $meta_id) use ($index, $id) {
-                if ($meta_id != $id && isset($deck['index']) && $deck['index'] >= $index) {
+                if ($meta_id == $id) {
+                    $deck['index'] = $index;
+                } elseif ($deck['index'] >= $index) {
                     $deck['index']++;
                 }
                 
                 return $deck;
-            })->all();
-            
-            $meta[$id] = $deck;
-            
-            $meta = collect($meta)->sortBy('index')->all();
+            })->sortBy('index')->all();
         }
+        
+        $set = $set->map(function($deck) use ($meta) {
+            $index = $meta[$deck['id']]['index'];
+            $deck['index'] = $index;
+            
+            return $deck;
+        });
         
         return $set->sortBy('index');
     }

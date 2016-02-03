@@ -5,11 +5,11 @@
         "file": "cards-against-humanity.json",
         "description": "The official Cards Against Humanity base game.",
         "type": "official",
-        "locales": {
-            "us": "US Version",
-            "ca": "Canadian Version",
-            "uk": "UK Version"
-        },
+        "locales": [
+            "us",
+            "ca",
+            "uk"
+        ],
         "calls": {
             "ca": 92,
             "uk": 92,
@@ -115,6 +115,7 @@
             "file": "box-expansion.json",
             "description": "The official Box Expansion. Instructions for use: 1. Do not.",
             "type": "official",
+            "calls": 0,
             "responses": 21
         },
         "h12": {
@@ -128,7 +129,7 @@
         "h13": {
             "name": "2013 Holiday Bullshit",
             "file": "2013-holiday-bullshit.json",
-            "description": "<a href=\"http:\/\/www.holidaybullshit.com\" target=\"_blank\">holidaybullshit.com<\/a>",
+            "description": "In a desperate bid for money and attention, we launched a holiday marketing campaign called &quot;Cards Against Humanity's 12 Days of Holiday Bullshit.&quot;",
             "type": "official",
             "calls": 8,
             "responses": 22
