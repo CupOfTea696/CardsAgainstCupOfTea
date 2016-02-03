@@ -1,9 +1,40 @@
-@include location(game) {
-    @include part(show) {
-        @include component(nav) {
-            @include part(container) {
-                position: absolute;
-            }
+@include component(game) {
+    padding: 0 64px;
+    overflow: hidden;
+    
+    @include part(settings) {
+        @include absolute((top: 0, left: 0));
+        width: 100%;
+        min-height: 100%;
+        background: $mainColor;
+        opacity: 0;
+        pointer-events: none;
+        transform: translateY(50%);
+        transition: opacity .3s, transform .3s;
+        
+        @include option(show) {
+            opacity: 1;
+            pointer-events: auto;
+            transform: translateY(0);
         }
     }
+    
+    @include part(chat) {
+        @include fixed((bottom: 0, left: 0));
+        background: #FFF;
+        @include size(100%, 320px);
+    }
 }
+
+@include location(game) { @include part(show) {
+    @include component(nav) {
+        @include part(container) {
+            position: absolute;
+        }
+    }
+    
+    #page {
+        width: 100%;
+        max-width: 100%;
+    }
+}}

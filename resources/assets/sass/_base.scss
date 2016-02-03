@@ -11,7 +11,9 @@ html{
     }
 }
 
-#{headings()}, p{
+#{headings()}, p {
+    color: red;
+    
     &:first-child{
         margin-top: 0;
     }
@@ -28,6 +30,10 @@ html{
 a {
     display: inline-block;
     transition: color .2s;
+}
+
+section {
+    position: relative;
 }
 
 fieldset {

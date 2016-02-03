@@ -32,7 +32,7 @@
         
         $(document).on('pjax:error', function(event, jqXHR, textStatus, error, options) {
             window.xhr = jqXHR;
-            console.log([event, jqXHR, textStatus, error, options]);
+            
             if (! (options.type == 'GET' && textStatus !== 'abort') && jqXHR.xhr.responseURL === options.requestUrl)  {
                 document.write(jqXHR.responseText);
                 document.title = jqXHR.status + ' ' + error;
@@ -83,4 +83,14 @@
         
         $checkboxes.prop('checked', state);
     });
+    
+    $(document).on('change', '.form\\/password_visibility_toggle', function() {
+        var $this = $(this);
+        var $pass = $('#' + $this.data('password').replace(/\//g, '\\/'));
+        var type = $this.prop('checked') ? 'text' : 'password';
+        
+        $pass.attr('type', type);
+    });
+    
+    app.Navigation.complete();
 })(window, app, jQuery);

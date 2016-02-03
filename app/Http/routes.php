@@ -46,7 +46,8 @@ Route::group(['middleware' => ['web', 'has.username']], function () {
     
     Route::get( 'game/create', ['as' => 'game.create',  'uses' => 'GameController@create'   ]);
     Route::post('game/create', ['as' => 'game.store',   'uses' => 'GameController@store'    ]);
-    Route::get( 'game/{game}', ['as' => 'game.show',    'uses' => 'GameController@show'     ]);
+    
+    Route::match(['get', 'post'], 'game/{game}', ['as' => 'game.show', 'uses' => 'GameController@show']);
 });
 
 Route::group(['middleware' => ['web', 'auth']], function () {

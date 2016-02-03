@@ -36,7 +36,9 @@
             <div class="form/group grid --no-grow --from-start">
                 <label for="game/password" class="grid/sm/one/fourth">{{ uc_trans('game.props.pass.label') }}</label>
                 <div class="grid/sm/one/half">
-                    <input type="password" class="form/control" name="password" id="game/password" placeholder="{{ $game->password }}">
+                    <input type="checkbox" class="form/password_visibility_toggle" id="game/password/toggle" data-password="game/password">
+                    <input type="password" class="form/control" name="password" id="game/password" placeholder="{{ uc_trans('game.props.pass') }}" value="{{ $game->password }}pass">
+                    <label for="game/password/toggle"></label>
                 </div>
             </div>
         @endif
@@ -60,7 +62,6 @@
                         @endforeach
                     @else
                         @foreach ($set as $id => $deck)
-                    <pre>{{ var_dump($deck) }}</pre> <?php continue; ?>
                             <span class="hint --top --rounded --bounce" data-hint="{{ strip_tags($deck->description) }}
                                                                                    [{{ $deck->calls }} {{ trans_choice('game.calls', $deck->calls) }},
                                                                                    {{ $deck->responses }} {{ trans_choice('game.responses', $deck->responses) }}]">

@@ -10,17 +10,25 @@ use Spatie\Pjax\Middleware\FilterIfPjax as SpatieFilterIfPjax;
 class FilterIfPjax extends SpatieFilterIfPjax
 {
     /**
-     * Easily add extra filters for PJAX requests.
+     * Handle an incoming request.
      *
-     * @param \Illuminate\Http\Response $response
-     * @param \Illuminate\Http\Request  $request
+     * @param \Illuminate\Http\Request $request
+     * @param \Closure                 $next
+     *
+     * @return mixed
      */
-    protected function filter(Response $response, Request $request, Closure $filter)
+    public function handle(Request $request, Closure $next)
     {
-        $filter($response, $request);
+        $response = parent::handle($request, $next);
+        
+        if (!$request->pjax() || $response->isRedirection()) {
+            return $response;
+        }
         
         if ($route = $request->route()) {
             $response->header('X-PJAX-Route', $route->getName());
         }
+        
+        return $response;
     }
 }

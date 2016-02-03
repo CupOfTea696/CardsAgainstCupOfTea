@@ -5,8 +5,13 @@
     </header>
     <main>
         <div class="lobby/game/actions">
-            <button class="btn btn-default btn-block --ripple --dark">Spectate</button>
-            <a href="{{ route('game.show', [$game]) }}" class="btn btn-primary btn-block --big --ripple">Join</a>
+            <form action="{{ route('game.show', [$game]) }}" method="post">
+                {{ csrf_field() }}
+                <input type="hidden" name="join_as" value="spectator">
+                
+                <button class="btn btn-default btn-block --ripple --dark" type="submit">Spectate</button>
+                <a href="{{ route('game.show', [$game]) }}" class="btn btn-primary btn-block --big --ripple">Join</a>
+            </form>
         </div>
         
         <ul class="lobby/game/meta">

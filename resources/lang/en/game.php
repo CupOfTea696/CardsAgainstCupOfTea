@@ -9,9 +9,9 @@ return array_dot([
     'decks' => 'card deck|card decks',
     'sets' => [
         'main' => 'Main Cards Against Humanity deck',
-        'official' => 'Official card decks',
-        'pax' => 'Official card decks',
-        'third-party' => 'Third-party card decks',
+        'official' => 'Official decks',
+        'pax' => 'Penny Arcade Expo decks',
+        'third-party' => 'Third-party decks',
     ],
     'locales' => [
         'ca' => 'Canadian version',

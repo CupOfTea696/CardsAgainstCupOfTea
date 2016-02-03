@@ -1,0 +1,74 @@
+@include component(ui-resizable) {
+    position: relative;
+    top: auto !important;
+    
+    .ui-resizable-n, .ui-resizable-e, .ui-resizable-s, .ui-resizable-w {
+        overflow: hidden;
+        
+        &:before, &:after {
+            content: '';
+            display: block;
+            opacity: 0;
+            transition: opacity .3s;
+        }
+        
+        &:active, &:hover {
+            &:before, &:after {
+                opacity: 1;
+            }
+        }
+    }
+    
+    .ui-resizable-n, .ui-resizable-s {
+        @include absolute((left: 0));
+        @include size(100%, 16px);
+        margin-top: -8px;
+        
+        &:before {
+            @include absolute((top: 50%, left: 0));
+            @include size(100%, 2px);
+            margin-top: -1px;
+            margin-left: 1px;
+            border-top: 1px dotted #222;
+        }
+        
+        &:after {
+            @include absolute((top: 50%, left: 0));
+            @include size(100%, 2px);
+            margin-top: -1px;
+            border-bottom: 1px dotted #222;
+        }
+    }
+    
+    .ui-resizable-e, .ui-resizable-w {
+        @include absolute((top: 0));
+        @include size(16px, 100%);
+        margin-left: -8px;
+        
+        &:after {
+            @include absolute((top: 0, left: 50%));
+            @include size(2px, 100%);
+            margin-left: -1px;
+        }
+    }
+    
+    .ui-resizable-n {
+        top: 0;
+        cursor: n-resize;
+    }
+    
+    .ui-resizable-e {
+        left: 0;
+        cursor: e-resize;
+    }
+    
+    .ui-resizable-s {
+        bottom: 0;
+        cursor: s-resize;
+    }
+    
+    .ui-resizable-w {
+        right: 0;
+        cursor: w-resize;
+    }
+}
