@@ -14,7 +14,7 @@
             <p>Waiting for players...</p>
         </main>
     </section>
-    <section class="game/chat">
+    <section class="game/chat chat" data-resizable="n" data-max-height="50%">
         
     </section>
 @stop

@@ -93,4 +93,30 @@
     });
     
     app.Navigation.complete();
+    
+    $('[data-resizable]').each(function() {
+        var $this = $(this);
+        var cfg = {
+            handles: $this.data('resizable'),
+            minHeight: 180
+        };
+        
+        if ($this.data('max-height')) {
+            var maxHeight = $this.data('max-height');
+            
+            if (maxHeight.match(/%$/)) {
+                maxHeight = parseFloat(maxHeight) / 100;
+                
+                if ($this.css('position') == 'fixed') {
+                    maxHeight = $(window).height() * maxHeight;
+                } else {
+                    maxHeight = $this.parent().outerHeight() * maxHeight;
+                }
+            }
+            
+            cfg.maxHeight = maxHeight;
+        }
+        
+        $(this).resizable(cfg);
+    });
 })(window, app, jQuery);
