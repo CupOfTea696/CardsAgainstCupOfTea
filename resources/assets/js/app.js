@@ -92,8 +92,6 @@
         $pass.attr('type', type);
     });
     
-    app.Navigation.complete();
-    
     $('[data-resizable]').each(function() {
         var $this = $(this);
         var cfg = {
@@ -119,4 +117,6 @@
         
         $(this).resizable(cfg);
     });
+    
+    app.Navigation.complete();
 })(window, app, jQuery);

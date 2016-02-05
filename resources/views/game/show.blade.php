@@ -15,6 +15,11 @@
         </main>
     </section>
     <section class="game/chat chat" data-resizable="n" data-max-height="50%">
-        
+        <div class="chat/messages">
+             
+        </div>
+        <div class="chat/input">
+            <input type="text" name="chat" data-action="chat.publish" placeholder="{{ trans('chat.cta') }}" autofocus>
+        </div>
     </section>
 @stop
