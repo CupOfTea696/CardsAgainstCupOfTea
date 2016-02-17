@@ -117,3 +117,33 @@ if (! function_exists('ucf_trans_choice')) {
         return ucfirst(trans_choice($id, $number, $parameters, $domain, $locale));
     }
 }
+
+if (! function_exists('minutes')) {
+    function minutes($amount = 1) {
+        return $amount * 60;
+    }
+}
+
+if (! function_exists('hours')) {
+    function hours($amount = 1) {
+        return $amount * 60 * 60;
+    }
+}
+
+if (! function_exists('days')) {
+    function days($amount = 1) {
+        return $amount * 60 * 60 * 24;
+    }
+}
+
+if (! function_exists('weeks')) {
+    function weeks($amount = 1) {
+        return $amount * 60 * 60 * 24 * 7;
+    }
+}
+
+if (! function_exists('years')) {
+    function years($amount = 1) {
+        return $amount * 60 * 60 * 24 * 7 * 52;
+    }
+}

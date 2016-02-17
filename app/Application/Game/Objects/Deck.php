@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Game\Objects;
+namespace CAT\Game\Objects;
 
-use App\Support\SortedObject;
+use CAT\Support\SortedObject;
 
 class Deck extends SortedObject
 {

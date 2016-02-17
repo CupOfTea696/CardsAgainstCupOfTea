@@ -1,16 +1,52 @@
 @include location(game) { @include part(show) {
+//    @include component(nav) {
+//        top: -64px;
+//        
+//        @include part(container) {
+//            height: $headerHeight / 4;
+//            
+//            &:hover {
+//                @include component(nav) {
+//                    top: 0;
+//                }
+//            }
+//        }
+//    }
+    
     @include component(nav) {
-        @include part(container) {
-            position: absolute;
+        height: $headerHeight / 2;
+        
+        @include part(item) {
+            height: $headerHeight / 2;
+            line-height: $headerHeight / 2;
+            padding: 0 16px;
+            
+            &:after {
+                @include font-size(14px);
+                left: 16px;
+                right: 16px;
+            }
+            
+            > a {
+                &:after {
+                    height: 2px;
+                }
+            }
         }
     }
     
     #page {
-        width: 100%;
+        @include size(100%, 100%);
         max-width: 100%;
+        padding: 0 0 $footerHeight;
     }
     
-    #container > footer {
-        position: fixed;
+    #container {
+        height: 100%;
+        
+        > footer {
+            position: fixed;
+            background: $mainColor;
+        }
     }
 }}

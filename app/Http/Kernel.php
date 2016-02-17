@@ -49,6 +49,7 @@ class Kernel extends HttpKernel
         'auth.basic' => \Illuminate\Auth\Middleware\AuthenticateWithBasicAuth::class,
         'has.username' => \App\Http\Middleware\HasUsername::class,
         'doesnt.have.username' => \App\Http\Middleware\DoesntHaveUsername::class,
+        'room.auth' => \App\Http\Middleware\AuthenticatedForRoom::class,
         'guest' => \App\Http\Middleware\RedirectIfAuthenticated::class,
         'throttle' => \Illuminate\Routing\Middleware\ThrottleRequests::class,
     ];

@@ -61,7 +61,7 @@
     }
     
     .ui-resizable-e {
-        left: -10px;
+        right: -8px;
         cursor: e-resize;
     }
     
@@ -71,7 +71,7 @@
     }
     
     .ui-resizable-w {
-        right: -8px;
+        left: -10px;
         cursor: w-resize;
     }
 }

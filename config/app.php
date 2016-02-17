@@ -157,6 +157,8 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
         
+        CAT\ApplicationServiceProvider::class,
+        
         CupOfTea\TwoStream\TwoStreamServiceProvider::class,
         CupOfTea\Counter\CounterServiceProvider::class,
 
@@ -197,6 +199,7 @@ return [
         'Queue'     => Illuminate\Support\Facades\Queue::class,
         'Redirect'  => Illuminate\Support\Facades\Redirect::class,
         'Redis'     => Illuminate\Support\Facades\Redis::class,
+            'JRedis'     => CAT\XRedis\Facades\JRedis::class,
         'Request'   => Illuminate\Support\Facades\Request::class,
         'Response'  => Illuminate\Support\Facades\Response::class,
         'Route'     => Illuminate\Support\Facades\Route::class,

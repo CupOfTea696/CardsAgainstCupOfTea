@@ -2,7 +2,11 @@
 
 namespace App\Models;
 
+use Crypt;
+use Redis;
+
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Contracts\Encryption\DecryptException;
 
 class Game extends Model
 {
@@ -68,14 +72,28 @@ class Game extends Model
         return 'slug';
     }
     
-    public function getPlayersAttribute()
+    public function getPasswordAttribute($value)
     {
-        return 0;
+        try {
+            return Crypt::decrypt($value);
+        } catch (DecryptException $e) {
+            return false;
+        }
     }
     
-    public function getSpectatorsAttribute()
+    public function setPasswordAttribute($value)
     {
-        return 0;
+        $this->attributes['password'] = Crypt::encrypt($value);
+    }
+    
+    public function getPlayerCountAttribute()
+    {
+        return Redis::scard('game:' . $this->id . ':players');
+    }
+    
+    public function getSpectatorCountAttribute()
+    {
+        return Redis::scard('game:' . $this->id . ':spectators');
     }
     
     public function getGoalAttribute()

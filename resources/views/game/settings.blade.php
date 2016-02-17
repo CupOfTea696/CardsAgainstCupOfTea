@@ -45,7 +45,7 @@
     </fieldset>
     <fieldset>
         <legend>{{ uc_trans_choice('game.decks', 0) }}</legend>
-        @foreach ($logic->sets as $set_id => $set)
+        @foreach ($logic->getSets() as $set_id => $set)
             <div class="form/group grid --no-grow --from-start">
                 <label class="grid/sm/one/fourth" data-set="game/decks/{{ $set_id }}">{{ uc_trans('game.sets.' . $set_id) }}</label>
                 <div class="grid/sm/three/fourths">

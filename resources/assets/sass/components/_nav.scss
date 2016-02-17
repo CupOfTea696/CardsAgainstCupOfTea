@@ -1,10 +1,11 @@
 @include component(nav) {
-    height: $headerHeight;
-    @include font-size($fontBaseSize);
+    @include relative((top: 0));
+    @include size(100%, $headerHeight);
     letter-spacing: .25px;
     font-family: $headingFont;
     color: #FFF;
     background: rgba(#000, .7);
+    transition: height .3s;
     
     @include part(container) {
         @include fixed((top: 0, left: 0));
@@ -18,6 +19,24 @@
         height: $headerHeight;
         padding: 0 32px;
         line-height: $headerHeight;
+        font-size: 0;
+        transition: height .3s, padding .3s, line-height .3s;
+        
+        &:before, &:after {
+            content: attr(data-text);
+            @include font-size($fontBaseSize);
+            text-align: center;
+            pointer-events: none;
+        }
+        
+        &:before {
+            opacity: 0;
+        }
+        
+        &:after {
+            @include absolute((top: 0, left: 32px, right: 32px));
+            transition: font-size .3s, left .3s, right .3s;
+        }
         
         @include option(main) {
             font-weight: 700;
@@ -39,7 +58,7 @@
                 @include absolute((bottom: -5px, left: 0));
                 @include size(100%, 5px);
                 background: #FFF;
-                transition: bottom .2s;
+                transition: bottom .2s, height .3s;
             }
         }
         

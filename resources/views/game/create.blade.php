@@ -1,6 +1,6 @@
 @extends('layouts.main')
 
-@inject('logic', 'App\Game\Logic')
+@inject('logic', 'CAT\Game\Logic')
 
 @section('page')
     <header>

@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Support;
+namespace CAT\Support;
 
 use Illuminate\Contracts\Support\Arrayable;
 

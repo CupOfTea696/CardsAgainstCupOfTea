@@ -1,4 +1,4 @@
-html{
+html {
     font-size: $fontBaseSize;
     line-height: 1.4;
     
@@ -12,10 +12,17 @@ html{
 }
 
 #{headings()}, p {
-    color: red;
-    
     &:first-child{
         margin-top: 0;
+    }
+    
+    &:last-child {
+        margin-bottom: 0;
+    }
+    
+    &.pull-left, &.pull-right {
+        margin-top: 0;
+        margin-bottom: 0;
     }
 }
 

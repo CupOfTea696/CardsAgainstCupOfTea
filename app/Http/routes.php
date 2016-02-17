@@ -44,15 +44,30 @@ Route::group(['middleware' => ['web']], function () {
 Route::group(['middleware' => ['web', 'has.username']], function () {
     Route::get('lobby', ['as' => 'lobby', 'uses' => 'GameController@lobby']);
     
-    Route::get( 'game/create', ['as' => 'game.create',  'uses' => 'GameController@create'   ]);
-    Route::post('game/create', ['as' => 'game.store',   'uses' => 'GameController@store'    ]);
+    Route::get( 'game/create',          ['as' => 'game.create',     'uses' => 'GameController@create'       ]);
+    Route::post('game/create',          ['as' => 'game.store',      'uses' => 'GameController@store'        ]);
+    Route::get( 'game/{game}/password', ['as' => 'game.password',   'uses' => 'GameController@password'     ]);
+    Route::post('game/{game}/password', ['as' => 'game.auth',       'uses' => 'GameController@authenticate' ]);
     
-    Route::match(['get', 'post'], 'game/{game}', ['as' => 'game.show', 'uses' => 'GameController@show']);
+    Route::group(['middleware' => 'room.auth'], function () {
+        Route::match(['get', 'post'], 'game/{game}', ['as' => 'game.show', 'uses' => 'GameController@show']);
+    });
 });
 
 Route::group(['middleware' => ['web', 'auth']], function () {
     Route::get( 'my/account', ['as' => 'account.edit',      'uses' => 'AccountController@edit'  ]);
     Route::post('my/account', ['as' => 'account.update',    'uses' => 'AccountController@update']);
+});
+
+Route::get('test', function() {
+    Redis::zadd('f', 0, json_encode(['a']));
+    Redis::zadd('f', 0, json_encode(['b']));
+    Redis::zadd('f', 0, json_encode(['c']));
+    Redis::zadd('f', 0, json_encode(['d']));
+    Redis::zadd('f', 0, json_encode(['e']));
+    
+    echo '<pre>';
+    var_dump(Redis::zrangeByLex('f', '-', '[' . json_encode(['c'])));
 });
 
 Route::get('sql', function() {

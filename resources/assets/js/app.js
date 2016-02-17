@@ -1,46 +1,34 @@
 (function(window, app, $) {
     var document = window.document;
     
-    if ($.support.pjax) {
-        $(document).on('click', 'a[href^="' + app.baseUrl + '"]', function(e) {
-            var container;
+    $(window).on('resize fullscreenchange', $.debounce(250, function() {
+        $('.ui-resizable').each(function() {
+            var $this = $(this);
             
-            if (! (container = $(this).data('pjax'))) {
-                container = '#page';
-            }
+            var types = ['min', 'max'];
+            var dimensions = ['width', 'height'];
             
-            $.pjax.click(e, {container: container, timeout: 3000});
-        });
-        
-        $(document).on('submit', 'form', function(e) {
-            var container;
-            
-            if (! (container = $(this).data('pjax'))) {
-                container = '#page';
-            }
-            
-            $.pjax.submit(e, container);
-        });
-
-        $(document).on('pjax:send', function(e) {
-            app.Navigation.start(e.target);
-        });
-        
-        $(document).on('pjax:success', function(e, data, status, xhr, options) {
-            app.Navigation.complete(e.target, xhr.getResponseHeader('X-PJAX-Route'));
-        });
-        
-        $(document).on('pjax:error', function(event, jqXHR, textStatus, error, options) {
-            window.xhr = jqXHR;
-            
-            if (! (options.type == 'GET' && textStatus !== 'abort') && jqXHR.xhr.responseURL === options.requestUrl)  {
-                document.write(jqXHR.responseText);
-                document.title = jqXHR.status + ' ' + error;
+            for (var i = 0; i < types.length; i++) {
+                for (var j = 0; j < dimensions.length; j++) {
+                    var type = types[i];
+                    var dimension = dimensions[j];
+                    
+                    var restriction = $this.data(type + '-' + dimension)
+                    
+                    if (restriction) {
+                        if(restriction.match(/%$/)) {
+                            restriction = parseFloat(restriction) / 100;
+                            restriction = $this.css('position') == 'fixed' ? ($(window)[dimension]() * restriction) : ($this.parent()['outer' + dimension.ucfirst()]() * restriction);
+                        }
+                        
+                        $this.resizable('option', type + dimension.ucfirst(), restriction);
+                    }
+                }
             }
         });
-    }
-        
-    $(document).on('mousedown', '.\\--ripple, .\\+ripple', function(e){
+    }));
+    
+    $(document).on('mousedown', '.\\--ripple, .\\+ripple', function(e) {
         var $this = $(this),
             $ripple = $('<div/>'),
             btnOffset = $this.offset(),
@@ -55,7 +43,7 @@
         }
         
         // handle multiple clicks so the buttons doesn't get overflow with effects.
-        $this.find('.ripple').addClass('remove').on(app.transitionEvent(), function(){
+        $this.find('.ripple').addClass('remove').on(app.transitionEvent(), function() {
             $(this).remove();
         });
         
@@ -67,11 +55,11 @@
         })
         .appendTo($this);
         
-        $ripple.on(app.animationEvent(), function(){
+        $ripple.on(app.animationEvent(), function() {
             $(this).remove();
         });
     });
-
+    
     $(document).on('click', '.btn, :button, :submit, :reset', function() {
         $(this).blur();
     });
@@ -92,31 +80,44 @@
         $pass.attr('type', type);
     });
     
-    $('[data-resizable]').each(function() {
-        var $this = $(this);
-        var cfg = {
-            handles: $this.data('resizable'),
-            minHeight: 180
-        };
-        
-        if ($this.data('max-height')) {
-            var maxHeight = $this.data('max-height');
+    if ($.support.pjax) {
+        $(document).on('click', 'a[href^="' + app.baseUrl + '"]', function(e) {
+            var container;
             
-            if (maxHeight.match(/%$/)) {
-                maxHeight = parseFloat(maxHeight) / 100;
-                
-                if ($this.css('position') == 'fixed') {
-                    maxHeight = $(window).height() * maxHeight;
-                } else {
-                    maxHeight = $this.parent().outerHeight() * maxHeight;
-                }
+            if (! (container = $(this).data('pjax'))) {
+                container = '#page';
             }
             
-            cfg.maxHeight = maxHeight;
-        }
+            $.pjax.click(e, {container: container, timeout: 3000});
+        });
         
-        $(this).resizable(cfg);
-    });
+        $(document).on('submit', 'form', function(e) {
+            var container;
+            
+            if (! (container = $(this).data('pjax'))) {
+                container = '#page';
+            }
+            
+            $.pjax.submit(e, container);
+        });
+        
+        $(document).on('pjax:send', function(e) {
+            app.Navigation.start(e.target);
+        });
+        
+        $(document).on('pjax:success', function(e, data, status, xhr, options) {
+            app.Navigation.complete(e.target, xhr.getResponseHeader('X-PJAX-Route'));
+        });
+        
+        $(document).on('pjax:error', function(event, jqXHR, textStatus, error, options) {
+            window.xhr = jqXHR;
+            
+            if (! (options.type == 'GET' && textStatus !== 'abort') && jqXHR.xhr.responseURL === options.requestUrl)  {
+                document.write(jqXHR.responseText);
+                document.title = jqXHR.status + ' ' + error;
+            }
+        });
+    }
     
     app.Navigation.complete();
 })(window, app, jQuery);

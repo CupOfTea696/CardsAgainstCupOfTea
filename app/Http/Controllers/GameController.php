@@ -9,7 +9,7 @@ use Illuminate\Http\Request;
 
 use App\Models\Game;
 use App\Http\Requests;
-use App\Game\Logic;
+use CAT\Game\Logic;
 
 class GameController extends Controller
 {
@@ -28,9 +28,24 @@ class GameController extends Controller
         return view('lobby.index', compact('games'));
     }
     
-    public function show(Game $game)
+    // game.show
+    public function show(Request $request, Game $game)
     {
+        $this->logic->user()->join($game, $request->input('join_as'));
+        
         return view('game.show', compact('game'));
+    }
+    
+    // game.password
+    public function passwordPrompt(Game $game)
+    {
+        return view('game.password', compact('game'));
+    }
+    
+    // game.auth
+    public function authenticate(Game $game)
+    {
+        
     }
     
     // game.create

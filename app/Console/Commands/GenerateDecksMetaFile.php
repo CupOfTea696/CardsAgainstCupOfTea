@@ -5,7 +5,7 @@ namespace App\Console\Commands;
 use Counter;
 use Storage;
 
-use App\Game\Objects\DeckMeta;
+use CAT\Game\Objects\DeckMeta;
 
 use Illuminate\Console\Command;
 

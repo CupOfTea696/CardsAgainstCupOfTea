@@ -16,10 +16,10 @@
         
         <ul class="lobby/game/meta">
             <li>
-                <strong>{{ ucf_trans_choice('lobby.players', 0) }}:</strong> {{ $game->players }}/{{ $game->capacity }}
+                <strong>{{ ucf_trans_choice('lobby.players', 0) }}:</strong> {{ $game->player_count }}/{{ $game->capacity }}
             </li>
             <li>
-                <strong>{{ ucf_trans_choice('lobby.spectators', 0) }}:</strong> {{ $game->spectators }}/{{ $game->spec_capacity }}
+                <strong>{{ ucf_trans_choice('lobby.spectators', 0) }}:</strong> {{ $game->spectator_count }}/{{ $game->spec_capacity }}
             </li>
         </ul> 
         <div class="lobby/game/details hide">

@@ -26,7 +26,8 @@
             "database"
         ],
         "psr-4": {
-            "App\\": "app/"
+            "App\\": "app/",
+            "CAT\\": "app/Application"
         },
         "files": [
             "app/helpers.php"

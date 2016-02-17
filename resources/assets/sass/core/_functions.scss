@@ -21,7 +21,7 @@
         }
     }
     
-    @return $string;
+    @return unquote($string);
 }
 
 @function brightness($color){
