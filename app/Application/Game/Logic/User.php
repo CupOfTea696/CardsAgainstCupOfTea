@@ -21,11 +21,47 @@ class User
     
     public function join(Game $game, $spectator = false)
     {
-        if ($spectator) {
-            Redis::sadd('game:' . $game->id . ':spectators', $this->user->id);
-        } else {
-            Redis::sadd('game:' . $game->id . ':players', $this->user->id);
+        $user_game = Redis::get('user:' . $this->user->id . ':game');
+        
+        if ($game->id == $user_game) {
+            return $this->setStatus($spectator ? 'playing' : 'spectation', $user_game);
         }
+        
+        $pipe = $this->leave(false, $user_game);
+        
+        if ($spectator) {
+            $pipe->sadd('game:' . $game->id . ':spectators', $this->user->id);
+        } else {
+            $pipe->sadd('game:' . $game->id . ':players', $this->user->id);
+        }
+        
+        $pipe->set('user:' . $this->user->id . ':game', $game->id);
+        $pipe->execute();
+    }
+    
+    public function leave($exec = true, $user_game = null)
+    {
+        $game = $user_game !== null ? $user_game : Redis::get('user:' . $this->user->id . ':game');
+        
+        if (! $game) {
+            if (! $exec) {
+                return Redis::pipeline();
+            }
+            
+            return;
+        }
+        
+        $pipe = Redis::pipeline();
+        
+        $pipe->del('user:' . $this->user->id . ':game');
+        $pipe->srem('game:' . $game . ':players', $this->user->id);
+        $pipe->srem('game:' . $game . ':spectators', $this->user->id);
+        
+        if ($exec) {
+            return $pipe->execute();
+        }
+        
+        return $pipe;
     }
     
     public function isAuthenticatedForGame(Game $game)
@@ -67,7 +103,18 @@ class User
     
     public function setStatus($status)
     {
-        // set user status to: playing / away / spectating
+        $game = $user_game !== null ? $user_game : Redis::get('user:' . $this->user->id . ':game');
+        $pipe = Redis::pipeline();
+        
+        if ($status == 'spectating') {
+            $pipe->srem('game:' . $game . ':players', $this->user->id);
+            $pipe->sadd('game:' . $game . ':spectators', $this->user->id);
+        } else {
+            $pipe->srem('game:' . $game . ':spectators', $this->user->id);
+            $pipe->sadd('game:' . $game . ':players', $this->user->id);
+        }
+        
+        $pipe->execute();
     }
     
     protected function hasValidAuthTokenForGame(Game $game)
