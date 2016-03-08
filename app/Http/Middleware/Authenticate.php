@@ -25,10 +25,6 @@ class Authenticate
             }
         }
         
-        view()->share([
-            'user' => Auth::user(),
-        ]);
-        
         return $next($request);
     }
 }

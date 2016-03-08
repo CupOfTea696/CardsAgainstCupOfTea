@@ -22,6 +22,11 @@ return array_dot([
     
     'calls' => 'black cards',
     'responses' => 'white cards',
+    'awesome_points' => 'awesome point|awesome points',
+    'status' => [
+        'spectating' => 'spectating',
+        'away' => 'away',
+    ],
     
     'props' => [
         'name' => 'name',

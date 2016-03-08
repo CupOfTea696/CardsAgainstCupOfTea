@@ -90,6 +90,13 @@ if (! function_exists('is_current_route')) {
     }
 }
 
+if (! function_exists('possessive')) {
+    function possessive($noun)
+    {
+        return (ends_with($noun, 's') || ends_with($noun, 'x') || ends_with($noun, 'z')) ? ($noun . "'") : ($noun . "'s");
+    }
+}
+
 if (! function_exists('uc_trans')) {
     function uc_trans($id, array $parameters = [], $domain = 'messages', $locale = null)
     {
@@ -144,6 +151,6 @@ if (! function_exists('weeks')) {
 
 if (! function_exists('years')) {
     function years($amount = 1) {
-        return $amount * 60 * 60 * 24 * 7 * 52;
+        return $amount * (60 * 60 * 24 * 365 + 60 * 60 * 5 + 60 * 48 + 46);
     }
 }

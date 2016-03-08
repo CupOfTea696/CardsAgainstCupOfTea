@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
+use CAT\User\Logic;
+
 use App\Models\User;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
@@ -25,14 +27,16 @@ class HomeController extends Controller
         return view('index');
     }
     
-    public function join(Request $request)
+    public function join(Request $request, Logic $userLogic)
     {
         $username = $request->input('username');
         
         // check if taken by other joins
-        if (User::where('username', $username)->count()) {
+        if (in_array($username, $userLogic->online() || User::where('username', $username)->count())) {
             return redirect()->back()->withErrors(['username' => trans('game.username.inuse')]);
         }
+        
+        $userLogic->register($username);
         
         return redirect()->route('lobby');
     }

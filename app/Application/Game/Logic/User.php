@@ -4,6 +4,9 @@ namespace CAT\Game\Logic;
 
 use Auth;
 use Redis;
+use JRedis;
+
+use CAT\User\Logic;
 
 use App\Models\Game;
 use App\Models\User;
@@ -16,7 +19,7 @@ class User
     
     public function __construct(User $user = null)
     {
-        $this->user = $user ?: Auth::user();
+        $this->user = $user ?: with(new Logic)->get();
     }
     
     public function join(Game $game, $spectator = false)
@@ -24,15 +27,15 @@ class User
         $user_game = Redis::get('user:' . $this->user->id . ':game');
         
         if ($game->id == $user_game) {
-            return $this->setStatus($spectator ? 'playing' : 'spectation', $user_game);
+            return $this->setStatus($spectator ? 'spectating' : 'playing', $user_game);
         }
         
         $pipe = $this->leave(false, $user_game);
         
         if ($spectator) {
-            $pipe->sadd('game:' . $game->id . ':spectators', $this->user->id);
+            $pipe->sadd('game:' . $game->id . ':spectators', $this->user);
         } else {
-            $pipe->sadd('game:' . $game->id . ':players', $this->user->id);
+            $pipe->sadd('game:' . $game->id . ':players', $this->user);
         }
         
         $pipe->set('user:' . $this->user->id . ':game', $game->id);
@@ -45,23 +48,33 @@ class User
         
         if (! $game) {
             if (! $exec) {
-                return Redis::pipeline();
+                return JRedis::pipeline();
             }
             
             return;
         }
         
-        $pipe = Redis::pipeline();
+        $pipe = JRedis::pipeline();
         
         $pipe->del('user:' . $this->user->id . ':game');
-        $pipe->srem('game:' . $game . ':players', $this->user->id);
-        $pipe->srem('game:' . $game . ':spectators', $this->user->id);
+        $pipe->srem('game:' . $game . ':players', $this->user);
+        $pipe->srem('game:' . $game . ':spectators', $this->user);
         
         if ($exec) {
             return $pipe->execute();
         }
         
         return $pipe;
+    }
+    
+    public function players(Game $game)
+    {
+        return JRedis::smembers('game:' . $game->id . ':players');
+    }
+    
+    public function spectators(Game $game)
+    {
+        return JRedis::smembers('game:' . $game->id . ':spectators');
     }
     
     public function isAuthenticatedForGame(Game $game)
@@ -101,17 +114,17 @@ class User
         Redis::expire('user:' . $this->user->id . ':game_token', days());
     }
     
-    public function setStatus($status)
+    public function setStatus($status, $game = null)
     {
-        $game = $user_game !== null ? $user_game : Redis::get('user:' . $this->user->id . ':game');
-        $pipe = Redis::pipeline();
+        $game = $game !== null ? $game : Redis::get('user:' . $this->user->id . ':game');
+        $pipe = JRedis::pipeline();
         
         if ($status == 'spectating') {
-            $pipe->srem('game:' . $game . ':players', $this->user->id);
-            $pipe->sadd('game:' . $game . ':spectators', $this->user->id);
+            $pipe->srem('game:' . $game . ':players', $this->user);
+            $pipe->sadd('game:' . $game . ':spectators', $this->user);
         } else {
-            $pipe->srem('game:' . $game . ':spectators', $this->user->id);
-            $pipe->sadd('game:' . $game . ':players', $this->user->id);
+            $pipe->srem('game:' . $game . ':spectators', $this->user);
+            $pipe->sadd('game:' . $game . ':players', $this->user);
         }
         
         $pipe->execute();
@@ -124,9 +137,7 @@ class User
                 extract(Crypt::decrypt($token));
                 
                 return $this->user->id == $userId && $game->slug === $slug && $game->id == $gameId;
-            } catch (DecryptException $e) {
-                return false;
-            }
+            } catch (DecryptException $e) {}
         }
         
         return false;

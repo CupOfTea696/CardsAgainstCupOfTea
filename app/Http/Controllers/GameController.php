@@ -32,8 +32,10 @@ class GameController extends Controller
     public function show(Request $request, Game $game)
     {
         $this->logic->user()->join($game, $request->input('join_as'));
+        $players = $this->logic->user()->players($game);
+        $spectators  = $this->logic->user()->spectators($game);
         
-        return view('game.show', compact('game'));
+        return view('game.show', compact('game', 'players', 'spectators'));
     }
     
     // game.password

@@ -2,8 +2,9 @@
 
 namespace App\Http\Middleware;
 
-use Auth;
 use Closure;
+use Session;
+use CAT\User\Logic;
 
 class HasUsername
 {
@@ -16,8 +17,9 @@ class HasUsername
      */
     public function handle($request, Closure $next, $guard = null)
     {
-        // check if join username
-        if (Auth::guard($guard)->guest()) {
+        $userLogic = new Logic;
+        
+        if (! $userLogic->get()) {
             if ($request->ajax()) {
                 return response('Unauthorized.', 401);
             } else {

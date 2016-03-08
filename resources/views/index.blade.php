@@ -10,6 +10,11 @@
             
             <div class="form-group col-md-4 col-md-offset-4">
                 <input type="text" class="form-control" name="username" placeholder="{{ uc_trans('auth.user') }}" required>
+                @if ($errors->has('username'))
+                    <span class="help-block">
+                        <strong>{{ $errors->first('username') }}</strong>
+                    </span>
+                @endif
             </div>
             
             <div class="form-group col-md-4 col-md-offset-4">
@@ -24,7 +29,9 @@
                 <p class="lead">
                     {{ trans('auth.signup.prompt') }}
                 </p>
-                <h2>{{ ucf_trans('auth.signup') }}!</h2>
+                <h2>
+                    {{ ucf_trans('auth.signup') }}!
+                </h2>
             </div>
             
             <div class="form-group col-md-4 col-md-offset-4">

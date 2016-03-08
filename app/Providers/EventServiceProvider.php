@@ -15,7 +15,9 @@ class EventServiceProvider extends ServiceProvider
      * @var array
      */
     protected $listen = [
-        
+        'App\Events\WebRequestReceived' => [
+            'App\Listeners\MarkUserAsOnline'
+        ],
     ];
     
     protected $listen_eloquent = [

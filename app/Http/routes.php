@@ -39,6 +39,12 @@ Route::group(['middleware' => ['web']], function () {
         Route::get( 'reset/password/{token}',   ['as' => 'pw.reset',    'uses' => 'PasswordController@showResetForm'        ]);
         Route::post('reset/password',           ['as' => 'pw.reset.do', 'uses' => 'PasswordController@reset'                ]);
     });
+    
+    Route::get('test', function() {
+        Redis::setex('key', 30, 'val');
+        
+        return response()->json();
+    });
 });
 
 Route::group(['middleware' => ['web', 'has.username']], function () {
@@ -57,17 +63,6 @@ Route::group(['middleware' => ['web', 'has.username']], function () {
 Route::group(['middleware' => ['web', 'auth']], function () {
     Route::get( 'my/account', ['as' => 'account.edit',      'uses' => 'AccountController@edit'  ]);
     Route::post('my/account', ['as' => 'account.update',    'uses' => 'AccountController@update']);
-});
-
-Route::get('test', function() {
-    Redis::zadd('f', 0, json_encode(['a']));
-    Redis::zadd('f', 0, json_encode(['b']));
-    Redis::zadd('f', 0, json_encode(['c']));
-    Redis::zadd('f', 0, json_encode(['d']));
-    Redis::zadd('f', 0, json_encode(['e']));
-    
-    echo '<pre>';
-    var_dump(Redis::zrangeByLex('f', '-', '[' . json_encode(['c'])));
 });
 
 Route::get('sql', function() {

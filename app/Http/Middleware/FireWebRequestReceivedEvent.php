@@ -2,12 +2,12 @@
 
 namespace App\Http\Middleware;
 
+use Event;
 use Closure;
-use Session;
 
-use CAT\User\Logic;
+use App\Events\WebRequestReceived;
 
-class DoesntHaveUsername
+class FireWebRequestReceivedEvent
 {
     /**
      * Handle an incoming request.
@@ -18,11 +18,7 @@ class DoesntHaveUsername
      */
     public function handle($request, Closure $next)
     {
-        $userLogic = new Logic;
-        
-        if ($userLogic->get()) {
-            return redirect()->route('lobby');
-        }
+        Event::fire(new WebRequestReceived($request));
         
         return $next($request);
     }

@@ -11,7 +11,7 @@
     }
     
     @include part(header) {
-        margin-top: 64px;
+        margin-top: 80px;
         
         #{headings()} {
             margin-top: 0;
@@ -33,6 +33,10 @@
         transform: translateY(50%);
         transition: opacity .3s, transform .3s;
         
+        #{$all-text-inputs} {
+            width: 50%;
+        }
+        
         @include option(show) {
             opacity: 1;
             pointer-events: auto;
@@ -44,8 +48,62 @@
         @include size(20%, 100%);
         max-width: 50%;
         float: left;
-        padding-top: 64px;
+        padding-top: 80px;
         border-bottom: 1px solid #CCC;
         border-left: 1px solid #CCC;
+    }
+    
+    @include part(player, spectator) {
+        @include clearfix;
+        padding: 16px;
+        border-bottom: 1px solid #CCC;
+        
+        &:first-child {
+            padding-top: 0;
+        }
+        
+        &:last-child {
+            padding-bottom: 0;
+            border-bottom: none;
+        }
+        
+        @include part(avatar) {
+            float: left;
+            width: 64px;
+            margin-right: 8px;
+        }
+        
+        @include part(username) {
+            padding-top: 8px;
+            @include font-size(18px);
+            font-weight: bold;
+        }
+    }
+    
+    @include part(player) {
+        @include part(username, score) {
+            padding-left: 64px + 8px;
+        }
+        
+        @include part(score) {
+            font-style: italic;
+        }
+    }
+    
+    @include part(spectator) {
+        color: #444;
+        
+        @include part(avatar) {
+            opacity: .8;
+            filter: grayscale(50%);
+        }
+        
+        @include part(username, status) {
+            padding-left: 64px + 8px;
+        }
+        
+        @include part(status) {
+            font-style: italic;
+        }
     }
 }

@@ -13,7 +13,7 @@
             </div>
             
             <div class="form-group col-md-4 col-md-offset-4">
-                <input type="text" class="form-control" name="username" placeholder="{{ uc_trans('auth.user') }}" required>
+                <input type="text" class="form-control" name="username" placeholder="{{ uc_trans('auth.user') }}" required{!! (isset($user->username) ? ' value="' . $user->username . '"' : '') !!}>
                 @if ($errors->has('username'))
                     <span class="help-block">
                         <strong>{{ $errors->first('username') }}</strong>

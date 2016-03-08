@@ -51,15 +51,14 @@ class AppServiceProvider extends ServiceProvider
         });
         
         Blade::directive('last', function() {
-            return '<?php if(Counter::first()): ?>';
+            return '<?php if(Counter::last()): ?>';
         });
         
-        Blade::directive('nth', function() {
-            return '<?php if(Counter::first()): ?>';
+        Blade::directive('nth', function($expression) {
+            return "<?php if(Counter::nth{$expression}): ?>";
         });
         
         Blade::directive('index', function($expression) {
-            echo var_dump($expression);
             return "<?php if(Counter::index{$expression}): ?>";
         });
     }
